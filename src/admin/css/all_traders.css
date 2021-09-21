@@ -394,4 +394,7 @@ label.u-ulias_select select option:hover {
     .u-dctl_item, .u-pop_up[data-target="history"] .u-pop_up-content .u-tabination  {
         min-width: 750px;
     }
+    .u-dctli_state {
+        width: 265px;
+    }
 }
