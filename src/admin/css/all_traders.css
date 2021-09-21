@@ -375,10 +375,10 @@ label.u-ulias_select select option:hover {
     .u-dc_traders_list {
         overflow-x: overlay;
     }
+    /* Pop Up Styles */
     .u-dctl_item, .u-pop_up[data-target="history"] .u-pop_up-content .u-tabination {
         min-width: 800px;
     }
-    /* Pop Up Styles */
     .u-pop_up[data-target="history"] .u-pop_up-content{
         overflow-x: overlay;
     }
