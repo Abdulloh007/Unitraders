@@ -1,0 +1,347 @@
+h2.u-heading{
+    width: 100%;
+    margin: 0;
+    color: var(--blue);
+    font-size: 16px;
+    font-weight: 500;
+}
+.u-data_centerbar {
+    width: calc(66% - 20px);
+    margin: 0 auto;
+    padding: 65px 50px;
+    background-color: #fff;
+    border-radius: 6px;
+    row-gap: 10px;
+}
+
+/* Data List Styles */
+.u-dc_traders_list {
+    width: 100%;
+    row-gap: 10px;
+}
+.u-dctl_item {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #DFF3F5;
+    border-radius: 6px;
+}
+.u-dctli_meta {
+    width: 25%;
+    height: 100%;
+    column-gap: 10px;
+}
+.u-dctli_icon{
+    height: 50px;
+    padding: 0 4px;
+    background-color: var(--light-gray);
+    border-radius: 2px;
+}
+.u-dctli_icon svg{
+    width: 16px;
+    height: 16px;
+}
+.u-dctli_info {
+    height: fit-content;
+    margin: auto 0;
+}
+.u-dctli_info p b {
+    color: var(--blue);
+    margin-left: 8px;
+}
+.u-dctl_item p {
+    margin-bottom: 0;
+    font-size: 10px;
+    color: var(--gray);
+}
+.u-dctl_item h4 {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--blue);
+}
+.u-dctl_item i {
+    font-style: normal;
+    color: var(--orange);
+}
+.u-dctli_account {
+    column-gap: 30px;
+}
+.u-dctli_state {
+    width: 200px;
+    column-gap: 10px;
+}
+.u-ulias_link {
+    padding: 8px 0;
+    background-color: var(--light-gray);
+    border-radius: 2px;
+    cursor: pointer;
+    transition: filter .4s ease;
+}
+.u-ulias_link:hover{
+    filter: brightness(.95);
+}
+.u-ulias_link svg{
+    width: 100%;
+    height: 16px;
+}
+.u-ulias_link span {
+    color: var(--blue);
+    font-size: 8px;
+}
+#state.u-ulias_link {
+    width: 140px;
+    padding: 8px 12px;
+}
+#state.u-ulias_link p {
+    font-size: 8px;
+}
+#state.u-ulias_link h4 {
+    font-size: 10px;
+    color: #462CFF;
+}
+
+
+/* Pop Up Styles */
+.u-pop_up.u-history .u-pop_up-wrap{
+    width: 1000px;
+}
+.u-pop_up-content {
+    row-gap: 40px;
+}
+.u-pop_up-content .u-dctli_state {
+    width: 140px;
+}
+.u-typeof_order.u-tab_nav {
+    column-gap: 20px;
+    padding: 18px 17px;
+}
+.u-typeof_order.u-tab_nav li {
+    position: relative;
+    font-size: 16px;
+    color: var(--gray);
+    cursor: pointer;
+}
+.u-typeof_order.u-tab_nav li.active {
+    color: var(--blue);
+}
+.u-typeof_order.u-tab_nav li.active::before {
+    content: "";
+    position: absolute;
+    bottom: -18px;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: var(--orange);
+    border-radius: 2px;
+}
+.u-orders.u-tab_nav {
+    padding: 18px 0;
+    border-bottom: 2px solid #e0eaef;
+}
+/* - Data Table Styles - */
+.u-dt_item {
+    font-size: 10px;
+    color: var(--blue);
+    padding: 8px 15px;
+}
+.u-dt_item.title span{
+    font-size: 8px;
+    color: var(--gray) !important;
+}
+.u-dt_item:nth-child(even) {
+    background-color: #fff;
+    border-radius: 6px;
+}
+.u-dt_item span {
+    width: 80px;
+}
+.u-dt_item span.u-dti_date {
+    width: 90px;
+}
+.u-dt_item span.u-dti_total {
+    width: 120px;
+}
+.u-dt_item span.u-dti_cancel {
+    box-sizing: content-box;
+    padding-right: 20px;
+}
+/* - Coloring Table Items - */
+.u-dt_item span.u-dti_date {
+    color: var(--gray);
+}
+.u-dt_item span.u-dti_side {
+    color: var(--red);
+}
+.u-dt_item span.u-dti_cancel {
+    color: var(--orange);
+    cursor: pointer;
+}
+
+/* ||-----> DARK THEME <-----|| */
+.u-dark .u-data_centerbar{
+    background-color: #1D2227;
+}
+.u-dark .u-dctl_item, .u-dark .u-orders.u-tab_nav{
+    border-color: #3C454E;
+}
+.u-dark .u-dt_item:nth-child(even){
+    background-color: var(--light-gray);
+}
+
+/*---------- Large Screens ----------*/
+@media (min-width: 1440px) {
+    h2.u-heading{
+        width: 100%;
+        margin: 0;
+        font-size: 20px;
+    }
+    h2.u-heading.blocked{
+        margin-top: 50px;
+    }
+    .u-data_centerbar {
+        width: calc(66% - 20px);
+        margin: 0 auto;
+        padding: 65px 50px;
+        row-gap: 10px;
+    }
+
+    /* Data List Styles */
+    .u-dc_traders_list {
+        width: 100%;
+        row-gap: 10px;
+    }
+    .u-dctl_item {
+        width: 100%;
+        padding: 5px;
+    }
+    .u-dctli_meta {
+        width: 25%;
+        height: 100%;
+        column-gap: 15px;
+    }
+    .u-dctli_icon svg{
+        width: 20px;
+        height: 20px;
+    }
+    .u-dctli_icon{
+        height: 50px;
+        padding: 0 4px;
+    }
+    .u-dctli_info p b {
+        margin-left: 8px;
+    }
+    .u-dctl_item p {
+        margin-bottom: 3px;
+        font-size: 12px;
+    }
+    .u-dctl_item h4 {
+        margin: 0;
+        font-size: 16px;
+    }
+    .u-dctli_account {
+        column-gap: 45px;
+    }
+    .u-dctli_state {
+        width: 211px;
+        column-gap: 10px;
+    }
+    .u-ulias_link {
+        padding: 8px 0;
+        border-radius: 2px;
+    }
+    .u-ulias_link svg{
+        width: 100%;
+        height: 20px;
+    }
+    .u-ulias_link span {
+        font-size: 10px;
+    }
+    #state.u-ulias_link {
+        padding: 8px 12px;
+    }
+    #state.u-ulias_link p {
+        font-size: 10px;
+    }
+    #state.u-ulias_link h4 {
+        font-size: 12px;
+    }
+    /* Pop Up Styles */
+    .u-pop_up.u-history .u-pop_up-wrap{
+        width: 1190px;
+    }
+    .u-pop_up-content {
+        row-gap: 40px;
+    }
+    .u-pop_up-content .u-dctli_state {
+        width: 140px;
+    }
+    .u-typeof_order.u-tab_nav {
+        column-gap: 25px;
+        padding: 18px 17px;
+    }
+    .u-typeof_order.u-tab_nav li {
+        font-size: 20px;
+    }
+    .u-typeof_order.u-tab_nav li.active::before {
+        bottom: -18px;
+        left: 0;
+        height: 2px;
+    }
+    .u-orders.u-tab_nav {
+        padding: 18px 0;
+    }
+    /* - Data Table Styles - */
+    .u-dt_item {
+        font-size: 12px;
+        padding: 8px 15px;
+    }
+    .u-dt_item.title span{
+        font-size: 10px;
+    }
+    .u-dt_item span {
+        width: 80px;
+    }
+    .u-dt_item span.u-dti_date {
+        width: 140px;
+    }
+    .u-dt_item span.u-dti_total {
+        width: 120px;
+    }
+    .u-dt_item span.u-dti_cancel {
+        padding-right: 100px;
+    }
+}
+
+
+
+
+/*---------- Media Styles ----------*/
+@media (max-width: 1200px) {
+    .u-data_centerbar {
+        width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    .u-data_centerbar {
+        padding: 35px 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .u-dc_traders_list {
+        overflow-x: overlay;
+    }
+    .u-dctl_item {
+        min-width: 800px;
+    }
+}
+
+@media (max-width: 576px) {
+    main .u-row{
+        padding: 0;
+    }
+    .u-dctl_item {
+        min-width: 750px;
+    }
+}

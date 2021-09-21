@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Trading W</title>
+        <script src="./js/glob.js"></script>
+        <link rel="icon" type="image/x-icon" href="/assets/favico.png">
+        <link rel="stylesheet" href="../../style.css">
+        <link rel="stylesheet" href="./css/all_traders.css">
+    </head>
+    <body>
+        <header id="header"></header>
+        <!-- Main Section -->
+        <main class="u-main">
+
+            <!--- All Traders List --->
+
+            <section class="u-data-section">
+                <div class="u-container">
+                    <div class="u-row">
+                        <div class="u-data_centerbar u-dfw">
+                        <h2 class="u-heading">Трейдеры с доступом к сисетме</h2>
+                        <ul class="u-dc_traders_list u-dfw">
+                            <li class="u-dctl_item u-dfw u-jc-sb u-alt-center">
+                                <div class="u-dctli_meta u-dfw">
+                                    <div class="u-dctli_icon u-dfw u-jc-center u-alt-center">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10 12.5C12.7614 12.5 15 10.2614 15 7.5C15 4.73858 12.7614 2.5 10 2.5C7.23858 2.5 5 4.73858 5 7.5C5 10.2614 7.23858 12.5 10 12.5Z" stroke="#EC5428" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M2.4209 16.8743C3.1893 15.5442 4.29419 14.4398 5.62456 13.672C6.95493 12.9042 8.46393 12.5 9.99997 12.5C11.536 12.5 13.045 12.9043 14.3754 13.6721C15.7057 14.44 16.8106 15.5444 17.579 16.8744" stroke="#EC5428" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <div class="u-dctli_info">
+                                        <p>Трейдер</p>
+                                        <h4>Фанис Низамов</h4>
+                                    </div>
+                                </div>
+                                <div class="u-dctli_account u-dfw">
+                                    <div class="u-dctlia_item">
+                                        <p>PNL за вчера</p>
+                                        <h4><b>+ 4 890 ₽</b> <i>+4.87%</i></h4>
+                                    </div>
+                                    <div class="u-dctlia_item">
+                                        <p>PNL за 30 дней</p>
+                                        <h4><b>+ 34 100 ₽</b> <i>+57.24%</i></h4>
+                                    </div>
+                                </div>
+                                <div class="u-dctli_state u-ulia_state u-dfw">
+                                    <label class="u-ulias_select">
+                                        <span>Состояние</span>
+                                        <select name="" >
+                                            <option value="Active">Активный</option>
+                                            <option value="Diactive">Заблокирован</option>
+                                        </select>
+                                    </label>
+                                    <a href="./panel_of_deals-in.html" class="u-ulias_link u-dfw u-jc-center u-alt-center">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.87477 10.5369L13.8996 16.7187C13.9808 16.7902 14.0793 16.8394 14.1853 16.8614C14.2913 16.8834 14.4012 16.8776 14.5043 16.8443C14.6073 16.8111 14.7 16.7517 14.7731 16.6719C14.8463 16.5921 14.8975 16.4946 14.9217 16.3891L17.8602 3.56624C17.8856 3.45538 17.8803 3.33968 17.8448 3.23162C17.8093 3.12356 17.745 3.02723 17.6588 2.95301C17.5726 2.8788 17.4678 2.82951 17.3557 2.81046C17.2436 2.79141 17.1284 2.80333 17.0225 2.84492L2.60399 8.50933C2.47833 8.55869 2.37203 8.64742 2.301 8.76224C2.22997 8.87706 2.19804 9.01178 2.20996 9.14627C2.22189 9.28075 2.27705 9.40775 2.36718 9.50827C2.4573 9.6088 2.57756 9.67743 2.70995 9.70391L6.87477 10.5369Z" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M6.875 10.5369L17.5088 2.85699" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10.3834 13.6243L7.94194 16.0657C7.85453 16.1531 7.74317 16.2126 7.62193 16.2368C7.50069 16.2609 7.37503 16.2485 7.26082 16.2012C7.14662 16.1539 7.04901 16.0738 6.98033 15.971C6.91166 15.8682 6.875 15.7474 6.875 15.6238V10.5369" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <span>Telegram</span>
+                                    </a>
+                                    <div id="history" class="u-ulias_link u-dfw u-jc-center u-alt-center u-pop_up-btn">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.5 13.75L10 18.125L17.5 13.75" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M2.5 10L10 14.375L17.5 10" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M2.5 6.25L10 10.625L17.5 6.25L10 1.875L2.5 6.25Z" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <span>История</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="u-dctl_item u-dfw u-jc-sb u-alt-center">
+                                <div class="u-dctli_meta u-dfw">
+                                    <div class="u-dctli_icon u-dfw u-jc-center u-alt-center">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10 12.5C12.7614 12.5 15 10.2614 15 7.5C15 4.73858 12.7614 2.5 10 2.5C7.23858 2.5 5 4.73858 5 7.5C5 10.2614 7.23858 12.5 10 12.5Z" stroke="#EC5428" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M2.4209 16.8743C3.1893 15.5442 4.29419 14.4398 5.62456 13.672C6.95493 12.9042 8.46393 12.5 9.99997 12.5C11.536 12.5 13.045 12.9043 14.3754 13.6721C15.7057 14.44 16.8106 15.5444 17.579 16.8744" stroke="#EC5428" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <div class="u-dctli_info">
+                                        <p>Трейдер</p>
+                                        <h4>Фанис Низамов</h4>
+                                    </div>
+                                </div>
+                                <div class="u-dctli_account u-dfw">
+                                    <div class="u-dctlia_item">
+                                        <p>PNL за вчера</p>
+                                        <h4><b>+ 4 890 ₽</b> <i>+4.87%</i></h4>
+                                    </div>
+                                    <div class="u-dctlia_item">
+                                        <p>PNL за 30 дней</p>
+                                        <h4><b>+ 34 100 ₽</b> <i>+57.24%</i></h4>
+                                    </div>
+                                </div>
+                                <div class="u-dctli_state u-ulia_state u-dfw">
+                                    <label class="u-ulias_select">
+                                        <span>Состояние</span>
+                                        <select name="" >
+                                            <option value="Active">Активный</option>
+                                            <option value="Diactive">Заблокирован</option>
+                                        </select>
+                                    </label>
+                                    <a href="./panel_of_deals-in.html" class="u-ulias_link u-dfw u-jc-center u-alt-center">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.87477 10.5369L13.8996 16.7187C13.9808 16.7902 14.0793 16.8394 14.1853 16.8614C14.2913 16.8834 14.4012 16.8776 14.5043 16.8443C14.6073 16.8111 14.7 16.7517 14.7731 16.6719C14.8463 16.5921 14.8975 16.4946 14.9217 16.3891L17.8602 3.56624C17.8856 3.45538 17.8803 3.33968 17.8448 3.23162C17.8093 3.12356 17.745 3.02723 17.6588 2.95301C17.5726 2.8788 17.4678 2.82951 17.3557 2.81046C17.2436 2.79141 17.1284 2.80333 17.0225 2.84492L2.60399 8.50933C2.47833 8.55869 2.37203 8.64742 2.301 8.76224C2.22997 8.87706 2.19804 9.01178 2.20996 9.14627C2.22189 9.28075 2.27705 9.40775 2.36718 9.50827C2.4573 9.6088 2.57756 9.67743 2.70995 9.70391L6.87477 10.5369Z" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M6.875 10.5369L17.5088 2.85699" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10.3834 13.6243L7.94194 16.0657C7.85453 16.1531 7.74317 16.2126 7.62193 16.2368C7.50069 16.2609 7.37503 16.2485 7.26082 16.2012C7.14662 16.1539 7.04901 16.0738 6.98033 15.971C6.91166 15.8682 6.875 15.7474 6.875 15.6238V10.5369" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <span>Telegram</span>
+                                    </a>
+                                    <div id="history" class="u-ulias_link u-dfw u-jc-center u-alt-center u-pop_up-btn">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.5 13.75L10 18.125L17.5 13.75" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M2.5 10L10 14.375L17.5 10" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M2.5 6.25L10 10.625L17.5 6.25L10 1.875L2.5 6.25Z" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <span>История</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="u-dctl_item u-dfw u-jc-sb u-alt-center">
+                                <div class="u-dctli_meta u-dfw">
+                                    <div class="u-dctli_icon u-dfw u-jc-center u-alt-center">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10 12.5C12.7614 12.5 15 10.2614 15 7.5C15 4.73858 12.7614 2.5 10 2.5C7.23858 2.5 5 4.73858 5 7.5C5 10.2614 7.23858 12.5 10 12.5Z" stroke="#EC5428" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M2.4209 16.8743C3.1893 15.5442 4.29419 14.4398 5.62456 13.672C6.95493 12.9042 8.46393 12.5 9.99997 12.5C11.536 12.5 13.045 12.9043 14.3754 13.6721C15.7057 14.44 16.8106 15.5444 17.579 16.8744" stroke="#EC5428" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <div class="u-dctli_info">
+                                        <p>Трейдер</p>
+                                        <h4>Фанис Низамов</h4>
+                                    </div>
+                                </div>
+                                <div class="u-dctli_account u-dfw">
+                                    <div class="u-dctlia_item">
+                                        <p>PNL за вчера</p>
+                                        <h4><b>+ 4 890 ₽</b> <i>+4.87%</i></h4>
+                                    </div>
+                                    <div class="u-dctlia_item">
+                                        <p>PNL за 30 дней</p>
+                                        <h4><b>+ 34 100 ₽</b> <i>+57.24%</i></h4>
+                                    </div>
+                                </div>
+                                <div class="u-dctli_state u-ulia_state u-dfw">
+                                    <label class="u-ulias_select">
+                                        <span>Состояние</span>
+                                        <select name="" >
+                                            <option value="Active">Активный</option>
+                                            <option value="Diactive">Заблокирован</option>
+                                        </select>
+                                    </label>
+                                    <a href="./panel_of_deals-in.html" class="u-ulias_link u-dfw u-jc-center u-alt-center">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.87477 10.5369L13.8996 16.7187C13.9808 16.7902 14.0793 16.8394 14.1853 16.8614C14.2913 16.8834 14.4012 16.8776 14.5043 16.8443C14.6073 16.8111 14.7 16.7517 14.7731 16.6719C14.8463 16.5921 14.8975 16.4946 14.9217 16.3891L17.8602 3.56624C17.8856 3.45538 17.8803 3.33968 17.8448 3.23162C17.8093 3.12356 17.745 3.02723 17.6588 2.95301C17.5726 2.8788 17.4678 2.82951 17.3557 2.81046C17.2436 2.79141 17.1284 2.80333 17.0225 2.84492L2.60399 8.50933C2.47833 8.55869 2.37203 8.64742 2.301 8.76224C2.22997 8.87706 2.19804 9.01178 2.20996 9.14627C2.22189 9.28075 2.27705 9.40775 2.36718 9.50827C2.4573 9.6088 2.57756 9.67743 2.70995 9.70391L6.87477 10.5369Z" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M6.875 10.5369L17.5088 2.85699" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10.3834 13.6243L7.94194 16.0657C7.85453 16.1531 7.74317 16.2126 7.62193 16.2368C7.50069 16.2609 7.37503 16.2485 7.26082 16.2012C7.14662 16.1539 7.04901 16.0738 6.98033 15.971C6.91166 15.8682 6.875 15.7474 6.875 15.6238V10.5369" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <span>Telegram</span>
+                                    </a>
+                                    <div id="history" class="u-ulias_link u-dfw u-jc-center u-alt-center u-pop_up-btn">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.5 13.75L10 18.125L17.5 13.75" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M2.5 10L10 14.375L17.5 10" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M2.5 6.25L10 10.625L17.5 6.25L10 1.875L2.5 6.25Z" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <span>История</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="u-dctl_item u-dfw u-jc-sb u-alt-center">
+                                <div class="u-dctli_meta u-dfw">
+                                    <div class="u-dctli_icon u-dfw u-jc-center u-alt-center">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10 12.5C12.7614 12.5 15 10.2614 15 7.5C15 4.73858 12.7614 2.5 10 2.5C7.23858 2.5 5 4.73858 5 7.5C5 10.2614 7.23858 12.5 10 12.5Z" stroke="#EC5428" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M2.4209 16.8743C3.1893 15.5442 4.29419 14.4398 5.62456 13.672C6.95493 12.9042 8.46393 12.5 9.99997 12.5C11.536 12.5 13.045 12.9043 14.3754 13.6721C15.7057 14.44 16.8106 15.5444 17.579 16.8744" stroke="#EC5428" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <div class="u-dctli_info">
+                                        <p>Трейдер</p>
+                                        <h4>Фанис Низамов</h4>
+                                    </div>
+                                </div>
+                                <div class="u-dctli_account u-dfw">
+                                    <div class="u-dctlia_item">
+                                        <p>PNL за вчера</p>
+                                        <h4><b>+ 4 890 ₽</b> <i>+4.87%</i></h4>
+                                    </div>
+                                    <div class="u-dctlia_item">
+                                        <p>PNL за 30 дней</p>
+                                        <h4><b>+ 34 100 ₽</b> <i>+57.24%</i></h4>
+                                    </div>
+                                </div>
+                                <div class="u-dctli_state u-ulia_state u-dfw">
+                                    <label class="u-ulias_select">
+                                        <span>Состояние</span>
+                                        <select name="" >
+                                            <option value="Active">Активный</option>
+                                            <option value="Diactive">Заблокирован</option>
+                                        </select>
+                                    </label>
+                                    <a href="./panel_of_deals-in.html" class="u-ulias_link u-dfw u-jc-center u-alt-center">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.87477 10.5369L13.8996 16.7187C13.9808 16.7902 14.0793 16.8394 14.1853 16.8614C14.2913 16.8834 14.4012 16.8776 14.5043 16.8443C14.6073 16.8111 14.7 16.7517 14.7731 16.6719C14.8463 16.5921 14.8975 16.4946 14.9217 16.3891L17.8602 3.56624C17.8856 3.45538 17.8803 3.33968 17.8448 3.23162C17.8093 3.12356 17.745 3.02723 17.6588 2.95301C17.5726 2.8788 17.4678 2.82951 17.3557 2.81046C17.2436 2.79141 17.1284 2.80333 17.0225 2.84492L2.60399 8.50933C2.47833 8.55869 2.37203 8.64742 2.301 8.76224C2.22997 8.87706 2.19804 9.01178 2.20996 9.14627C2.22189 9.28075 2.27705 9.40775 2.36718 9.50827C2.4573 9.6088 2.57756 9.67743 2.70995 9.70391L6.87477 10.5369Z" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M6.875 10.5369L17.5088 2.85699" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10.3834 13.6243L7.94194 16.0657C7.85453 16.1531 7.74317 16.2126 7.62193 16.2368C7.50069 16.2609 7.37503 16.2485 7.26082 16.2012C7.14662 16.1539 7.04901 16.0738 6.98033 15.971C6.91166 15.8682 6.875 15.7474 6.875 15.6238V10.5369" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <span>Telegram</span>
+                                    </a>
+                                    <div id="history" class="u-ulias_link u-dfw u-jc-center u-alt-center u-pop_up-btn">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.5 13.75L10 18.125L17.5 13.75" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M2.5 10L10 14.375L17.5 10" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M2.5 6.25L10 10.625L17.5 6.25L10 1.875L2.5 6.25Z" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <span>История</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <h2 class="u-heading blocked">Заблокированные</h2>
+                        <ul class="u-dc_traders_list u-dfw">
+                            <li class="u-dctl_item u-dfw u-jc-sb u-alt-center">
+                                <div class="u-dctli_meta u-dfw">
+                                    <div class="u-dctli_icon u-dfw u-jc-center u-alt-center">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10 12.5C12.7614 12.5 15 10.2614 15 7.5C15 4.73858 12.7614 2.5 10 2.5C7.23858 2.5 5 4.73858 5 7.5C5 10.2614 7.23858 12.5 10 12.5Z" stroke="#EC5428" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M2.4209 16.8743C3.1893 15.5442 4.29419 14.4398 5.62456 13.672C6.95493 12.9042 8.46393 12.5 9.99997 12.5C11.536 12.5 13.045 12.9043 14.3754 13.6721C15.7057 14.44 16.8106 15.5444 17.579 16.8744" stroke="#EC5428" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <div class="u-dctli_info">
+                                        <p>Трейдер</p>
+                                        <h4>Фанис Низамов</h4>
+                                    </div>
+                                </div>
+                                <div class="u-dctli_account u-dfw">
+                                    <div class="u-dctlia_item">
+                                        <p>PNL за вчера</p>
+                                        <h4><b>+ 4 890 ₽</b> <i>+4.87%</i></h4>
+                                    </div>
+                                    <div class="u-dctlia_item">
+                                        <p>PNL за 30 дней</p>
+                                        <h4><b>+ 34 100 ₽</b> <i>+57.24%</i></h4>
+                                    </div>
+                                </div>
+                                <div class="u-dctli_state u-ulia_state u-dfw">
+                                    <label class="u-ulias_select">
+                                        <span>Состояние</span>
+                                        <select name="" >
+                                            <option value="Active">Активный</option>
+                                            <option value="Diactive">Заблокирован</option>
+                                        </select>
+                                    </label>
+                                    <a href="./panel_of_deals-in.html" class="u-ulias_link u-dfw u-jc-center u-alt-center">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.87477 10.5369L13.8996 16.7187C13.9808 16.7902 14.0793 16.8394 14.1853 16.8614C14.2913 16.8834 14.4012 16.8776 14.5043 16.8443C14.6073 16.8111 14.7 16.7517 14.7731 16.6719C14.8463 16.5921 14.8975 16.4946 14.9217 16.3891L17.8602 3.56624C17.8856 3.45538 17.8803 3.33968 17.8448 3.23162C17.8093 3.12356 17.745 3.02723 17.6588 2.95301C17.5726 2.8788 17.4678 2.82951 17.3557 2.81046C17.2436 2.79141 17.1284 2.80333 17.0225 2.84492L2.60399 8.50933C2.47833 8.55869 2.37203 8.64742 2.301 8.76224C2.22997 8.87706 2.19804 9.01178 2.20996 9.14627C2.22189 9.28075 2.27705 9.40775 2.36718 9.50827C2.4573 9.6088 2.57756 9.67743 2.70995 9.70391L6.87477 10.5369Z" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M6.875 10.5369L17.5088 2.85699" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10.3834 13.6243L7.94194 16.0657C7.85453 16.1531 7.74317 16.2126 7.62193 16.2368C7.50069 16.2609 7.37503 16.2485 7.26082 16.2012C7.14662 16.1539 7.04901 16.0738 6.98033 15.971C6.91166 15.8682 6.875 15.7474 6.875 15.6238V10.5369" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <span>Telegram</span>
+                                    </a>
+                                    <div id="history" class="u-ulias_link u-dfw u-jc-center u-alt-center u-pop_up-btn">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.5 13.75L10 18.125L17.5 13.75" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M2.5 10L10 14.375L17.5 10" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M2.5 6.25L10 10.625L17.5 6.25L10 1.875L2.5 6.25Z" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <span>История</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="u-dctl_item u-dfw u-jc-sb u-alt-center">
+                                <div class="u-dctli_meta u-dfw">
+                                    <div class="u-dctli_icon u-dfw u-jc-center u-alt-center">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10 12.5C12.7614 12.5 15 10.2614 15 7.5C15 4.73858 12.7614 2.5 10 2.5C7.23858 2.5 5 4.73858 5 7.5C5 10.2614 7.23858 12.5 10 12.5Z" stroke="#EC5428" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M2.4209 16.8743C3.1893 15.5442 4.29419 14.4398 5.62456 13.672C6.95493 12.9042 8.46393 12.5 9.99997 12.5C11.536 12.5 13.045 12.9043 14.3754 13.6721C15.7057 14.44 16.8106 15.5444 17.579 16.8744" stroke="#EC5428" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <div class="u-dctli_info">
+                                        <p>Трейдер</p>
+                                        <h4>Фанис Низамов</h4>
+                                    </div>
+                                </div>
+                                <div class="u-dctli_account u-dfw">
+                                    <div class="u-dctlia_item">
+                                        <p>PNL за вчера</p>
+                                        <h4><b>+ 4 890 ₽</b> <i>+4.87%</i></h4>
+                                    </div>
+                                    <div class="u-dctlia_item">
+                                        <p>PNL за 30 дней</p>
+                                        <h4><b>+ 34 100 ₽</b> <i>+57.24%</i></h4>
+                                    </div>
+                                </div>
+                                <div class="u-dctli_state u-ulia_state u-dfw">
+                                    <label class="u-ulias_select">
+                                        <span>Состояние</span>
+                                        <select name="" >
+                                            <option value="Active">Активный</option>
+                                            <option value="Diactive">Заблокирован</option>
+                                        </select>
+                                    </label>
+                                    <a href="./panel_of_deals-in.html" class="u-ulias_link u-dfw u-jc-center u-alt-center">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.87477 10.5369L13.8996 16.7187C13.9808 16.7902 14.0793 16.8394 14.1853 16.8614C14.2913 16.8834 14.4012 16.8776 14.5043 16.8443C14.6073 16.8111 14.7 16.7517 14.7731 16.6719C14.8463 16.5921 14.8975 16.4946 14.9217 16.3891L17.8602 3.56624C17.8856 3.45538 17.8803 3.33968 17.8448 3.23162C17.8093 3.12356 17.745 3.02723 17.6588 2.95301C17.5726 2.8788 17.4678 2.82951 17.3557 2.81046C17.2436 2.79141 17.1284 2.80333 17.0225 2.84492L2.60399 8.50933C2.47833 8.55869 2.37203 8.64742 2.301 8.76224C2.22997 8.87706 2.19804 9.01178 2.20996 9.14627C2.22189 9.28075 2.27705 9.40775 2.36718 9.50827C2.4573 9.6088 2.57756 9.67743 2.70995 9.70391L6.87477 10.5369Z" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M6.875 10.5369L17.5088 2.85699" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10.3834 13.6243L7.94194 16.0657C7.85453 16.1531 7.74317 16.2126 7.62193 16.2368C7.50069 16.2609 7.37503 16.2485 7.26082 16.2012C7.14662 16.1539 7.04901 16.0738 6.98033 15.971C6.91166 15.8682 6.875 15.7474 6.875 15.6238V10.5369" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <span>Telegram</span>
+                                    </a>
+                                    <div id="history" class="u-ulias_link u-dfw u-jc-center u-alt-center u-pop_up-btn">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.5 13.75L10 18.125L17.5 13.75" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M2.5 10L10 14.375L17.5 10" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M2.5 6.25L10 10.625L17.5 6.25L10 1.875L2.5 6.25Z" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <span>История</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="u-dctl_item u-dfw u-jc-sb u-alt-center">
+                                <div class="u-dctli_meta u-dfw">
+                                    <div class="u-dctli_icon u-dfw u-jc-center u-alt-center">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10 12.5C12.7614 12.5 15 10.2614 15 7.5C15 4.73858 12.7614 2.5 10 2.5C7.23858 2.5 5 4.73858 5 7.5C5 10.2614 7.23858 12.5 10 12.5Z" stroke="#EC5428" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M2.4209 16.8743C3.1893 15.5442 4.29419 14.4398 5.62456 13.672C6.95493 12.9042 8.46393 12.5 9.99997 12.5C11.536 12.5 13.045 12.9043 14.3754 13.6721C15.7057 14.44 16.8106 15.5444 17.579 16.8744" stroke="#EC5428" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <div class="u-dctli_info">
+                                        <p>Трейдер</p>
+                                        <h4>Фанис Низамов</h4>
+                                    </div>
+                                </div>
+                                <div class="u-dctli_account u-dfw">
+                                    <div class="u-dctlia_item">
+                                        <p>PNL за вчера</p>
+                                        <h4><b>+ 4 890 ₽</b> <i>+4.87%</i></h4>
+                                    </div>
+                                    <div class="u-dctlia_item">
+                                        <p>PNL за 30 дней</p>
+                                        <h4><b>+ 34 100 ₽</b> <i>+57.24%</i></h4>
+                                    </div>
+                                </div>
+                                <div class="u-dctli_state u-ulia_state u-dfw">
+                                    <label class="u-ulias_select">
+                                        <span>Состояние</span>
+                                        <select name="" >
+                                            <option value="Active">Активный</option>
+                                            <option value="Diactive">Заблокирован</option>
+                                        </select>
+                                    </label>
+                                    <a href="./panel_of_deals-in.html" class="u-ulias_link u-dfw u-jc-center u-alt-center">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.87477 10.5369L13.8996 16.7187C13.9808 16.7902 14.0793 16.8394 14.1853 16.8614C14.2913 16.8834 14.4012 16.8776 14.5043 16.8443C14.6073 16.8111 14.7 16.7517 14.7731 16.6719C14.8463 16.5921 14.8975 16.4946 14.9217 16.3891L17.8602 3.56624C17.8856 3.45538 17.8803 3.33968 17.8448 3.23162C17.8093 3.12356 17.745 3.02723 17.6588 2.95301C17.5726 2.8788 17.4678 2.82951 17.3557 2.81046C17.2436 2.79141 17.1284 2.80333 17.0225 2.84492L2.60399 8.50933C2.47833 8.55869 2.37203 8.64742 2.301 8.76224C2.22997 8.87706 2.19804 9.01178 2.20996 9.14627C2.22189 9.28075 2.27705 9.40775 2.36718 9.50827C2.4573 9.6088 2.57756 9.67743 2.70995 9.70391L6.87477 10.5369Z" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M6.875 10.5369L17.5088 2.85699" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10.3834 13.6243L7.94194 16.0657C7.85453 16.1531 7.74317 16.2126 7.62193 16.2368C7.50069 16.2609 7.37503 16.2485 7.26082 16.2012C7.14662 16.1539 7.04901 16.0738 6.98033 15.971C6.91166 15.8682 6.875 15.7474 6.875 15.6238V10.5369" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <span>Telegram</span>
+                                    </a>
+                                    <div id="history" class="u-ulias_link u-dfw u-jc-center u-alt-center u-pop_up-btn">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.5 13.75L10 18.125L17.5 13.75" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M2.5 10L10 14.375L17.5 10" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M2.5 6.25L10 10.625L17.5 6.25L10 1.875L2.5 6.25Z" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <span>История</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="u-dctl_item u-dfw u-jc-sb u-alt-center">
+                                <div class="u-dctli_meta u-dfw">
+                                    <div class="u-dctli_icon u-dfw u-jc-center u-alt-center">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10 12.5C12.7614 12.5 15 10.2614 15 7.5C15 4.73858 12.7614 2.5 10 2.5C7.23858 2.5 5 4.73858 5 7.5C5 10.2614 7.23858 12.5 10 12.5Z" stroke="#EC5428" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M2.4209 16.8743C3.1893 15.5442 4.29419 14.4398 5.62456 13.672C6.95493 12.9042 8.46393 12.5 9.99997 12.5C11.536 12.5 13.045 12.9043 14.3754 13.6721C15.7057 14.44 16.8106 15.5444 17.579 16.8744" stroke="#EC5428" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <div class="u-dctli_info">
+                                        <p>Трейдер</p>
+                                        <h4>Фанис Низамов</h4>
+                                    </div>
+                                </div>
+                                <div class="u-dctli_account u-dfw">
+                                    <div class="u-dctlia_item">
+                                        <p>PNL за вчера</p>
+                                        <h4><b>+ 4 890 ₽</b> <i>+4.87%</i></h4>
+                                    </div>
+                                    <div class="u-dctlia_item">
+                                        <p>PNL за 30 дней</p>
+                                        <h4><b>+ 34 100 ₽</b> <i>+57.24%</i></h4>
+                                    </div>
+                                </div>
+                                <div class="u-dctli_state u-ulia_state u-dfw">
+                                    <label class="u-ulias_select">
+                                        <span>Состояние</span>
+                                        <select name="" >
+                                            <option value="Active">Активный</option>
+                                            <option value="Diactive">Заблокирован</option>
+                                        </select>
+                                    </label>
+                                    <a href="./panel_of_deals-in.html" class="u-ulias_link u-dfw u-jc-center u-alt-center">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.87477 10.5369L13.8996 16.7187C13.9808 16.7902 14.0793 16.8394 14.1853 16.8614C14.2913 16.8834 14.4012 16.8776 14.5043 16.8443C14.6073 16.8111 14.7 16.7517 14.7731 16.6719C14.8463 16.5921 14.8975 16.4946 14.9217 16.3891L17.8602 3.56624C17.8856 3.45538 17.8803 3.33968 17.8448 3.23162C17.8093 3.12356 17.745 3.02723 17.6588 2.95301C17.5726 2.8788 17.4678 2.82951 17.3557 2.81046C17.2436 2.79141 17.1284 2.80333 17.0225 2.84492L2.60399 8.50933C2.47833 8.55869 2.37203 8.64742 2.301 8.76224C2.22997 8.87706 2.19804 9.01178 2.20996 9.14627C2.22189 9.28075 2.27705 9.40775 2.36718 9.50827C2.4573 9.6088 2.57756 9.67743 2.70995 9.70391L6.87477 10.5369Z" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M6.875 10.5369L17.5088 2.85699" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10.3834 13.6243L7.94194 16.0657C7.85453 16.1531 7.74317 16.2126 7.62193 16.2368C7.50069 16.2609 7.37503 16.2485 7.26082 16.2012C7.14662 16.1539 7.04901 16.0738 6.98033 15.971C6.91166 15.8682 6.875 15.7474 6.875 15.6238V10.5369" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <span>Telegram</span>
+                                    </a>
+                                    <div id="history" class="u-ulias_link u-dfw u-jc-center u-alt-center u-pop_up-btn">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.5 13.75L10 18.125L17.5 13.75" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M2.5 10L10 14.375L17.5 10" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M2.5 6.25L10 10.625L17.5 6.25L10 1.875L2.5 6.25Z" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <span>История</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Main Section End -->
+
+        <!-- Pop Up Section -->
+
+        <section class="u-pop_ups">
+            <div data-target="history" class="u-pop_up u-history u-dfw">
+                <div class="u-pop_up-wrap">
+                    <div class="u-pop_up-header">
+                        <h4>Трейдер</h4>
+                        <i class="far fa-close">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 1L1 15M1.00001 1L15 15" stroke="#C9CBD0" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </i>
+                    </div>
+                    <div class="u-pop_up-content u-dfw">
+                        <div class="u-dctl_item u-dfw u-jc-sb u-alt-center">
+                            <div class="u-dctli_meta u-dfw">
+                                <div class="u-dctli_icon u-dfw u-jc-center u-alt-center">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10 12.5C12.7614 12.5 15 10.2614 15 7.5C15 4.73858 12.7614 2.5 10 2.5C7.23858 2.5 5 4.73858 5 7.5C5 10.2614 7.23858 12.5 10 12.5Z" stroke="#EC5428" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M2.4209 16.8743C3.1893 15.5442 4.29419 14.4398 5.62456 13.672C6.95493 12.9042 8.46393 12.5 9.99997 12.5C11.536 12.5 13.045 12.9043 14.3754 13.6721C15.7057 14.44 16.8106 15.5444 17.579 16.8744" stroke="#EC5428" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </div>
+                                <div class="u-dctli_info">
+                                    <p>Трейдер</p>
+                                    <h4>Фанис Низамов</h4>
+                                </div>
+                            </div>
+                            <div class="u-dctli_account u-dfw">
+                                <div class="u-dctlia_item">
+                                    <p>PNL за вчера</p>
+                                    <h4><b>+ 4 890 ₽</b> <i>+4.87%</i></h4>
+                                </div>
+                                <div class="u-dctlia_item">
+                                    <p>PNL за 30 дней</p>
+                                    <h4><b>+ 34 100 ₽</b> <i>+57.24%</i></h4>
+                                </div>
+                            </div>
+                            <div class="u-dctli_state u-ulia_state u-dfw">
+                                <label class="u-ulias_select">
+                                    <span>Состояние</span>
+                                    <select name="">
+                                        <option value="Active">Активный</option>
+                                        <option value="Diactive">Заблокирован</option>
+                                    </select>
+                                </label>
+                                <a href="./panel_of_deals-in.html" class="u-ulias_link u-dfw u-jc-center u-alt-center">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.87477 10.5369L13.8996 16.7187C13.9808 16.7902 14.0793 16.8394 14.1853 16.8614C14.2913 16.8834 14.4012 16.8776 14.5043 16.8443C14.6073 16.8111 14.7 16.7517 14.7731 16.6719C14.8463 16.5921 14.8975 16.4946 14.9217 16.3891L17.8602 3.56624C17.8856 3.45538 17.8803 3.33968 17.8448 3.23162C17.8093 3.12356 17.745 3.02723 17.6588 2.95301C17.5726 2.8788 17.4678 2.82951 17.3557 2.81046C17.2436 2.79141 17.1284 2.80333 17.0225 2.84492L2.60399 8.50933C2.47833 8.55869 2.37203 8.64742 2.301 8.76224C2.22997 8.87706 2.19804 9.01178 2.20996 9.14627C2.22189 9.28075 2.27705 9.40775 2.36718 9.50827C2.4573 9.6088 2.57756 9.67743 2.70995 9.70391L6.87477 10.5369Z" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M6.875 10.5369L17.5088 2.85699" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M10.3834 13.6243L7.94194 16.0657C7.85453 16.1531 7.74317 16.2126 7.62193 16.2368C7.50069 16.2609 7.37503 16.2485 7.26082 16.2012C7.14662 16.1539 7.04901 16.0738 6.98033 15.971C6.91166 15.8682 6.875 15.7474 6.875 15.6238V10.5369" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                    <span>Telegram</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="u-tabination">
+                            <ul class="u-typeof_order u-orders u-tab_nav u-dfw">
+                                <li class="active">Открытые ордера</li>
+                                <li>История ордеров</li>
+                                <li>История сделок</li>
+                                <li>Средства</li>
+                            </ul>
+                            <div class="u-tab_item">
+                                <ul data-show="8" class="u-data_table u-show_more">
+                                    <li class="u-dt_item u-dfw u-jc-sb title">
+                                        <span class="u-dti_date">Дата</span>
+                                        <span class="u-dti_couple">Пара</span>
+                                        <span class="u-dti_type">Тип</span>
+                                        <span class="u-dti_side">Сторона</span>
+                                        <span class="u-dti_price">Цена</span>
+                                        <span class="u-dti_count">Количество</span>
+                                        <span class="u-dti_fill">Заполнено</span>
+                                        <span class="u-dti_total">Всего</span>
+                                        <span class="u-dti_cancel">Отмнить все</span>
+                                    </li>
+                                    <li class="u-dt_item u-dfw u-jc-sb">
+                                        <span class="u-dti_date">02-24 11:09:36</span>
+                                        <span class="u-dti_couple">BTC/USDT</span>
+                                        <span class="u-dti_type">Лимит</span>
+                                        <span class="u-dti_side">Продать</span>
+                                        <span class="u-dti_price">0.057380</span>
+                                        <span class="u-dti_count">52,726</span>
+                                        <span class="u-dti_fill">0.00%</span>
+                                        <span class="u-dti_total">3,025.417880 BUSD</span>
+                                        <span class="u-dti_cancel">Отменить</span>
+                                    </li>
+                                    <li class="u-dt_item u-dfw u-jc-sb">
+                                        <span class="u-dti_date">02-24 11:09:36</span>
+                                        <span class="u-dti_couple">BTC/USDT</span>
+                                        <span class="u-dti_type">Лимит</span>
+                                        <span class="u-dti_side">Продать</span>
+                                        <span class="u-dti_price">0.057380</span>
+                                        <span class="u-dti_count">52,726</span>
+                                        <span class="u-dti_fill">0.00%</span>
+                                        <span class="u-dti_total">3,025.417880 BUSD</span>
+                                        <span class="u-dti_cancel">Отменить</span>
+                                    </li>
+                                    <li class="u-dt_item u-dfw u-jc-sb">
+                                        <span class="u-dti_date">02-24 11:09:36</span>
+                                        <span class="u-dti_couple">BTC/USDT</span>
+                                        <span class="u-dti_type">Лимит</span>
+                                        <span class="u-dti_side">Продать</span>
+                                        <span class="u-dti_price">0.057380</span>
+                                        <span class="u-dti_count">52,726</span>
+                                        <span class="u-dti_fill">0.00%</span>
+                                        <span class="u-dti_total">3,025.417880 BUSD</span>
+                                        <span class="u-dti_cancel">Отменить</span>
+                                    </li>
+                                    <li class="u-dt_item u-dfw u-jc-sb">
+                                        <span class="u-dti_date">02-24 11:09:36</span>
+                                        <span class="u-dti_couple">BTC/USDT</span>
+                                        <span class="u-dti_type">Лимит</span>
+                                        <span class="u-dti_side">Продать</span>
+                                        <span class="u-dti_price">0.057380</span>
+                                        <span class="u-dti_count">52,726</span>
+                                        <span class="u-dti_fill">0.00%</span>
+                                        <span class="u-dti_total">3,025.417880 BUSD</span>
+                                        <span class="u-dti_cancel">Отменить</span>
+                                    </li>
+                                    <li class="u-dt_item u-dfw u-jc-sb">
+                                        <span class="u-dti_date">02-24 11:09:36</span>
+                                        <span class="u-dti_couple">BTC/USDT</span>
+                                        <span class="u-dti_type">Лимит</span>
+                                        <span class="u-dti_side">Продать</span>
+                                        <span class="u-dti_price">0.057380</span>
+                                        <span class="u-dti_count">52,726</span>
+                                        <span class="u-dti_fill">0.00%</span>
+                                        <span class="u-dti_total">3,025.417880 BUSD</span>
+                                        <span class="u-dti_cancel">Отменить</span>
+                                    </li>
+                                    <li class="u-dt_item u-dfw u-jc-sb">
+                                        <span class="u-dti_date">02-24 11:09:36</span>
+                                        <span class="u-dti_couple">BTC/USDT</span>
+                                        <span class="u-dti_type">Лимит</span>
+                                        <span class="u-dti_side">Продать</span>
+                                        <span class="u-dti_price">0.057380</span>
+                                        <span class="u-dti_count">52,726</span>
+                                        <span class="u-dti_fill">0.00%</span>
+                                        <span class="u-dti_total">3,025.417880 BUSD</span>
+                                        <span class="u-dti_cancel">Отменить</span>
+                                    </li>
+                                    <li class="u-dt_item u-dfw u-jc-sb">
+                                        <span class="u-dti_date">02-24 11:09:36</span>
+                                        <span class="u-dti_couple">BTC/USDT</span>
+                                        <span class="u-dti_type">Лимит</span>
+                                        <span class="u-dti_side">Продать</span>
+                                        <span class="u-dti_price">0.057380</span>
+                                        <span class="u-dti_count">52,726</span>
+                                        <span class="u-dti_fill">0.00%</span>
+                                        <span class="u-dti_total">3,025.417880 BUSD</span>
+                                        <span class="u-dti_cancel">Отменить</span>
+                                    </li>
+                                </ul>
+                                <button class="u-show_more-btn not_opened u-dfw u-alt-center">
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M17.875 8.25L11 15.125L4.125 8.25" stroke="#97A0B7" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <span>Загрузить больше</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <script type="text/javascript" src="../../index.js"></script>
+    </body>
+</html>

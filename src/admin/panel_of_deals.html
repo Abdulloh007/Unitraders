@@ -1,0 +1,1483 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Trading W</title>
+        <script src="./js/glob.js"></script>
+        <link rel="icon" type="image/x-icon" href="/assets/favico.png">
+        <link rel="stylesheet" href="../../style.css">
+        <link rel="stylesheet" href="./css/panel_of_deals.css">
+    </head>
+    <body>
+        <header id="header"></header>
+        <!-- Main Section -->
+        <main class="u-main">
+            <!--- Users List |-> Deal History | User State --->
+            <section class="u-users_list">
+                <div class="u-container">
+                    <div class="u-row">
+                        <div class="u-ul_item u-col">
+                            <div class="u-uli_actions u-dfw u-jc-sb">
+                                <div class="u-ulia_user-meta u-dfw">
+                                    <div class="u-icon u-dfw u-jc-center u-alt-center">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10 12.5C12.7614 12.5 15 10.2614 15 7.5C15 4.73858 12.7614 2.5 10 2.5C7.23858 2.5 5 4.73858 5 7.5C5 10.2614 7.23858 12.5 10 12.5Z" stroke="#EC5428" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M2.42114 16.8743C3.18955 15.5442 4.29443 14.4398 5.6248 13.672C6.95517 12.9042 8.46417 12.5 10.0002 12.5C11.5363 12.5 13.0453 12.9043 14.3756 13.6721C15.706 14.44 16.8108 15.5444 17.5792 16.8744" stroke="#EC5428" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <div class="u-uliaum_info">
+                                        <h4>Фанис Низамов</h4>
+                                        <div class="u-uliaumi_account u-dfw">
+                                            <p>5 234,65 ₽</p>
+                                            <p>0,00146975 <i>BTC</i></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="u-ulia_state u-dfw">
+                                    <label class="u-ulias_select">
+                                        <span>Состояние</span>
+                                        <select name="" >
+                                            <option value="Active">Активный</option>
+                                            <option value="Diactive">Отключон</option>
+                                        </select>
+                                    </label>
+                                    <a href="./panel_of_deals-in.html" class="u-ulias_link u-dfw u-jc-center u-alt-center">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.375 14.375H5.45455L3.27513 2.3882C3.24894 2.24419 3.17305 2.11394 3.06067 2.02016C2.9483 1.92637 2.80658 1.875 2.66021 1.875H1.25" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M6.25 17.5C7.11294 17.5 7.8125 16.8004 7.8125 15.9375C7.8125 15.0746 7.11294 14.375 6.25 14.375C5.38706 14.375 4.6875 15.0746 4.6875 15.9375C4.6875 16.8004 5.38706 17.5 6.25 17.5Z" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.375 17.5C15.2379 17.5 15.9375 16.8004 15.9375 15.9375C15.9375 15.0746 15.2379 14.375 14.375 14.375C13.5121 14.375 12.8125 15.0746 12.8125 15.9375C12.8125 16.8004 13.5121 17.5 14.375 17.5Z" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M4.88636 11.25H14.6954C14.9882 11.25 15.2716 11.1473 15.4963 10.9597C15.7211 10.7721 15.8729 10.5116 15.9253 10.2236L16.875 5H3.75" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <span>Площадка</span>
+                                    </a>
+                                    <a href="./panel_of_deals-in.html" class="u-ulias_link u-dfw u-jc-center u-alt-center">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.87477 10.5369L13.8996 16.7187C13.9808 16.7902 14.0793 16.8394 14.1853 16.8614C14.2913 16.8834 14.4012 16.8776 14.5043 16.8443C14.6073 16.8111 14.7 16.7517 14.7731 16.6719C14.8463 16.5921 14.8975 16.4946 14.9217 16.3891L17.8602 3.56624C17.8856 3.45538 17.8803 3.33968 17.8448 3.23162C17.8093 3.12356 17.745 3.02723 17.6588 2.95301C17.5726 2.8788 17.4678 2.82951 17.3557 2.81046C17.2436 2.79141 17.1284 2.80333 17.0225 2.84492L2.60399 8.50933C2.47833 8.55869 2.37203 8.64742 2.301 8.76224C2.22997 8.87706 2.19804 9.01178 2.20996 9.14627C2.22189 9.28075 2.27705 9.40775 2.36718 9.50827C2.4573 9.6088 2.57756 9.67743 2.70995 9.70391L6.87477 10.5369Z" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M6.875 10.5369L17.5088 2.85699" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10.3834 13.6243L7.94194 16.0657C7.85453 16.1531 7.74317 16.2126 7.62193 16.2368C7.50069 16.2609 7.37503 16.2485 7.26082 16.2012C7.14662 16.1539 7.04901 16.0738 6.98033 15.971C6.91166 15.8682 6.875 15.7474 6.875 15.6238V10.5369" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <span>Telegram</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <ul class="u-uli_deals-history u-data_table">
+                                <li class="u-dt_item u-dfw u-jc-sb">
+                                    <div class="u-part u-dfw u-jc-sb">
+                                        <div class="u-unificated u-dfw">
+                                            <span class="u-dti_date">11:09</span>
+                                            <span class="u-dti_couple">BTC/USDT</span>
+                                        </div>
+                                        <span class="u-dti_type">Лимит</span>
+                                        <span class="u-dti_price u-dfw u-alt-center red"><b>0.057380</b>
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 2.8125V15.1875" stroke="#F24A4A" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M3.9375 10.125L9 15.1875L14.0625 10.125" stroke="#F24A4A" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                        <span class="u-dti_count">52,726</span>
+                                        <span class="u-dti_total">3,025.417880 BUSD</span>
+                                    </div>
+                                    <span class="u-dti_cancel u-btn u-dfw u-jc-center u-alt-center">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.0625 3.9375L3.9375 14.0625" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.0625 14.0625L3.9375 3.9375" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </li>
+                                <li class="u-dt_item u-dfw u-jc-sb">
+                                    <div class="u-part u-dfw u-jc-sb">
+                                        <div class="u-unificated u-dfw">
+                                            <span class="u-dti_date">11:09</span>
+                                            <span class="u-dti_couple">BTC/USDT</span>
+                                        </div>
+                                        <span class="u-dti_type">Лимит</span>
+                                        <span class="u-dti_price u-dfw u-alt-center red"><b>0.057380</b>
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 2.8125V15.1875" stroke="#F24A4A" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M3.9375 10.125L9 15.1875L14.0625 10.125" stroke="#F24A4A" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                        <span class="u-dti_count">52,726</span>
+                                        <span class="u-dti_total">3,025.417880 BUSD</span>
+                                    </div>
+                                    <span class="u-dti_cancel u-btn u-dfw u-jc-center u-alt-center">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.0625 3.9375L3.9375 14.0625" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.0625 14.0625L3.9375 3.9375" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </li>
+                                <li class="u-dt_item u-dfw u-jc-sb">
+                                    <div class="u-part u-dfw u-jc-sb">
+                                        <div class="u-unificated u-dfw">
+                                            <span class="u-dti_date">11:09</span>
+                                            <span class="u-dti_couple">BTC/USDT</span>
+                                        </div>
+                                        <span class="u-dti_type">Лимит</span>
+                                        <span class="u-dti_price u-dfw u-alt-center green"><b>0.057380</b>
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 15.1875V2.8125" stroke="#41C94F" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M3.9375 7.875L9 2.8125L14.0625 7.875" stroke="#41C94F" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                        <span class="u-dti_count">52,726</span>
+                                        <span class="u-dti_total">3,025.417880 BUSD</span>
+                                    </div>
+                                    <span class="u-dti_cancel u-btn u-dfw u-jc-center u-alt-center">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.0625 3.9375L3.9375 14.0625" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.0625 14.0625L3.9375 3.9375" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </li>
+                                <li class="u-dt_item u-dfw u-jc-sb">
+                                    <div class="u-part u-dfw u-jc-sb">
+                                        <div class="u-unificated u-dfw">
+                                            <span class="u-dti_date">11:09</span>
+                                            <span class="u-dti_couple">BTC/USDT</span>
+                                        </div>
+                                        <span class="u-dti_type">Лимит</span>
+                                        <span class="u-dti_price u-dfw u-alt-center red"><b>0.057380</b>
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 2.8125V15.1875" stroke="#F24A4A" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M3.9375 10.125L9 15.1875L14.0625 10.125" stroke="#F24A4A" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                        <span class="u-dti_count">52,726</span>
+                                        <span class="u-dti_total">3,025.417880 BUSD</span>
+                                    </div>
+                                    <span class="u-dti_cancel u-btn u-dfw u-jc-center u-alt-center">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.0625 3.9375L3.9375 14.0625" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.0625 14.0625L3.9375 3.9375" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </li>
+                                <li class="u-dt_item u-dfw u-jc-sb">
+                                    <div class="u-part u-dfw u-jc-sb">
+                                        <div class="u-unificated u-dfw">
+                                            <span class="u-dti_date">11:09</span>
+                                            <span class="u-dti_couple">BTC/USDT</span>
+                                        </div>
+                                        <span class="u-dti_type">Лимит</span>
+                                        <span class="u-dti_price u-dfw u-alt-center green"><b>0.057380</b>
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 15.1875V2.8125" stroke="#41C94F" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M3.9375 7.875L9 2.8125L14.0625 7.875" stroke="#41C94F" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                        <span class="u-dti_count">52,726</span>
+                                        <span class="u-dti_total">3,025.417880 BUSD</span>
+                                    </div>
+                                    <span class="u-dti_cancel u-btn u-dfw u-jc-center u-alt-center">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.0625 3.9375L3.9375 14.0625" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.0625 14.0625L3.9375 3.9375" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="u-ul_item u-col">
+                            <div class="u-uli_actions u-dfw u-jc-sb">
+                                <div class="u-ulia_user-meta u-dfw">
+                                    <div class="u-icon u-dfw u-jc-center u-alt-center">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10 12.5C12.7614 12.5 15 10.2614 15 7.5C15 4.73858 12.7614 2.5 10 2.5C7.23858 2.5 5 4.73858 5 7.5C5 10.2614 7.23858 12.5 10 12.5Z" stroke="#EC5428" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M2.42114 16.8743C3.18955 15.5442 4.29443 14.4398 5.6248 13.672C6.95517 12.9042 8.46417 12.5 10.0002 12.5C11.5363 12.5 13.0453 12.9043 14.3756 13.6721C15.706 14.44 16.8108 15.5444 17.5792 16.8744" stroke="#EC5428" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <div class="u-uliaum_info">
+                                        <h4>Фанис Низамов</h4>
+                                        <div class="u-uliaumi_account u-dfw">
+                                            <p>5 234,65 ₽</p>
+                                            <p>0,00146975 <i>BTC</i></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="u-ulia_state u-dfw">
+                                    <label class="u-ulias_select">
+                                        <span>Состояние</span>
+                                        <select name="" >
+                                            <option value="Active">Активный</option>
+                                            <option value="Diactive">Отключон</option>
+                                        </select>
+                                    </label>
+                                    <a href="./panel_of_deals-in.html" class="u-ulias_link u-dfw u-jc-center u-alt-center">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.375 14.375H5.45455L3.27513 2.3882C3.24894 2.24419 3.17305 2.11394 3.06067 2.02016C2.9483 1.92637 2.80658 1.875 2.66021 1.875H1.25" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M6.25 17.5C7.11294 17.5 7.8125 16.8004 7.8125 15.9375C7.8125 15.0746 7.11294 14.375 6.25 14.375C5.38706 14.375 4.6875 15.0746 4.6875 15.9375C4.6875 16.8004 5.38706 17.5 6.25 17.5Z" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.375 17.5C15.2379 17.5 15.9375 16.8004 15.9375 15.9375C15.9375 15.0746 15.2379 14.375 14.375 14.375C13.5121 14.375 12.8125 15.0746 12.8125 15.9375C12.8125 16.8004 13.5121 17.5 14.375 17.5Z" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M4.88636 11.25H14.6954C14.9882 11.25 15.2716 11.1473 15.4963 10.9597C15.7211 10.7721 15.8729 10.5116 15.9253 10.2236L16.875 5H3.75" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <span>Площадка</span>
+                                    </a>
+                                    <a href="./panel_of_deals-in.html" class="u-ulias_link u-dfw u-jc-center u-alt-center">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.87477 10.5369L13.8996 16.7187C13.9808 16.7902 14.0793 16.8394 14.1853 16.8614C14.2913 16.8834 14.4012 16.8776 14.5043 16.8443C14.6073 16.8111 14.7 16.7517 14.7731 16.6719C14.8463 16.5921 14.8975 16.4946 14.9217 16.3891L17.8602 3.56624C17.8856 3.45538 17.8803 3.33968 17.8448 3.23162C17.8093 3.12356 17.745 3.02723 17.6588 2.95301C17.5726 2.8788 17.4678 2.82951 17.3557 2.81046C17.2436 2.79141 17.1284 2.80333 17.0225 2.84492L2.60399 8.50933C2.47833 8.55869 2.37203 8.64742 2.301 8.76224C2.22997 8.87706 2.19804 9.01178 2.20996 9.14627C2.22189 9.28075 2.27705 9.40775 2.36718 9.50827C2.4573 9.6088 2.57756 9.67743 2.70995 9.70391L6.87477 10.5369Z" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M6.875 10.5369L17.5088 2.85699" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10.3834 13.6243L7.94194 16.0657C7.85453 16.1531 7.74317 16.2126 7.62193 16.2368C7.50069 16.2609 7.37503 16.2485 7.26082 16.2012C7.14662 16.1539 7.04901 16.0738 6.98033 15.971C6.91166 15.8682 6.875 15.7474 6.875 15.6238V10.5369" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <span>Telegram</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <ul class="u-uli_deals-history u-data_table">
+                                <li class="u-dt_item u-dfw u-jc-sb">
+                                    <div class="u-part u-dfw u-jc-sb">
+                                        <div class="u-unificated u-dfw">
+                                            <span class="u-dti_date">11:09</span>
+                                            <span class="u-dti_couple">BTC/USDT</span>
+                                        </div>
+                                        <span class="u-dti_type">Лимит</span>
+                                        <span class="u-dti_price u-dfw u-alt-center red"><b>0.057380</b>
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 2.8125V15.1875" stroke="#F24A4A" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M3.9375 10.125L9 15.1875L14.0625 10.125" stroke="#F24A4A" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                        <span class="u-dti_count">52,726</span>
+                                        <span class="u-dti_total">3,025.417880 BUSD</span>
+                                    </div>
+                                    <span class="u-dti_cancel u-btn u-dfw u-jc-center u-alt-center">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.0625 3.9375L3.9375 14.0625" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.0625 14.0625L3.9375 3.9375" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </li>
+                                <li class="u-dt_item u-dfw u-jc-sb">
+                                    <div class="u-part u-dfw u-jc-sb">
+                                        <div class="u-unificated u-dfw">
+                                            <span class="u-dti_date">11:09</span>
+                                            <span class="u-dti_couple">BTC/USDT</span>
+                                        </div>
+                                        <span class="u-dti_type">Лимит</span>
+                                        <span class="u-dti_price u-dfw u-alt-center red"><b>0.057380</b>
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 2.8125V15.1875" stroke="#F24A4A" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M3.9375 10.125L9 15.1875L14.0625 10.125" stroke="#F24A4A" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                        <span class="u-dti_count">52,726</span>
+                                        <span class="u-dti_total">3,025.417880 BUSD</span>
+                                    </div>
+                                    <span class="u-dti_cancel u-btn u-dfw u-jc-center u-alt-center">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.0625 3.9375L3.9375 14.0625" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.0625 14.0625L3.9375 3.9375" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </li>
+                                <li class="u-dt_item u-dfw u-jc-sb">
+                                    <div class="u-part u-dfw u-jc-sb">
+                                        <div class="u-unificated u-dfw">
+                                            <span class="u-dti_date">11:09</span>
+                                            <span class="u-dti_couple">BTC/USDT</span>
+                                        </div>
+                                        <span class="u-dti_type">Лимит</span>
+                                        <span class="u-dti_price u-dfw u-alt-center green"><b>0.057380</b>
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 15.1875V2.8125" stroke="#41C94F" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M3.9375 7.875L9 2.8125L14.0625 7.875" stroke="#41C94F" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                        <span class="u-dti_count">52,726</span>
+                                        <span class="u-dti_total">3,025.417880 BUSD</span>
+                                    </div>
+                                    <span class="u-dti_cancel u-btn u-dfw u-jc-center u-alt-center">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.0625 3.9375L3.9375 14.0625" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.0625 14.0625L3.9375 3.9375" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </li>
+                                <li class="u-dt_item u-dfw u-jc-sb">
+                                    <div class="u-part u-dfw u-jc-sb">
+                                        <div class="u-unificated u-dfw">
+                                            <span class="u-dti_date">11:09</span>
+                                            <span class="u-dti_couple">BTC/USDT</span>
+                                        </div>
+                                        <span class="u-dti_type">Лимит</span>
+                                        <span class="u-dti_price u-dfw u-alt-center red"><b>0.057380</b>
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 2.8125V15.1875" stroke="#F24A4A" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M3.9375 10.125L9 15.1875L14.0625 10.125" stroke="#F24A4A" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                        <span class="u-dti_count">52,726</span>
+                                        <span class="u-dti_total">3,025.417880 BUSD</span>
+                                    </div>
+                                    <span class="u-dti_cancel u-btn u-dfw u-jc-center u-alt-center">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.0625 3.9375L3.9375 14.0625" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.0625 14.0625L3.9375 3.9375" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </li>
+                                <li class="u-dt_item u-dfw u-jc-sb">
+                                    <div class="u-part u-dfw u-jc-sb">
+                                        <div class="u-unificated u-dfw">
+                                            <span class="u-dti_date">11:09</span>
+                                            <span class="u-dti_couple">BTC/USDT</span>
+                                        </div>
+                                        <span class="u-dti_type">Лимит</span>
+                                        <span class="u-dti_price u-dfw u-alt-center green"><b>0.057380</b>
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 15.1875V2.8125" stroke="#41C94F" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M3.9375 7.875L9 2.8125L14.0625 7.875" stroke="#41C94F" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                        <span class="u-dti_count">52,726</span>
+                                        <span class="u-dti_total">3,025.417880 BUSD</span>
+                                    </div>
+                                    <span class="u-dti_cancel u-btn u-dfw u-jc-center u-alt-center">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.0625 3.9375L3.9375 14.0625" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.0625 14.0625L3.9375 3.9375" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="u-ul_item u-col">
+                            <div class="u-uli_actions u-dfw u-jc-sb">
+                                <div class="u-ulia_user-meta u-dfw">
+                                    <div class="u-icon u-dfw u-jc-center u-alt-center">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10 12.5C12.7614 12.5 15 10.2614 15 7.5C15 4.73858 12.7614 2.5 10 2.5C7.23858 2.5 5 4.73858 5 7.5C5 10.2614 7.23858 12.5 10 12.5Z" stroke="#EC5428" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M2.42114 16.8743C3.18955 15.5442 4.29443 14.4398 5.6248 13.672C6.95517 12.9042 8.46417 12.5 10.0002 12.5C11.5363 12.5 13.0453 12.9043 14.3756 13.6721C15.706 14.44 16.8108 15.5444 17.5792 16.8744" stroke="#EC5428" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <div class="u-uliaum_info">
+                                        <h4>Фанис Низамов</h4>
+                                        <div class="u-uliaumi_account u-dfw">
+                                            <p>5 234,65 ₽</p>
+                                            <p>0,00146975 <i>BTC</i></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="u-ulia_state u-dfw">
+                                    <label class="u-ulias_select">
+                                        <span>Состояние</span>
+                                        <select name="" >
+                                            <option value="Active">Активный</option>
+                                            <option value="Diactive">Отключон</option>
+                                        </select>
+                                    </label>
+                                    <a href="./panel_of_deals-in.html" class="u-ulias_link u-dfw u-jc-center u-alt-center">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.375 14.375H5.45455L3.27513 2.3882C3.24894 2.24419 3.17305 2.11394 3.06067 2.02016C2.9483 1.92637 2.80658 1.875 2.66021 1.875H1.25" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M6.25 17.5C7.11294 17.5 7.8125 16.8004 7.8125 15.9375C7.8125 15.0746 7.11294 14.375 6.25 14.375C5.38706 14.375 4.6875 15.0746 4.6875 15.9375C4.6875 16.8004 5.38706 17.5 6.25 17.5Z" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.375 17.5C15.2379 17.5 15.9375 16.8004 15.9375 15.9375C15.9375 15.0746 15.2379 14.375 14.375 14.375C13.5121 14.375 12.8125 15.0746 12.8125 15.9375C12.8125 16.8004 13.5121 17.5 14.375 17.5Z" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M4.88636 11.25H14.6954C14.9882 11.25 15.2716 11.1473 15.4963 10.9597C15.7211 10.7721 15.8729 10.5116 15.9253 10.2236L16.875 5H3.75" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <span>Площадка</span>
+                                    </a>
+                                    <a href="./panel_of_deals-in.html" class="u-ulias_link u-dfw u-jc-center u-alt-center">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.87477 10.5369L13.8996 16.7187C13.9808 16.7902 14.0793 16.8394 14.1853 16.8614C14.2913 16.8834 14.4012 16.8776 14.5043 16.8443C14.6073 16.8111 14.7 16.7517 14.7731 16.6719C14.8463 16.5921 14.8975 16.4946 14.9217 16.3891L17.8602 3.56624C17.8856 3.45538 17.8803 3.33968 17.8448 3.23162C17.8093 3.12356 17.745 3.02723 17.6588 2.95301C17.5726 2.8788 17.4678 2.82951 17.3557 2.81046C17.2436 2.79141 17.1284 2.80333 17.0225 2.84492L2.60399 8.50933C2.47833 8.55869 2.37203 8.64742 2.301 8.76224C2.22997 8.87706 2.19804 9.01178 2.20996 9.14627C2.22189 9.28075 2.27705 9.40775 2.36718 9.50827C2.4573 9.6088 2.57756 9.67743 2.70995 9.70391L6.87477 10.5369Z" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M6.875 10.5369L17.5088 2.85699" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10.3834 13.6243L7.94194 16.0657C7.85453 16.1531 7.74317 16.2126 7.62193 16.2368C7.50069 16.2609 7.37503 16.2485 7.26082 16.2012C7.14662 16.1539 7.04901 16.0738 6.98033 15.971C6.91166 15.8682 6.875 15.7474 6.875 15.6238V10.5369" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <span>Telegram</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <ul class="u-uli_deals-history u-data_table">
+                                <li class="u-dt_item u-dfw u-jc-sb">
+                                    <div class="u-part u-dfw u-jc-sb">
+                                        <div class="u-unificated u-dfw">
+                                            <span class="u-dti_date">11:09</span>
+                                            <span class="u-dti_couple">BTC/USDT</span>
+                                        </div>
+                                        <span class="u-dti_type">Лимит</span>
+                                        <span class="u-dti_price u-dfw u-alt-center red"><b>0.057380</b>
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 2.8125V15.1875" stroke="#F24A4A" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M3.9375 10.125L9 15.1875L14.0625 10.125" stroke="#F24A4A" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                        <span class="u-dti_count">52,726</span>
+                                        <span class="u-dti_total">3,025.417880 BUSD</span>
+                                    </div>
+                                    <span class="u-dti_cancel u-btn u-dfw u-jc-center u-alt-center">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.0625 3.9375L3.9375 14.0625" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.0625 14.0625L3.9375 3.9375" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </li>
+                                <li class="u-dt_item u-dfw u-jc-sb">
+                                    <div class="u-part u-dfw u-jc-sb">
+                                        <div class="u-unificated u-dfw">
+                                            <span class="u-dti_date">11:09</span>
+                                            <span class="u-dti_couple">BTC/USDT</span>
+                                        </div>
+                                        <span class="u-dti_type">Лимит</span>
+                                        <span class="u-dti_price u-dfw u-alt-center red"><b>0.057380</b>
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 2.8125V15.1875" stroke="#F24A4A" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M3.9375 10.125L9 15.1875L14.0625 10.125" stroke="#F24A4A" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                        <span class="u-dti_count">52,726</span>
+                                        <span class="u-dti_total">3,025.417880 BUSD</span>
+                                    </div>
+                                    <span class="u-dti_cancel u-btn u-dfw u-jc-center u-alt-center">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.0625 3.9375L3.9375 14.0625" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.0625 14.0625L3.9375 3.9375" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </li>
+                                <li class="u-dt_item u-dfw u-jc-sb">
+                                    <div class="u-part u-dfw u-jc-sb">
+                                        <div class="u-unificated u-dfw">
+                                            <span class="u-dti_date">11:09</span>
+                                            <span class="u-dti_couple">BTC/USDT</span>
+                                        </div>
+                                        <span class="u-dti_type">Лимит</span>
+                                        <span class="u-dti_price u-dfw u-alt-center green"><b>0.057380</b>
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 15.1875V2.8125" stroke="#41C94F" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M3.9375 7.875L9 2.8125L14.0625 7.875" stroke="#41C94F" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                        <span class="u-dti_count">52,726</span>
+                                        <span class="u-dti_total">3,025.417880 BUSD</span>
+                                    </div>
+                                    <span class="u-dti_cancel u-btn u-dfw u-jc-center u-alt-center">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.0625 3.9375L3.9375 14.0625" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.0625 14.0625L3.9375 3.9375" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </li>
+                                <li class="u-dt_item u-dfw u-jc-sb">
+                                    <div class="u-part u-dfw u-jc-sb">
+                                        <div class="u-unificated u-dfw">
+                                            <span class="u-dti_date">11:09</span>
+                                            <span class="u-dti_couple">BTC/USDT</span>
+                                        </div>
+                                        <span class="u-dti_type">Лимит</span>
+                                        <span class="u-dti_price u-dfw u-alt-center red"><b>0.057380</b>
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 2.8125V15.1875" stroke="#F24A4A" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M3.9375 10.125L9 15.1875L14.0625 10.125" stroke="#F24A4A" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                        <span class="u-dti_count">52,726</span>
+                                        <span class="u-dti_total">3,025.417880 BUSD</span>
+                                    </div>
+                                    <span class="u-dti_cancel u-btn u-dfw u-jc-center u-alt-center">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.0625 3.9375L3.9375 14.0625" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.0625 14.0625L3.9375 3.9375" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </li>
+                                <li class="u-dt_item u-dfw u-jc-sb">
+                                    <div class="u-part u-dfw u-jc-sb">
+                                        <div class="u-unificated u-dfw">
+                                            <span class="u-dti_date">11:09</span>
+                                            <span class="u-dti_couple">BTC/USDT</span>
+                                        </div>
+                                        <span class="u-dti_type">Лимит</span>
+                                        <span class="u-dti_price u-dfw u-alt-center green"><b>0.057380</b>
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 15.1875V2.8125" stroke="#41C94F" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M3.9375 7.875L9 2.8125L14.0625 7.875" stroke="#41C94F" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                        <span class="u-dti_count">52,726</span>
+                                        <span class="u-dti_total">3,025.417880 BUSD</span>
+                                    </div>
+                                    <span class="u-dti_cancel u-btn u-dfw u-jc-center u-alt-center">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.0625 3.9375L3.9375 14.0625" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.0625 14.0625L3.9375 3.9375" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="u-ul_item u-col">
+                            <div class="u-uli_actions u-dfw u-jc-sb">
+                                <div class="u-ulia_user-meta u-dfw">
+                                    <div class="u-icon u-dfw u-jc-center u-alt-center">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10 12.5C12.7614 12.5 15 10.2614 15 7.5C15 4.73858 12.7614 2.5 10 2.5C7.23858 2.5 5 4.73858 5 7.5C5 10.2614 7.23858 12.5 10 12.5Z" stroke="#EC5428" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M2.42114 16.8743C3.18955 15.5442 4.29443 14.4398 5.6248 13.672C6.95517 12.9042 8.46417 12.5 10.0002 12.5C11.5363 12.5 13.0453 12.9043 14.3756 13.6721C15.706 14.44 16.8108 15.5444 17.5792 16.8744" stroke="#EC5428" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <div class="u-uliaum_info">
+                                        <h4>Фанис Низамов</h4>
+                                        <div class="u-uliaumi_account u-dfw">
+                                            <p>5 234,65 ₽</p>
+                                            <p>0,00146975 <i>BTC</i></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="u-ulia_state u-dfw">
+                                    <label class="u-ulias_select">
+                                        <span>Состояние</span>
+                                        <select name="" >
+                                            <option value="Active">Активный</option>
+                                            <option value="Diactive">Отключон</option>
+                                        </select>
+                                    </label>
+                                    <a href="./panel_of_deals-in.html" class="u-ulias_link u-dfw u-jc-center u-alt-center">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.375 14.375H5.45455L3.27513 2.3882C3.24894 2.24419 3.17305 2.11394 3.06067 2.02016C2.9483 1.92637 2.80658 1.875 2.66021 1.875H1.25" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M6.25 17.5C7.11294 17.5 7.8125 16.8004 7.8125 15.9375C7.8125 15.0746 7.11294 14.375 6.25 14.375C5.38706 14.375 4.6875 15.0746 4.6875 15.9375C4.6875 16.8004 5.38706 17.5 6.25 17.5Z" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.375 17.5C15.2379 17.5 15.9375 16.8004 15.9375 15.9375C15.9375 15.0746 15.2379 14.375 14.375 14.375C13.5121 14.375 12.8125 15.0746 12.8125 15.9375C12.8125 16.8004 13.5121 17.5 14.375 17.5Z" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M4.88636 11.25H14.6954C14.9882 11.25 15.2716 11.1473 15.4963 10.9597C15.7211 10.7721 15.8729 10.5116 15.9253 10.2236L16.875 5H3.75" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <span>Площадка</span>
+                                    </a>
+                                    <a href="./panel_of_deals-in.html" class="u-ulias_link u-dfw u-jc-center u-alt-center">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.87477 10.5369L13.8996 16.7187C13.9808 16.7902 14.0793 16.8394 14.1853 16.8614C14.2913 16.8834 14.4012 16.8776 14.5043 16.8443C14.6073 16.8111 14.7 16.7517 14.7731 16.6719C14.8463 16.5921 14.8975 16.4946 14.9217 16.3891L17.8602 3.56624C17.8856 3.45538 17.8803 3.33968 17.8448 3.23162C17.8093 3.12356 17.745 3.02723 17.6588 2.95301C17.5726 2.8788 17.4678 2.82951 17.3557 2.81046C17.2436 2.79141 17.1284 2.80333 17.0225 2.84492L2.60399 8.50933C2.47833 8.55869 2.37203 8.64742 2.301 8.76224C2.22997 8.87706 2.19804 9.01178 2.20996 9.14627C2.22189 9.28075 2.27705 9.40775 2.36718 9.50827C2.4573 9.6088 2.57756 9.67743 2.70995 9.70391L6.87477 10.5369Z" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M6.875 10.5369L17.5088 2.85699" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10.3834 13.6243L7.94194 16.0657C7.85453 16.1531 7.74317 16.2126 7.62193 16.2368C7.50069 16.2609 7.37503 16.2485 7.26082 16.2012C7.14662 16.1539 7.04901 16.0738 6.98033 15.971C6.91166 15.8682 6.875 15.7474 6.875 15.6238V10.5369" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <span>Telegram</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <ul class="u-uli_deals-history u-data_table">
+                                <li class="u-dt_item u-dfw u-jc-sb">
+                                    <div class="u-part u-dfw u-jc-sb">
+                                        <div class="u-unificated u-dfw">
+                                            <span class="u-dti_date">11:09</span>
+                                            <span class="u-dti_couple">BTC/USDT</span>
+                                        </div>
+                                        <span class="u-dti_type">Лимит</span>
+                                        <span class="u-dti_price u-dfw u-alt-center red"><b>0.057380</b>
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 2.8125V15.1875" stroke="#F24A4A" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M3.9375 10.125L9 15.1875L14.0625 10.125" stroke="#F24A4A" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                        <span class="u-dti_count">52,726</span>
+                                        <span class="u-dti_total">3,025.417880 BUSD</span>
+                                    </div>
+                                    <span class="u-dti_cancel u-btn u-dfw u-jc-center u-alt-center">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.0625 3.9375L3.9375 14.0625" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.0625 14.0625L3.9375 3.9375" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </li>
+                                <li class="u-dt_item u-dfw u-jc-sb">
+                                    <div class="u-part u-dfw u-jc-sb">
+                                        <div class="u-unificated u-dfw">
+                                            <span class="u-dti_date">11:09</span>
+                                            <span class="u-dti_couple">BTC/USDT</span>
+                                        </div>
+                                        <span class="u-dti_type">Лимит</span>
+                                        <span class="u-dti_price u-dfw u-alt-center red"><b>0.057380</b>
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 2.8125V15.1875" stroke="#F24A4A" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M3.9375 10.125L9 15.1875L14.0625 10.125" stroke="#F24A4A" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                        <span class="u-dti_count">52,726</span>
+                                        <span class="u-dti_total">3,025.417880 BUSD</span>
+                                    </div>
+                                    <span class="u-dti_cancel u-btn u-dfw u-jc-center u-alt-center">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.0625 3.9375L3.9375 14.0625" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.0625 14.0625L3.9375 3.9375" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </li>
+                                <li class="u-dt_item u-dfw u-jc-sb">
+                                    <div class="u-part u-dfw u-jc-sb">
+                                        <div class="u-unificated u-dfw">
+                                            <span class="u-dti_date">11:09</span>
+                                            <span class="u-dti_couple">BTC/USDT</span>
+                                        </div>
+                                        <span class="u-dti_type">Лимит</span>
+                                        <span class="u-dti_price u-dfw u-alt-center green"><b>0.057380</b>
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 15.1875V2.8125" stroke="#41C94F" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M3.9375 7.875L9 2.8125L14.0625 7.875" stroke="#41C94F" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                        <span class="u-dti_count">52,726</span>
+                                        <span class="u-dti_total">3,025.417880 BUSD</span>
+                                    </div>
+                                    <span class="u-dti_cancel u-btn u-dfw u-jc-center u-alt-center">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.0625 3.9375L3.9375 14.0625" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.0625 14.0625L3.9375 3.9375" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </li>
+                                <li class="u-dt_item u-dfw u-jc-sb">
+                                    <div class="u-part u-dfw u-jc-sb">
+                                        <div class="u-unificated u-dfw">
+                                            <span class="u-dti_date">11:09</span>
+                                            <span class="u-dti_couple">BTC/USDT</span>
+                                        </div>
+                                        <span class="u-dti_type">Лимит</span>
+                                        <span class="u-dti_price u-dfw u-alt-center red"><b>0.057380</b>
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 2.8125V15.1875" stroke="#F24A4A" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M3.9375 10.125L9 15.1875L14.0625 10.125" stroke="#F24A4A" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                        <span class="u-dti_count">52,726</span>
+                                        <span class="u-dti_total">3,025.417880 BUSD</span>
+                                    </div>
+                                    <span class="u-dti_cancel u-btn u-dfw u-jc-center u-alt-center">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.0625 3.9375L3.9375 14.0625" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.0625 14.0625L3.9375 3.9375" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </li>
+                                <li class="u-dt_item u-dfw u-jc-sb">
+                                    <div class="u-part u-dfw u-jc-sb">
+                                        <div class="u-unificated u-dfw">
+                                            <span class="u-dti_date">11:09</span>
+                                            <span class="u-dti_couple">BTC/USDT</span>
+                                        </div>
+                                        <span class="u-dti_type">Лимит</span>
+                                        <span class="u-dti_price u-dfw u-alt-center green"><b>0.057380</b>
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 15.1875V2.8125" stroke="#41C94F" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M3.9375 7.875L9 2.8125L14.0625 7.875" stroke="#41C94F" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                        <span class="u-dti_count">52,726</span>
+                                        <span class="u-dti_total">3,025.417880 BUSD</span>
+                                    </div>
+                                    <span class="u-dti_cancel u-btn u-dfw u-jc-center u-alt-center">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.0625 3.9375L3.9375 14.0625" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.0625 14.0625L3.9375 3.9375" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="u-ul_item u-col">
+                            <div class="u-uli_actions u-dfw u-jc-sb">
+                                <div class="u-ulia_user-meta u-dfw">
+                                    <div class="u-icon u-dfw u-jc-center u-alt-center">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10 12.5C12.7614 12.5 15 10.2614 15 7.5C15 4.73858 12.7614 2.5 10 2.5C7.23858 2.5 5 4.73858 5 7.5C5 10.2614 7.23858 12.5 10 12.5Z" stroke="#EC5428" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M2.42114 16.8743C3.18955 15.5442 4.29443 14.4398 5.6248 13.672C6.95517 12.9042 8.46417 12.5 10.0002 12.5C11.5363 12.5 13.0453 12.9043 14.3756 13.6721C15.706 14.44 16.8108 15.5444 17.5792 16.8744" stroke="#EC5428" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <div class="u-uliaum_info">
+                                        <h4>Фанис Низамов</h4>
+                                        <div class="u-uliaumi_account u-dfw">
+                                            <p>5 234,65 ₽</p>
+                                            <p>0,00146975 <i>BTC</i></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="u-ulia_state u-dfw">
+                                    <label class="u-ulias_select">
+                                        <span>Состояние</span>
+                                        <select name="" >
+                                            <option value="Active">Активный</option>
+                                            <option value="Diactive">Отключон</option>
+                                        </select>
+                                    </label>
+                                    <a href="./panel_of_deals-in.html" class="u-ulias_link u-dfw u-jc-center u-alt-center">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.375 14.375H5.45455L3.27513 2.3882C3.24894 2.24419 3.17305 2.11394 3.06067 2.02016C2.9483 1.92637 2.80658 1.875 2.66021 1.875H1.25" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M6.25 17.5C7.11294 17.5 7.8125 16.8004 7.8125 15.9375C7.8125 15.0746 7.11294 14.375 6.25 14.375C5.38706 14.375 4.6875 15.0746 4.6875 15.9375C4.6875 16.8004 5.38706 17.5 6.25 17.5Z" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.375 17.5C15.2379 17.5 15.9375 16.8004 15.9375 15.9375C15.9375 15.0746 15.2379 14.375 14.375 14.375C13.5121 14.375 12.8125 15.0746 12.8125 15.9375C12.8125 16.8004 13.5121 17.5 14.375 17.5Z" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M4.88636 11.25H14.6954C14.9882 11.25 15.2716 11.1473 15.4963 10.9597C15.7211 10.7721 15.8729 10.5116 15.9253 10.2236L16.875 5H3.75" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <span>Площадка</span>
+                                    </a>
+                                    <a href="./panel_of_deals-in.html" class="u-ulias_link u-dfw u-jc-center u-alt-center">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.87477 10.5369L13.8996 16.7187C13.9808 16.7902 14.0793 16.8394 14.1853 16.8614C14.2913 16.8834 14.4012 16.8776 14.5043 16.8443C14.6073 16.8111 14.7 16.7517 14.7731 16.6719C14.8463 16.5921 14.8975 16.4946 14.9217 16.3891L17.8602 3.56624C17.8856 3.45538 17.8803 3.33968 17.8448 3.23162C17.8093 3.12356 17.745 3.02723 17.6588 2.95301C17.5726 2.8788 17.4678 2.82951 17.3557 2.81046C17.2436 2.79141 17.1284 2.80333 17.0225 2.84492L2.60399 8.50933C2.47833 8.55869 2.37203 8.64742 2.301 8.76224C2.22997 8.87706 2.19804 9.01178 2.20996 9.14627C2.22189 9.28075 2.27705 9.40775 2.36718 9.50827C2.4573 9.6088 2.57756 9.67743 2.70995 9.70391L6.87477 10.5369Z" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M6.875 10.5369L17.5088 2.85699" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10.3834 13.6243L7.94194 16.0657C7.85453 16.1531 7.74317 16.2126 7.62193 16.2368C7.50069 16.2609 7.37503 16.2485 7.26082 16.2012C7.14662 16.1539 7.04901 16.0738 6.98033 15.971C6.91166 15.8682 6.875 15.7474 6.875 15.6238V10.5369" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <span>Telegram</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <ul class="u-uli_deals-history u-data_table">
+                                <li class="u-dt_item u-dfw u-jc-sb">
+                                    <div class="u-part u-dfw u-jc-sb">
+                                        <div class="u-unificated u-dfw">
+                                            <span class="u-dti_date">11:09</span>
+                                            <span class="u-dti_couple">BTC/USDT</span>
+                                        </div>
+                                        <span class="u-dti_type">Лимит</span>
+                                        <span class="u-dti_price u-dfw u-alt-center red"><b>0.057380</b>
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 2.8125V15.1875" stroke="#F24A4A" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M3.9375 10.125L9 15.1875L14.0625 10.125" stroke="#F24A4A" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                        <span class="u-dti_count">52,726</span>
+                                        <span class="u-dti_total">3,025.417880 BUSD</span>
+                                    </div>
+                                    <span class="u-dti_cancel u-btn u-dfw u-jc-center u-alt-center">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.0625 3.9375L3.9375 14.0625" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.0625 14.0625L3.9375 3.9375" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </li>
+                                <li class="u-dt_item u-dfw u-jc-sb">
+                                    <div class="u-part u-dfw u-jc-sb">
+                                        <div class="u-unificated u-dfw">
+                                            <span class="u-dti_date">11:09</span>
+                                            <span class="u-dti_couple">BTC/USDT</span>
+                                        </div>
+                                        <span class="u-dti_type">Лимит</span>
+                                        <span class="u-dti_price u-dfw u-alt-center red"><b>0.057380</b>
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 2.8125V15.1875" stroke="#F24A4A" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M3.9375 10.125L9 15.1875L14.0625 10.125" stroke="#F24A4A" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                        <span class="u-dti_count">52,726</span>
+                                        <span class="u-dti_total">3,025.417880 BUSD</span>
+                                    </div>
+                                    <span class="u-dti_cancel u-btn u-dfw u-jc-center u-alt-center">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.0625 3.9375L3.9375 14.0625" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.0625 14.0625L3.9375 3.9375" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </li>
+                                <li class="u-dt_item u-dfw u-jc-sb">
+                                    <div class="u-part u-dfw u-jc-sb">
+                                        <div class="u-unificated u-dfw">
+                                            <span class="u-dti_date">11:09</span>
+                                            <span class="u-dti_couple">BTC/USDT</span>
+                                        </div>
+                                        <span class="u-dti_type">Лимит</span>
+                                        <span class="u-dti_price u-dfw u-alt-center green"><b>0.057380</b>
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 15.1875V2.8125" stroke="#41C94F" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M3.9375 7.875L9 2.8125L14.0625 7.875" stroke="#41C94F" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                        <span class="u-dti_count">52,726</span>
+                                        <span class="u-dti_total">3,025.417880 BUSD</span>
+                                    </div>
+                                    <span class="u-dti_cancel u-btn u-dfw u-jc-center u-alt-center">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.0625 3.9375L3.9375 14.0625" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.0625 14.0625L3.9375 3.9375" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </li>
+                                <li class="u-dt_item u-dfw u-jc-sb">
+                                    <div class="u-part u-dfw u-jc-sb">
+                                        <div class="u-unificated u-dfw">
+                                            <span class="u-dti_date">11:09</span>
+                                            <span class="u-dti_couple">BTC/USDT</span>
+                                        </div>
+                                        <span class="u-dti_type">Лимит</span>
+                                        <span class="u-dti_price u-dfw u-alt-center red"><b>0.057380</b>
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 2.8125V15.1875" stroke="#F24A4A" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M3.9375 10.125L9 15.1875L14.0625 10.125" stroke="#F24A4A" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                        <span class="u-dti_count">52,726</span>
+                                        <span class="u-dti_total">3,025.417880 BUSD</span>
+                                    </div>
+                                    <span class="u-dti_cancel u-btn u-dfw u-jc-center u-alt-center">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.0625 3.9375L3.9375 14.0625" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.0625 14.0625L3.9375 3.9375" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </li>
+                                <li class="u-dt_item u-dfw u-jc-sb">
+                                    <div class="u-part u-dfw u-jc-sb">
+                                        <div class="u-unificated u-dfw">
+                                            <span class="u-dti_date">11:09</span>
+                                            <span class="u-dti_couple">BTC/USDT</span>
+                                        </div>
+                                        <span class="u-dti_type">Лимит</span>
+                                        <span class="u-dti_price u-dfw u-alt-center green"><b>0.057380</b>
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 15.1875V2.8125" stroke="#41C94F" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M3.9375 7.875L9 2.8125L14.0625 7.875" stroke="#41C94F" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                        <span class="u-dti_count">52,726</span>
+                                        <span class="u-dti_total">3,025.417880 BUSD</span>
+                                    </div>
+                                    <span class="u-dti_cancel u-btn u-dfw u-jc-center u-alt-center">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.0625 3.9375L3.9375 14.0625" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.0625 14.0625L3.9375 3.9375" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="u-ul_item u-col">
+                            <div class="u-uli_actions u-dfw u-jc-sb">
+                                <div class="u-ulia_user-meta u-dfw">
+                                    <div class="u-icon u-dfw u-jc-center u-alt-center">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10 12.5C12.7614 12.5 15 10.2614 15 7.5C15 4.73858 12.7614 2.5 10 2.5C7.23858 2.5 5 4.73858 5 7.5C5 10.2614 7.23858 12.5 10 12.5Z" stroke="#EC5428" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M2.42114 16.8743C3.18955 15.5442 4.29443 14.4398 5.6248 13.672C6.95517 12.9042 8.46417 12.5 10.0002 12.5C11.5363 12.5 13.0453 12.9043 14.3756 13.6721C15.706 14.44 16.8108 15.5444 17.5792 16.8744" stroke="#EC5428" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <div class="u-uliaum_info">
+                                        <h4>Фанис Низамов</h4>
+                                        <div class="u-uliaumi_account u-dfw">
+                                            <p>5 234,65 ₽</p>
+                                            <p>0,00146975 <i>BTC</i></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="u-ulia_state u-dfw">
+                                    <label class="u-ulias_select">
+                                        <span>Состояние</span>
+                                        <select name="" >
+                                            <option value="Active">Активный</option>
+                                            <option value="Diactive">Отключон</option>
+                                        </select>
+                                    </label>
+                                    <a href="./panel_of_deals-in.html" class="u-ulias_link u-dfw u-jc-center u-alt-center">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.375 14.375H5.45455L3.27513 2.3882C3.24894 2.24419 3.17305 2.11394 3.06067 2.02016C2.9483 1.92637 2.80658 1.875 2.66021 1.875H1.25" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M6.25 17.5C7.11294 17.5 7.8125 16.8004 7.8125 15.9375C7.8125 15.0746 7.11294 14.375 6.25 14.375C5.38706 14.375 4.6875 15.0746 4.6875 15.9375C4.6875 16.8004 5.38706 17.5 6.25 17.5Z" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.375 17.5C15.2379 17.5 15.9375 16.8004 15.9375 15.9375C15.9375 15.0746 15.2379 14.375 14.375 14.375C13.5121 14.375 12.8125 15.0746 12.8125 15.9375C12.8125 16.8004 13.5121 17.5 14.375 17.5Z" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M4.88636 11.25H14.6954C14.9882 11.25 15.2716 11.1473 15.4963 10.9597C15.7211 10.7721 15.8729 10.5116 15.9253 10.2236L16.875 5H3.75" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <span>Площадка</span>
+                                    </a>
+                                    <a href="./panel_of_deals-in.html" class="u-ulias_link u-dfw u-jc-center u-alt-center">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.87477 10.5369L13.8996 16.7187C13.9808 16.7902 14.0793 16.8394 14.1853 16.8614C14.2913 16.8834 14.4012 16.8776 14.5043 16.8443C14.6073 16.8111 14.7 16.7517 14.7731 16.6719C14.8463 16.5921 14.8975 16.4946 14.9217 16.3891L17.8602 3.56624C17.8856 3.45538 17.8803 3.33968 17.8448 3.23162C17.8093 3.12356 17.745 3.02723 17.6588 2.95301C17.5726 2.8788 17.4678 2.82951 17.3557 2.81046C17.2436 2.79141 17.1284 2.80333 17.0225 2.84492L2.60399 8.50933C2.47833 8.55869 2.37203 8.64742 2.301 8.76224C2.22997 8.87706 2.19804 9.01178 2.20996 9.14627C2.22189 9.28075 2.27705 9.40775 2.36718 9.50827C2.4573 9.6088 2.57756 9.67743 2.70995 9.70391L6.87477 10.5369Z" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M6.875 10.5369L17.5088 2.85699" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10.3834 13.6243L7.94194 16.0657C7.85453 16.1531 7.74317 16.2126 7.62193 16.2368C7.50069 16.2609 7.37503 16.2485 7.26082 16.2012C7.14662 16.1539 7.04901 16.0738 6.98033 15.971C6.91166 15.8682 6.875 15.7474 6.875 15.6238V10.5369" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <span>Telegram</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <ul class="u-uli_deals-history u-data_table">
+                                <li class="u-dt_item u-dfw u-jc-sb">
+                                    <div class="u-part u-dfw u-jc-sb">
+                                        <div class="u-unificated u-dfw">
+                                            <span class="u-dti_date">11:09</span>
+                                            <span class="u-dti_couple">BTC/USDT</span>
+                                        </div>
+                                        <span class="u-dti_type">Лимит</span>
+                                        <span class="u-dti_price u-dfw u-alt-center red"><b>0.057380</b>
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 2.8125V15.1875" stroke="#F24A4A" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M3.9375 10.125L9 15.1875L14.0625 10.125" stroke="#F24A4A" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                        <span class="u-dti_count">52,726</span>
+                                        <span class="u-dti_total">3,025.417880 BUSD</span>
+                                    </div>
+                                    <span class="u-dti_cancel u-btn u-dfw u-jc-center u-alt-center">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.0625 3.9375L3.9375 14.0625" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.0625 14.0625L3.9375 3.9375" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </li>
+                                <li class="u-dt_item u-dfw u-jc-sb">
+                                    <div class="u-part u-dfw u-jc-sb">
+                                        <div class="u-unificated u-dfw">
+                                            <span class="u-dti_date">11:09</span>
+                                            <span class="u-dti_couple">BTC/USDT</span>
+                                        </div>
+                                        <span class="u-dti_type">Лимит</span>
+                                        <span class="u-dti_price u-dfw u-alt-center red"><b>0.057380</b>
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 2.8125V15.1875" stroke="#F24A4A" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M3.9375 10.125L9 15.1875L14.0625 10.125" stroke="#F24A4A" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                        <span class="u-dti_count">52,726</span>
+                                        <span class="u-dti_total">3,025.417880 BUSD</span>
+                                    </div>
+                                    <span class="u-dti_cancel u-btn u-dfw u-jc-center u-alt-center">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.0625 3.9375L3.9375 14.0625" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.0625 14.0625L3.9375 3.9375" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </li>
+                                <li class="u-dt_item u-dfw u-jc-sb">
+                                    <div class="u-part u-dfw u-jc-sb">
+                                        <div class="u-unificated u-dfw">
+                                            <span class="u-dti_date">11:09</span>
+                                            <span class="u-dti_couple">BTC/USDT</span>
+                                        </div>
+                                        <span class="u-dti_type">Лимит</span>
+                                        <span class="u-dti_price u-dfw u-alt-center green"><b>0.057380</b>
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 15.1875V2.8125" stroke="#41C94F" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M3.9375 7.875L9 2.8125L14.0625 7.875" stroke="#41C94F" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                        <span class="u-dti_count">52,726</span>
+                                        <span class="u-dti_total">3,025.417880 BUSD</span>
+                                    </div>
+                                    <span class="u-dti_cancel u-btn u-dfw u-jc-center u-alt-center">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.0625 3.9375L3.9375 14.0625" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.0625 14.0625L3.9375 3.9375" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </li>
+                                <li class="u-dt_item u-dfw u-jc-sb">
+                                    <div class="u-part u-dfw u-jc-sb">
+                                        <div class="u-unificated u-dfw">
+                                            <span class="u-dti_date">11:09</span>
+                                            <span class="u-dti_couple">BTC/USDT</span>
+                                        </div>
+                                        <span class="u-dti_type">Лимит</span>
+                                        <span class="u-dti_price u-dfw u-alt-center red"><b>0.057380</b>
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 2.8125V15.1875" stroke="#F24A4A" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M3.9375 10.125L9 15.1875L14.0625 10.125" stroke="#F24A4A" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                        <span class="u-dti_count">52,726</span>
+                                        <span class="u-dti_total">3,025.417880 BUSD</span>
+                                    </div>
+                                    <span class="u-dti_cancel u-btn u-dfw u-jc-center u-alt-center">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.0625 3.9375L3.9375 14.0625" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.0625 14.0625L3.9375 3.9375" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </li>
+                                <li class="u-dt_item u-dfw u-jc-sb">
+                                    <div class="u-part u-dfw u-jc-sb">
+                                        <div class="u-unificated u-dfw">
+                                            <span class="u-dti_date">11:09</span>
+                                            <span class="u-dti_couple">BTC/USDT</span>
+                                        </div>
+                                        <span class="u-dti_type">Лимит</span>
+                                        <span class="u-dti_price u-dfw u-alt-center green"><b>0.057380</b>
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 15.1875V2.8125" stroke="#41C94F" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M3.9375 7.875L9 2.8125L14.0625 7.875" stroke="#41C94F" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                        <span class="u-dti_count">52,726</span>
+                                        <span class="u-dti_total">3,025.417880 BUSD</span>
+                                    </div>
+                                    <span class="u-dti_cancel u-btn u-dfw u-jc-center u-alt-center">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.0625 3.9375L3.9375 14.0625" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.0625 14.0625L3.9375 3.9375" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="u-ul_item u-col">
+                            <div class="u-uli_actions u-dfw u-jc-sb">
+                                <div class="u-ulia_user-meta u-dfw">
+                                    <div class="u-icon u-dfw u-jc-center u-alt-center">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10 12.5C12.7614 12.5 15 10.2614 15 7.5C15 4.73858 12.7614 2.5 10 2.5C7.23858 2.5 5 4.73858 5 7.5C5 10.2614 7.23858 12.5 10 12.5Z" stroke="#EC5428" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M2.42114 16.8743C3.18955 15.5442 4.29443 14.4398 5.6248 13.672C6.95517 12.9042 8.46417 12.5 10.0002 12.5C11.5363 12.5 13.0453 12.9043 14.3756 13.6721C15.706 14.44 16.8108 15.5444 17.5792 16.8744" stroke="#EC5428" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <div class="u-uliaum_info">
+                                        <h4>Фанис Низамов</h4>
+                                        <div class="u-uliaumi_account u-dfw">
+                                            <p>5 234,65 ₽</p>
+                                            <p>0,00146975 <i>BTC</i></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="u-ulia_state u-dfw">
+                                    <label class="u-ulias_select">
+                                        <span>Состояние</span>
+                                        <select name="" >
+                                            <option value="Active">Активный</option>
+                                            <option value="Diactive">Отключон</option>
+                                        </select>
+                                    </label>
+                                    <a href="./panel_of_deals-in.html" class="u-ulias_link u-dfw u-jc-center u-alt-center">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.375 14.375H5.45455L3.27513 2.3882C3.24894 2.24419 3.17305 2.11394 3.06067 2.02016C2.9483 1.92637 2.80658 1.875 2.66021 1.875H1.25" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M6.25 17.5C7.11294 17.5 7.8125 16.8004 7.8125 15.9375C7.8125 15.0746 7.11294 14.375 6.25 14.375C5.38706 14.375 4.6875 15.0746 4.6875 15.9375C4.6875 16.8004 5.38706 17.5 6.25 17.5Z" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.375 17.5C15.2379 17.5 15.9375 16.8004 15.9375 15.9375C15.9375 15.0746 15.2379 14.375 14.375 14.375C13.5121 14.375 12.8125 15.0746 12.8125 15.9375C12.8125 16.8004 13.5121 17.5 14.375 17.5Z" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M4.88636 11.25H14.6954C14.9882 11.25 15.2716 11.1473 15.4963 10.9597C15.7211 10.7721 15.8729 10.5116 15.9253 10.2236L16.875 5H3.75" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <span>Площадка</span>
+                                    </a>
+                                    <a href="./panel_of_deals-in.html" class="u-ulias_link u-dfw u-jc-center u-alt-center">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.87477 10.5369L13.8996 16.7187C13.9808 16.7902 14.0793 16.8394 14.1853 16.8614C14.2913 16.8834 14.4012 16.8776 14.5043 16.8443C14.6073 16.8111 14.7 16.7517 14.7731 16.6719C14.8463 16.5921 14.8975 16.4946 14.9217 16.3891L17.8602 3.56624C17.8856 3.45538 17.8803 3.33968 17.8448 3.23162C17.8093 3.12356 17.745 3.02723 17.6588 2.95301C17.5726 2.8788 17.4678 2.82951 17.3557 2.81046C17.2436 2.79141 17.1284 2.80333 17.0225 2.84492L2.60399 8.50933C2.47833 8.55869 2.37203 8.64742 2.301 8.76224C2.22997 8.87706 2.19804 9.01178 2.20996 9.14627C2.22189 9.28075 2.27705 9.40775 2.36718 9.50827C2.4573 9.6088 2.57756 9.67743 2.70995 9.70391L6.87477 10.5369Z" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M6.875 10.5369L17.5088 2.85699" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10.3834 13.6243L7.94194 16.0657C7.85453 16.1531 7.74317 16.2126 7.62193 16.2368C7.50069 16.2609 7.37503 16.2485 7.26082 16.2012C7.14662 16.1539 7.04901 16.0738 6.98033 15.971C6.91166 15.8682 6.875 15.7474 6.875 15.6238V10.5369" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <span>Telegram</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <ul class="u-uli_deals-history u-data_table">
+                                <li class="u-dt_item u-dfw u-jc-sb">
+                                    <div class="u-part u-dfw u-jc-sb">
+                                        <div class="u-unificated u-dfw">
+                                            <span class="u-dti_date">11:09</span>
+                                            <span class="u-dti_couple">BTC/USDT</span>
+                                        </div>
+                                        <span class="u-dti_type">Лимит</span>
+                                        <span class="u-dti_price u-dfw u-alt-center red"><b>0.057380</b>
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 2.8125V15.1875" stroke="#F24A4A" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M3.9375 10.125L9 15.1875L14.0625 10.125" stroke="#F24A4A" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                        <span class="u-dti_count">52,726</span>
+                                        <span class="u-dti_total">3,025.417880 BUSD</span>
+                                    </div>
+                                    <span class="u-dti_cancel u-btn u-dfw u-jc-center u-alt-center">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.0625 3.9375L3.9375 14.0625" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.0625 14.0625L3.9375 3.9375" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </li>
+                                <li class="u-dt_item u-dfw u-jc-sb">
+                                    <div class="u-part u-dfw u-jc-sb">
+                                        <div class="u-unificated u-dfw">
+                                            <span class="u-dti_date">11:09</span>
+                                            <span class="u-dti_couple">BTC/USDT</span>
+                                        </div>
+                                        <span class="u-dti_type">Лимит</span>
+                                        <span class="u-dti_price u-dfw u-alt-center red"><b>0.057380</b>
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 2.8125V15.1875" stroke="#F24A4A" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M3.9375 10.125L9 15.1875L14.0625 10.125" stroke="#F24A4A" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                        <span class="u-dti_count">52,726</span>
+                                        <span class="u-dti_total">3,025.417880 BUSD</span>
+                                    </div>
+                                    <span class="u-dti_cancel u-btn u-dfw u-jc-center u-alt-center">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.0625 3.9375L3.9375 14.0625" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.0625 14.0625L3.9375 3.9375" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </li>
+                                <li class="u-dt_item u-dfw u-jc-sb">
+                                    <div class="u-part u-dfw u-jc-sb">
+                                        <div class="u-unificated u-dfw">
+                                            <span class="u-dti_date">11:09</span>
+                                            <span class="u-dti_couple">BTC/USDT</span>
+                                        </div>
+                                        <span class="u-dti_type">Лимит</span>
+                                        <span class="u-dti_price u-dfw u-alt-center green"><b>0.057380</b>
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 15.1875V2.8125" stroke="#41C94F" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M3.9375 7.875L9 2.8125L14.0625 7.875" stroke="#41C94F" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                        <span class="u-dti_count">52,726</span>
+                                        <span class="u-dti_total">3,025.417880 BUSD</span>
+                                    </div>
+                                    <span class="u-dti_cancel u-btn u-dfw u-jc-center u-alt-center">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.0625 3.9375L3.9375 14.0625" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.0625 14.0625L3.9375 3.9375" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </li>
+                                <li class="u-dt_item u-dfw u-jc-sb">
+                                    <div class="u-part u-dfw u-jc-sb">
+                                        <div class="u-unificated u-dfw">
+                                            <span class="u-dti_date">11:09</span>
+                                            <span class="u-dti_couple">BTC/USDT</span>
+                                        </div>
+                                        <span class="u-dti_type">Лимит</span>
+                                        <span class="u-dti_price u-dfw u-alt-center red"><b>0.057380</b>
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 2.8125V15.1875" stroke="#F24A4A" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M3.9375 10.125L9 15.1875L14.0625 10.125" stroke="#F24A4A" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                        <span class="u-dti_count">52,726</span>
+                                        <span class="u-dti_total">3,025.417880 BUSD</span>
+                                    </div>
+                                    <span class="u-dti_cancel u-btn u-dfw u-jc-center u-alt-center">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.0625 3.9375L3.9375 14.0625" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.0625 14.0625L3.9375 3.9375" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </li>
+                                <li class="u-dt_item u-dfw u-jc-sb">
+                                    <div class="u-part u-dfw u-jc-sb">
+                                        <div class="u-unificated u-dfw">
+                                            <span class="u-dti_date">11:09</span>
+                                            <span class="u-dti_couple">BTC/USDT</span>
+                                        </div>
+                                        <span class="u-dti_type">Лимит</span>
+                                        <span class="u-dti_price u-dfw u-alt-center green"><b>0.057380</b>
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 15.1875V2.8125" stroke="#41C94F" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M3.9375 7.875L9 2.8125L14.0625 7.875" stroke="#41C94F" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                        <span class="u-dti_count">52,726</span>
+                                        <span class="u-dti_total">3,025.417880 BUSD</span>
+                                    </div>
+                                    <span class="u-dti_cancel u-btn u-dfw u-jc-center u-alt-center">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.0625 3.9375L3.9375 14.0625" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.0625 14.0625L3.9375 3.9375" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="u-ul_item u-col">
+                            <div class="u-uli_actions u-dfw u-jc-sb">
+                                <div class="u-ulia_user-meta u-dfw">
+                                    <div class="u-icon u-dfw u-jc-center u-alt-center">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10 12.5C12.7614 12.5 15 10.2614 15 7.5C15 4.73858 12.7614 2.5 10 2.5C7.23858 2.5 5 4.73858 5 7.5C5 10.2614 7.23858 12.5 10 12.5Z" stroke="#EC5428" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M2.42114 16.8743C3.18955 15.5442 4.29443 14.4398 5.6248 13.672C6.95517 12.9042 8.46417 12.5 10.0002 12.5C11.5363 12.5 13.0453 12.9043 14.3756 13.6721C15.706 14.44 16.8108 15.5444 17.5792 16.8744" stroke="#EC5428" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <div class="u-uliaum_info">
+                                        <h4>Фанис Низамов</h4>
+                                        <div class="u-uliaumi_account u-dfw">
+                                            <p>5 234,65 ₽</p>
+                                            <p>0,00146975 <i>BTC</i></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="u-ulia_state u-dfw">
+                                    <label class="u-ulias_select">
+                                        <span>Состояние</span>
+                                        <select name="" >
+                                            <option value="Active">Активный</option>
+                                            <option value="Diactive">Отключон</option>
+                                        </select>
+                                    </label>
+                                    <a href="./panel_of_deals-in.html" class="u-ulias_link u-dfw u-jc-center u-alt-center">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.375 14.375H5.45455L3.27513 2.3882C3.24894 2.24419 3.17305 2.11394 3.06067 2.02016C2.9483 1.92637 2.80658 1.875 2.66021 1.875H1.25" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M6.25 17.5C7.11294 17.5 7.8125 16.8004 7.8125 15.9375C7.8125 15.0746 7.11294 14.375 6.25 14.375C5.38706 14.375 4.6875 15.0746 4.6875 15.9375C4.6875 16.8004 5.38706 17.5 6.25 17.5Z" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.375 17.5C15.2379 17.5 15.9375 16.8004 15.9375 15.9375C15.9375 15.0746 15.2379 14.375 14.375 14.375C13.5121 14.375 12.8125 15.0746 12.8125 15.9375C12.8125 16.8004 13.5121 17.5 14.375 17.5Z" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M4.88636 11.25H14.6954C14.9882 11.25 15.2716 11.1473 15.4963 10.9597C15.7211 10.7721 15.8729 10.5116 15.9253 10.2236L16.875 5H3.75" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <span>Площадка</span>
+                                    </a>
+                                    <a href="./panel_of_deals-in.html" class="u-ulias_link u-dfw u-jc-center u-alt-center">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.87477 10.5369L13.8996 16.7187C13.9808 16.7902 14.0793 16.8394 14.1853 16.8614C14.2913 16.8834 14.4012 16.8776 14.5043 16.8443C14.6073 16.8111 14.7 16.7517 14.7731 16.6719C14.8463 16.5921 14.8975 16.4946 14.9217 16.3891L17.8602 3.56624C17.8856 3.45538 17.8803 3.33968 17.8448 3.23162C17.8093 3.12356 17.745 3.02723 17.6588 2.95301C17.5726 2.8788 17.4678 2.82951 17.3557 2.81046C17.2436 2.79141 17.1284 2.80333 17.0225 2.84492L2.60399 8.50933C2.47833 8.55869 2.37203 8.64742 2.301 8.76224C2.22997 8.87706 2.19804 9.01178 2.20996 9.14627C2.22189 9.28075 2.27705 9.40775 2.36718 9.50827C2.4573 9.6088 2.57756 9.67743 2.70995 9.70391L6.87477 10.5369Z" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M6.875 10.5369L17.5088 2.85699" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10.3834 13.6243L7.94194 16.0657C7.85453 16.1531 7.74317 16.2126 7.62193 16.2368C7.50069 16.2609 7.37503 16.2485 7.26082 16.2012C7.14662 16.1539 7.04901 16.0738 6.98033 15.971C6.91166 15.8682 6.875 15.7474 6.875 15.6238V10.5369" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <span>Telegram</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <ul class="u-uli_deals-history u-data_table">
+                                <li class="u-dt_item u-dfw u-jc-sb">
+                                    <div class="u-part u-dfw u-jc-sb">
+                                        <div class="u-unificated u-dfw">
+                                            <span class="u-dti_date">11:09</span>
+                                            <span class="u-dti_couple">BTC/USDT</span>
+                                        </div>
+                                        <span class="u-dti_type">Лимит</span>
+                                        <span class="u-dti_price u-dfw u-alt-center red"><b>0.057380</b>
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 2.8125V15.1875" stroke="#F24A4A" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M3.9375 10.125L9 15.1875L14.0625 10.125" stroke="#F24A4A" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                        <span class="u-dti_count">52,726</span>
+                                        <span class="u-dti_total">3,025.417880 BUSD</span>
+                                    </div>
+                                    <span class="u-dti_cancel u-btn u-dfw u-jc-center u-alt-center">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.0625 3.9375L3.9375 14.0625" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.0625 14.0625L3.9375 3.9375" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </li>
+                                <li class="u-dt_item u-dfw u-jc-sb">
+                                    <div class="u-part u-dfw u-jc-sb">
+                                        <div class="u-unificated u-dfw">
+                                            <span class="u-dti_date">11:09</span>
+                                            <span class="u-dti_couple">BTC/USDT</span>
+                                        </div>
+                                        <span class="u-dti_type">Лимит</span>
+                                        <span class="u-dti_price u-dfw u-alt-center red"><b>0.057380</b>
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 2.8125V15.1875" stroke="#F24A4A" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M3.9375 10.125L9 15.1875L14.0625 10.125" stroke="#F24A4A" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                        <span class="u-dti_count">52,726</span>
+                                        <span class="u-dti_total">3,025.417880 BUSD</span>
+                                    </div>
+                                    <span class="u-dti_cancel u-btn u-dfw u-jc-center u-alt-center">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.0625 3.9375L3.9375 14.0625" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.0625 14.0625L3.9375 3.9375" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </li>
+                                <li class="u-dt_item u-dfw u-jc-sb">
+                                    <div class="u-part u-dfw u-jc-sb">
+                                        <div class="u-unificated u-dfw">
+                                            <span class="u-dti_date">11:09</span>
+                                            <span class="u-dti_couple">BTC/USDT</span>
+                                        </div>
+                                        <span class="u-dti_type">Лимит</span>
+                                        <span class="u-dti_price u-dfw u-alt-center green"><b>0.057380</b>
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 15.1875V2.8125" stroke="#41C94F" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M3.9375 7.875L9 2.8125L14.0625 7.875" stroke="#41C94F" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                        <span class="u-dti_count">52,726</span>
+                                        <span class="u-dti_total">3,025.417880 BUSD</span>
+                                    </div>
+                                    <span class="u-dti_cancel u-btn u-dfw u-jc-center u-alt-center">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.0625 3.9375L3.9375 14.0625" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.0625 14.0625L3.9375 3.9375" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </li>
+                                <li class="u-dt_item u-dfw u-jc-sb">
+                                    <div class="u-part u-dfw u-jc-sb">
+                                        <div class="u-unificated u-dfw">
+                                            <span class="u-dti_date">11:09</span>
+                                            <span class="u-dti_couple">BTC/USDT</span>
+                                        </div>
+                                        <span class="u-dti_type">Лимит</span>
+                                        <span class="u-dti_price u-dfw u-alt-center red"><b>0.057380</b>
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 2.8125V15.1875" stroke="#F24A4A" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M3.9375 10.125L9 15.1875L14.0625 10.125" stroke="#F24A4A" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                        <span class="u-dti_count">52,726</span>
+                                        <span class="u-dti_total">3,025.417880 BUSD</span>
+                                    </div>
+                                    <span class="u-dti_cancel u-btn u-dfw u-jc-center u-alt-center">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.0625 3.9375L3.9375 14.0625" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.0625 14.0625L3.9375 3.9375" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </li>
+                                <li class="u-dt_item u-dfw u-jc-sb">
+                                    <div class="u-part u-dfw u-jc-sb">
+                                        <div class="u-unificated u-dfw">
+                                            <span class="u-dti_date">11:09</span>
+                                            <span class="u-dti_couple">BTC/USDT</span>
+                                        </div>
+                                        <span class="u-dti_type">Лимит</span>
+                                        <span class="u-dti_price u-dfw u-alt-center green"><b>0.057380</b>
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 15.1875V2.8125" stroke="#41C94F" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M3.9375 7.875L9 2.8125L14.0625 7.875" stroke="#41C94F" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                        <span class="u-dti_count">52,726</span>
+                                        <span class="u-dti_total">3,025.417880 BUSD</span>
+                                    </div>
+                                    <span class="u-dti_cancel u-btn u-dfw u-jc-center u-alt-center">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.0625 3.9375L3.9375 14.0625" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.0625 14.0625L3.9375 3.9375" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="u-ul_item u-col">
+                            <div class="u-uli_actions u-dfw u-jc-sb">
+                                <div class="u-ulia_user-meta u-dfw">
+                                    <div class="u-icon u-dfw u-jc-center u-alt-center">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10 12.5C12.7614 12.5 15 10.2614 15 7.5C15 4.73858 12.7614 2.5 10 2.5C7.23858 2.5 5 4.73858 5 7.5C5 10.2614 7.23858 12.5 10 12.5Z" stroke="#EC5428" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M2.42114 16.8743C3.18955 15.5442 4.29443 14.4398 5.6248 13.672C6.95517 12.9042 8.46417 12.5 10.0002 12.5C11.5363 12.5 13.0453 12.9043 14.3756 13.6721C15.706 14.44 16.8108 15.5444 17.5792 16.8744" stroke="#EC5428" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <div class="u-uliaum_info">
+                                        <h4>Фанис Низамов</h4>
+                                        <div class="u-uliaumi_account u-dfw">
+                                            <p>5 234,65 ₽</p>
+                                            <p>0,00146975 <i>BTC</i></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="u-ulia_state u-dfw">
+                                    <label class="u-ulias_select">
+                                        <span>Состояние</span>
+                                        <select name="" >
+                                            <option value="Active">Активный</option>
+                                            <option value="Diactive">Отключон</option>
+                                        </select>
+                                    </label>
+                                    <a href="./panel_of_deals-in.html" class="u-ulias_link u-dfw u-jc-center u-alt-center">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.375 14.375H5.45455L3.27513 2.3882C3.24894 2.24419 3.17305 2.11394 3.06067 2.02016C2.9483 1.92637 2.80658 1.875 2.66021 1.875H1.25" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M6.25 17.5C7.11294 17.5 7.8125 16.8004 7.8125 15.9375C7.8125 15.0746 7.11294 14.375 6.25 14.375C5.38706 14.375 4.6875 15.0746 4.6875 15.9375C4.6875 16.8004 5.38706 17.5 6.25 17.5Z" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.375 17.5C15.2379 17.5 15.9375 16.8004 15.9375 15.9375C15.9375 15.0746 15.2379 14.375 14.375 14.375C13.5121 14.375 12.8125 15.0746 12.8125 15.9375C12.8125 16.8004 13.5121 17.5 14.375 17.5Z" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M4.88636 11.25H14.6954C14.9882 11.25 15.2716 11.1473 15.4963 10.9597C15.7211 10.7721 15.8729 10.5116 15.9253 10.2236L16.875 5H3.75" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <span>Площадка</span>
+                                    </a>
+                                    <a href="./panel_of_deals-in.html" class="u-ulias_link u-dfw u-jc-center u-alt-center">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.87477 10.5369L13.8996 16.7187C13.9808 16.7902 14.0793 16.8394 14.1853 16.8614C14.2913 16.8834 14.4012 16.8776 14.5043 16.8443C14.6073 16.8111 14.7 16.7517 14.7731 16.6719C14.8463 16.5921 14.8975 16.4946 14.9217 16.3891L17.8602 3.56624C17.8856 3.45538 17.8803 3.33968 17.8448 3.23162C17.8093 3.12356 17.745 3.02723 17.6588 2.95301C17.5726 2.8788 17.4678 2.82951 17.3557 2.81046C17.2436 2.79141 17.1284 2.80333 17.0225 2.84492L2.60399 8.50933C2.47833 8.55869 2.37203 8.64742 2.301 8.76224C2.22997 8.87706 2.19804 9.01178 2.20996 9.14627C2.22189 9.28075 2.27705 9.40775 2.36718 9.50827C2.4573 9.6088 2.57756 9.67743 2.70995 9.70391L6.87477 10.5369Z" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M6.875 10.5369L17.5088 2.85699" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10.3834 13.6243L7.94194 16.0657C7.85453 16.1531 7.74317 16.2126 7.62193 16.2368C7.50069 16.2609 7.37503 16.2485 7.26082 16.2012C7.14662 16.1539 7.04901 16.0738 6.98033 15.971C6.91166 15.8682 6.875 15.7474 6.875 15.6238V10.5369" stroke="#152B64" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <span>Telegram</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <ul class="u-uli_deals-history u-data_table">
+                                <li class="u-dt_item u-dfw u-jc-sb">
+                                    <div class="u-part u-dfw u-jc-sb">
+                                        <div class="u-unificated u-dfw">
+                                            <span class="u-dti_date">11:09</span>
+                                            <span class="u-dti_couple">BTC/USDT</span>
+                                        </div>
+                                        <span class="u-dti_type">Лимит</span>
+                                        <span class="u-dti_price u-dfw u-alt-center red"><b>0.057380</b>
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 2.8125V15.1875" stroke="#F24A4A" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M3.9375 10.125L9 15.1875L14.0625 10.125" stroke="#F24A4A" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                        <span class="u-dti_count">52,726</span>
+                                        <span class="u-dti_total">3,025.417880 BUSD</span>
+                                    </div>
+                                    <span class="u-dti_cancel u-btn u-dfw u-jc-center u-alt-center">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.0625 3.9375L3.9375 14.0625" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.0625 14.0625L3.9375 3.9375" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </li>
+                                <li class="u-dt_item u-dfw u-jc-sb">
+                                    <div class="u-part u-dfw u-jc-sb">
+                                        <div class="u-unificated u-dfw">
+                                            <span class="u-dti_date">11:09</span>
+                                            <span class="u-dti_couple">BTC/USDT</span>
+                                        </div>
+                                        <span class="u-dti_type">Лимит</span>
+                                        <span class="u-dti_price u-dfw u-alt-center red"><b>0.057380</b>
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 2.8125V15.1875" stroke="#F24A4A" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M3.9375 10.125L9 15.1875L14.0625 10.125" stroke="#F24A4A" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                        <span class="u-dti_count">52,726</span>
+                                        <span class="u-dti_total">3,025.417880 BUSD</span>
+                                    </div>
+                                    <span class="u-dti_cancel u-btn u-dfw u-jc-center u-alt-center">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.0625 3.9375L3.9375 14.0625" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.0625 14.0625L3.9375 3.9375" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </li>
+                                <li class="u-dt_item u-dfw u-jc-sb">
+                                    <div class="u-part u-dfw u-jc-sb">
+                                        <div class="u-unificated u-dfw">
+                                            <span class="u-dti_date">11:09</span>
+                                            <span class="u-dti_couple">BTC/USDT</span>
+                                        </div>
+                                        <span class="u-dti_type">Лимит</span>
+                                        <span class="u-dti_price u-dfw u-alt-center green"><b>0.057380</b>
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 15.1875V2.8125" stroke="#41C94F" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M3.9375 7.875L9 2.8125L14.0625 7.875" stroke="#41C94F" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                        <span class="u-dti_count">52,726</span>
+                                        <span class="u-dti_total">3,025.417880 BUSD</span>
+                                    </div>
+                                    <span class="u-dti_cancel u-btn u-dfw u-jc-center u-alt-center">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.0625 3.9375L3.9375 14.0625" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.0625 14.0625L3.9375 3.9375" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </li>
+                                <li class="u-dt_item u-dfw u-jc-sb">
+                                    <div class="u-part u-dfw u-jc-sb">
+                                        <div class="u-unificated u-dfw">
+                                            <span class="u-dti_date">11:09</span>
+                                            <span class="u-dti_couple">BTC/USDT</span>
+                                        </div>
+                                        <span class="u-dti_type">Лимит</span>
+                                        <span class="u-dti_price u-dfw u-alt-center red"><b>0.057380</b>
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 2.8125V15.1875" stroke="#F24A4A" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M3.9375 10.125L9 15.1875L14.0625 10.125" stroke="#F24A4A" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                        <span class="u-dti_count">52,726</span>
+                                        <span class="u-dti_total">3,025.417880 BUSD</span>
+                                    </div>
+                                    <span class="u-dti_cancel u-btn u-dfw u-jc-center u-alt-center">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.0625 3.9375L3.9375 14.0625" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.0625 14.0625L3.9375 3.9375" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </li>
+                                <li class="u-dt_item u-dfw u-jc-sb">
+                                    <div class="u-part u-dfw u-jc-sb">
+                                        <div class="u-unificated u-dfw">
+                                            <span class="u-dti_date">11:09</span>
+                                            <span class="u-dti_couple">BTC/USDT</span>
+                                        </div>
+                                        <span class="u-dti_type">Лимит</span>
+                                        <span class="u-dti_price u-dfw u-alt-center green"><b>0.057380</b>
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 15.1875V2.8125" stroke="#41C94F" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M3.9375 7.875L9 2.8125L14.0625 7.875" stroke="#41C94F" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                        <span class="u-dti_count">52,726</span>
+                                        <span class="u-dti_total">3,025.417880 BUSD</span>
+                                    </div>
+                                    <span class="u-dti_cancel u-btn u-dfw u-jc-center u-alt-center">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.0625 3.9375L3.9375 14.0625" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.0625 14.0625L3.9375 3.9375" stroke="#C7CDDD" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

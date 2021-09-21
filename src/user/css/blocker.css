@@ -1,0 +1,74 @@
+/*---------- Large Screens ----------*/
+@media (min-width: 1440px) { ... }
+
+*{
+    pointer-events: none;
+}
+body{
+    overflow: hidden;
+}
+
+.u-waiting_for-access {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255 255 255 / 30%);
+    backdrop-filter: blur(5px);
+    z-index: 99;
+}
+.u-wfa {
+    position: relative;
+    width: 400px;
+    padding: 55px;
+    margin: auto auto;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 6px 6px 60px rgba(0, 0, 0, 0.2);
+}
+.u-wfa_logo {
+    position: absolute;
+    top: -23px;
+    height: 46px;
+}
+.u-wfa_inner {
+    row-gap: 25px;
+}
+.u-wfa_inner p {
+    font-size: 20px;
+    color: var(--blue);
+}
+.u-wfa_inner span {
+    font-size: 12px;
+    color: var(--gray);
+}
+.u-wfa_timer h4 {
+    margin: 0;
+    font-size: 40px;
+    font-weight: normal;
+    color: var(--blue);
+}
+.u-extra_call {
+    width: 100%;
+    padding: 10px 14px;
+    background-color: var(--light-gray);
+    border-radius: 6px;
+    pointer-events: auto;
+}
+.u-extra_call h4 {
+    margin: 7px 0 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--blue);
+}
+
+
+/*---------- Media Styles ----------*/
+@media (max-width: 1024px) { ... }
+
+@media (max-width: 992px) { ... }
+
+@media (max-width: 768px) { ... }
+
+@media (max-width: 576px) { ... }

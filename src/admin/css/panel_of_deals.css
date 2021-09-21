@@ -1,0 +1,302 @@
+section.u-users_list .u-row {
+    column-gap: 10px;
+    row-gap: 10px;
+}
+.u-ul_item.u-col {
+    width: calc(33.33335% - (20px / 3));
+    padding: 18px 17px;
+    background-color: #fff;
+    border-radius: 6px;
+}
+.u-uli_actions {
+    margin-bottom: 18px;
+}
+.u-icon {
+    padding: 0 2px;
+    background-color: var(--light-gray);
+    border-radius: 2px;
+}
+.u-icon svg {
+    height: 16px;
+    width: 16px;
+}
+.u-uliaum_info {
+    margin-left: 8px;
+}
+.u-uliaum_info h4 {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--blue);
+    margin: 0 0 5px;
+}
+.u-uliaumi_account p {
+    font-size: 9px;
+    color: var(--gray);
+}
+.u-uliaumi_account p:last-child {
+    color: var(--blue);
+    font-weight: 700;
+    margin-left: 8px;
+}
+.u-uliaumi_account p i {
+    color: var(--orange);
+    font-style: normal;
+    font-weight: 500;
+}
+.u-ulia_state {
+    column-gap: 5px;
+}
+label.u-ulias_select {
+    background-color: transparent;
+    border: 1px solid #DFF3F5;
+    border-radius: 2px;
+    transition: all .4s ease;
+    padding: 10px 5px;
+}
+label.u-ulias_select:hover, label.u-ulias_select:focus {
+    border: 1px solid #C7E0E2;
+}
+label.u-ulias_select.err {
+    border: 1px solid var(--orange);
+}
+label.u-ulias_select span{
+    display: block;
+    font-size: 8px;
+    color: var(--gray);
+}
+label.u-ulias_select select{
+    width: 100%;
+    margin-top: 0;
+    border: none;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--blue);
+    background-color: transparent
+}
+label.u-ulias_select select option {
+    font-weight: 700;
+}
+label.u-ulias_select select option:hover {
+    background-color: var(--light-gray);
+}
+.u-ulias_link {
+    padding: 5px 0;
+    background-color: var(--light-gray);
+    border-radius: 2px;
+}
+.u-ulias_link svg{
+    width: 100%;
+    height: 16px;
+}
+.u-ulias_link span {
+    color: var(--blue);
+    font-size: 8px;
+}
+/* - Deal List - */
+/* - Data Table Styles - */
+.u-dt_item {
+    font-size: 10px;
+    color: var(--blue);
+}
+.u-dt_item .u-part {
+    width: calc(100% - 28px);
+    padding: 5px 10px;
+}
+.u-dt_item:nth-child(odd) .u-part, .u-dt_item:nth-child(odd) span.u-dti_cancel {
+    background-color: var(--light-gray);
+    border-radius: 6px;
+}
+.u-dt_item.title span{
+    font-size: 10px;
+    color: var(--gray) !important;
+}
+.u-dt_item span {
+    width: auto;
+}
+.u-dt_item span.u-dti_date {
+    width: 30px;
+}
+.u-dt_item span.u-dti_total {
+    width: 100px;
+}
+.u-dt_item span.u-dti_cancel {
+    width: 26px;
+    margin-left: 2px;
+}
+/* - Coloring Table Items - */
+.red{
+    color: var(--red);
+}
+.green{
+    color: var(--green);
+}
+.u-dt_item span.u-dti_date {
+    color: var(--gray);
+}
+.u-dt_item span.u-dti_side {
+    color: var(--red);
+}
+.u-dt_item span.u-dti_cancel {
+    color: var(--orange);
+    cursor: pointer;
+}
+
+/* ||-----> DARK THEME <-----|| */
+.u-dark .u-ul_item.u-col{
+    background-color: #1D2227;
+}
+.u-dark label.u-ulias_select{
+    border-color: #3C454E;
+}
+.u-dark label.u-ulias_select select option {
+    background-color: #1D2227;
+}
+
+/*---------- Large Screens ----------*/
+@media (min-width: 1440px) {
+    section.u-users_list .u-row {
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+    .u-ul_item.u-col {
+        width: calc(33.33335% - (20px / 3));
+        padding: 18px 17px;
+        border-radius: 6px;
+    }
+    .u-uli_actions {
+        margin-bottom: 18px;
+    }
+    .u-icon {
+        padding: 0 4px;
+        border-radius: 2px;
+    }
+    .u-icon svg {
+        height: 20px;
+        width: 20px;
+    }
+    .u-uliaum_info {
+        margin-left: 12px;
+    }
+    .u-uliaum_info h4 {
+        font-size: 16px;
+        margin: 0 0 5px;
+    }
+    .u-uliaumi_account p {
+        font-size: 12px;
+    }
+    .u-uliaumi_account p:last-child {
+        margin-left: 8px;
+    }
+    .u-ulia_state {
+        column-gap: 5px;
+    }
+    label.u-ulias_select {
+        padding: 12px 8px;
+    }
+    label.u-ulias_select span{
+        font-size: 10px;
+    }
+    label.u-ulias_select select{
+        width: 100%;
+        margin-top: 3px;
+        font-size: 16px;
+    }
+    .u-ulias_link {
+        padding: 8px 0;
+        border-radius: 2px;
+    }
+    .u-ulias_link svg{
+        width: 100%;
+        height: 20px
+    }
+    .u-ulias_link span {
+        font-size: 10px;
+    }
+    /* - Deal List - */
+    /* - Data Table Styles - */
+    .u-dt_item {
+        font-size: 12px;
+    }
+    .u-dt_item .u-part {
+        width: calc(100% - 28px);
+        padding: 5px 10px;
+    }
+    .u-dt_item:nth-child(odd) .u-part, .u-dt_item:nth-child(odd) span.u-dti_cancel {
+        border-radius: 6px;
+    }
+    .u-dt_item.title span{
+        font-size: 10px;
+    }
+    .u-dt_item span.u-dti_date {
+        width: 35px;
+    }
+    .u-dt_item span.u-dti_total {
+        width: 120px;
+    }
+    .u-dt_item span.u-dti_cancel {
+        width: 26px;
+        margin-left: 2px;
+    }
+}
+
+
+
+/*---------- Media Styles ----------*/
+@media (max-width: 1200px) {
+    .u-ul_item.u-col {
+        width: calc(50% - (10px / 2));
+    }
+}
+
+@media (max-width: 992px) {
+    .u-container {
+        max-width: 850px;
+    }
+    .u-uliaum_info h4 {
+        font-size: 10px;
+    }
+    .u-uliaumi_account p {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    .u-ul_item.u-col {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    section.u-users_list .u-row{
+        padding: 0;
+    }
+    .u-uliaum_info h4 {
+        font-size: 14px;
+    }
+    .u-uliaumi_account p {
+        font-size: 10px;
+    }
+    .u-ulia_state {
+        margin-top: 10px;
+    }
+    label.u-ulias_select span{
+        font-size: 10px;
+    }
+    .u-ulias_link svg {
+        height: 18px;
+    }
+    .u-ulias_link span {
+        font-size: 10px;
+    }
+    .u-uli_deals-history {
+        overflow-x: scroll;
+    }
+    .u-dt_item {
+        font-size: 12px;
+        min-width: 500px
+    }
+    .u-dt_item span.u-dti_total {
+        width: 130px;
+        color: var(--orange)
+    }
+}

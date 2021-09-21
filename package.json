@@ -1,0 +1,21 @@
+{
+  "name": "unitraders",
+  "version": "1.0.0",
+  "description": "Best trading platform",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abdulloh007/Unitraders.git"
+  },
+  "author": "`Abdullah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Abdulloh007/Unitraders/issues"
+  },
+  "homepage": "https://github.com/Abdulloh007/Unitraders#readme"
+}

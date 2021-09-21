@@ -1,0 +1,1294 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Trading W</title>
+        <script src="./js/glob.js"></script>
+        <link rel="icon" type="image/x-icon" href="/assets/favico.png">
+        <link rel="stylesheet" href="../../style.css">
+        <link rel="stylesheet" href="./css/home.css">
+    </head>
+    <body>
+        <header id="header"></header>
+        <!-- Main Section -->
+        <main class="u-main">
+
+            <!--- Data | Currency | Chatrs Section --->
+
+            <section class="u-data-section">
+                <div class="u-container">
+                    <div class="u-row">
+                        <div class="u-info_sidebar left">
+                            <div class="u-is_inner u-tabination">
+                                <ul class="u-is_topbar-filter u-tab_nav u-dfw">
+                                    <li class="u-iftf_item u-dfw u-jc-center u-alt-center active">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M19.5 13.5H4.5C4.08579 13.5 3.75 13.8358 3.75 14.25V18C3.75 18.4142 4.08579 18.75 4.5 18.75H19.5C19.9142 18.75 20.25 18.4142 20.25 18V14.25C20.25 13.8358 19.9142 13.5 19.5 13.5Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M19.5 5.25H4.5C4.08579 5.25 3.75 5.58579 3.75 6V9.75C3.75 10.1642 4.08579 10.5 4.5 10.5H19.5C19.9142 10.5 20.25 10.1642 20.25 9.75V6C20.25 5.58579 19.9142 5.25 19.5 5.25Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </li>
+                                    <li class="u-iftf_item u-dfw u-jc-center u-alt-center">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path class="u-l" d="M9.75 19.5L9.75 4.5C9.75 4.08579 9.41421 3.75 9 3.75L5.25 3.75C4.83579 3.75 4.5 4.08579 4.5 4.5L4.5 19.5C4.5 19.9142 4.83579 20.25 5.25 20.25H9C9.41421 20.25 9.75 19.9142 9.75 19.5Z" stroke="#F24A4A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M13.5 6H20" stroke="#97A0B7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M13.5 9.75H20" stroke="#97A0B7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M13.5 13.5H20" stroke="#97A0B7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M13.5 17.25H20" stroke="#97A0B7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </li>
+                                    <li class="u-iftf_item u-dfw u-jc-center u-alt-center">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path class="u-l" d="M9.75 19.5L9.75 4.5C9.75 4.08579 9.41421 3.75 9 3.75L5.25 3.75C4.83579 3.75 4.5 4.08579 4.5 4.5L4.5 19.5C4.5 19.9142 4.83579 20.25 5.25 20.25H9C9.41421 20.25 9.75 19.9142 9.75 19.5Z" stroke="#41C94F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M13.5 6H20" stroke="#97A0B7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M13.5 9.75H20" stroke="#97A0B7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M13.5 13.5H20" stroke="#97A0B7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M13.5 17.25H20" stroke="#97A0B7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </li>
+                                    <div class="u-iftf_item u-dfw u-jc-center u-alt-center u-select">
+                                        <select>
+                                            <option value="0.01">0.01</option>
+                                            <option value="0.02">0.02</option>
+                                            <option value="0.03">0.03</option>
+                                            <option value="0.04">0.04</option>
+                                            <option value="0.04">0.04</option>
+                                        </select>
+                                    </div>
+                                </ul>
+                                <div class="u-is_body u-tab_item">
+                                    <ul class="u-isb_list u-back_labels u-dfw">
+                                        <li class="u-isbl_item u-dfw title">
+                                            <span class="first">Цена(USDT)</span>
+                                            <div class="u-isbli_group u-dfw u-jc-sb">
+                                                <span>Количество(BTC)</span>
+                                                <span>Всего</span>
+                                            </div>
+                                        </li>
+                                        <li data-width="50" class="u-isbl_item u-dfw">
+                                            <span class="first red">45380,64</span>
+                                            <div class="u-isbli_group u-dfw u-jc-sb">
+                                                <span>0.356778</span>
+                                                <span>826.87895</span>
+                                            </div>
+                                        </li>
+                                        <li data-width="25" class="u-isbl_item u-dfw">
+                                            <span class="first red">49400,23</span>
+                                            <div class="u-isbli_group u-dfw u-jc-sb">
+                                                <span>0.019716</span>
+                                                <span>151.07751</span>
+                                            </div>
+                                        </li>
+                                        <li data-width="15" class="u-isbl_item u-dfw">
+                                            <span class="first red">49530,08</span>
+                                            <div class="u-isbli_group u-dfw u-jc-sb">
+                                                <span>0.007087</span>
+                                                <span>826.87895</span>
+                                            </div>
+                                        </li>
+                                        <li data-width="35" class="u-isbl_item u-dfw">
+                                            <span class="first red">48032,12</span>
+                                            <div class="u-isbli_group u-dfw u-jc-sb">
+                                                <span>0.0506487</span>
+                                                <span>24,578.30987</span>
+                                            </div>
+                                        </li>
+                                        <li data-width="40" class="u-isbl_item u-dfw">
+                                            <span class="first red">45380,64</span>
+                                            <div class="u-isbli_group u-dfw u-jc-sb">
+                                                <span>0.356778</span>
+                                                <span>826.87895</span>
+                                            </div>
+                                        </li>
+                                        <li data-width="15" class="u-isbl_item u-dfw">
+                                            <span class="first red">49400,23</span>
+                                            <div class="u-isbli_group u-dfw u-jc-sb">
+                                                <span>0.019716</span>
+                                                <span>151.07751</span>
+                                            </div>
+                                        </li>
+                                        <li data-width="50" class="u-isbl_item u-dfw">
+                                            <span class="first red">49530,08</span>
+                                            <div class="u-isbli_group u-dfw u-jc-sb">
+                                                <span>0.007087</span>
+                                                <span>826.87895</span>
+                                            </div>
+                                        </li>
+                                        <li data-width="10" class="u-isbl_item u-dfw">
+                                            <span class="first red">48032,12</span>
+                                            <div class="u-isbli_group u-dfw u-jc-sb">
+                                                <span>0.0506487</span>
+                                                <span>24,578.30987</span>
+                                            </div>
+                                        </li>
+                                        <li data-width="45" class="u-isbl_item u-dfw">
+                                            <span class="first red">45380,64</span>
+                                            <div class="u-isbli_group u-dfw u-jc-sb">
+                                                <span>0.356778</span>
+                                                <span>826.87895</span>
+                                            </div>
+                                        </li>
+                                        <li data-width="20" class="u-isbl_item u-dfw">
+                                            <span class="first red">49400,23</span>
+                                            <div class="u-isbli_group u-dfw u-jc-sb">
+                                                <span>0.019716</span>
+                                                <span>151.07751</span>
+                                            </div>
+                                        </li>
+                                        <li data-width="30" class="u-isbl_item u-dfw">
+                                            <span class="first red">49530,08</span>
+                                            <div class="u-isbli_group u-dfw u-jc-sb">
+                                                <span>0.007087</span>
+                                                <span>826.87895</span>
+                                            </div>
+                                        </li>
+                                        <li data-width="45" class="u-isbl_item u-dfw">
+                                            <span class="first red">48032,12</span>
+                                            <div class="u-isbli_group u-dfw u-jc-sb">
+                                                <span>0.0506487</span>
+                                                <span>24,578.30987</span>
+                                            </div>
+                                        </li>
+                                        <li data-width="50" class="u-isbl_item u-dfw">
+                                            <span class="first red">45380,64</span>
+                                            <div class="u-isbli_group u-dfw u-jc-sb">
+                                                <span>0.356778</span>
+                                                <span>826.87895</span>
+                                            </div>
+                                        </li>
+                                        <li data-width="10" class="u-isbl_item u-dfw">
+                                            <span class="first red">49400,23</span>
+                                            <div class="u-isbli_group u-dfw u-jc-sb">
+                                                <span>0.019716</span>
+                                                <span>151.07751</span>
+                                            </div>
+                                        </li>
+                                        <li data-width="" class="u-isbl_item u-dfw">
+                                            <span class="first red">49530,08</span>
+                                            <div class="u-isbli_group u-dfw u-jc-sb">
+                                                <span>0.007087</span>
+                                                <span>826.87895</span>
+                                            </div>
+                                        </li>
+                                        <li data-width="15" class="u-isbl_item u-dfw">
+                                            <span class="first red">48032,12</span>
+                                            <div class="u-isbli_group u-dfw u-jc-sb">
+                                                <span>0.0506487</span>
+                                                <span>24,578.30987</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="u-isb_rise-block u-dfw u-alt-center">
+                                        <div class="u-isbrb_text-wrap">
+                                            <h3>0,00146975</h3>
+                                            <p>3 650 380,64 ₽</p>
+                                        </div>
+                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M16 27V5" stroke="#41C94F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M7 14L16 5L25 14" stroke="#41C94F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <ul class="u-isb_list rise u-dfw">
+                                        <li class="u-isbl_item u-dfw">
+                                            <span class="first green">45380,64</span>
+                                            <div class="u-isbli_group u-dfw u-jc-sb">
+                                                <span>0.356778</span>
+                                                <span>826.87895</span>
+                                            </div>
+                                        </li>
+                                        <li class="u-isbl_item u-dfw">
+                                            <span class="first green">49400,23</span>
+                                            <div class="u-isbli_group u-dfw u-jc-sb">
+                                                <span>0.019716</span>
+                                                <span>151.07751</span>
+                                            </div>
+                                        </li>
+                                        <li class="u-isbl_item u-dfw">
+                                            <span class="first green">49530,08</span>
+                                            <div class="u-isbli_group u-dfw u-jc-sb">
+                                                <span>0.007087</span>
+                                                <span>826.87895</span>
+                                            </div>
+                                        </li>
+                                        <li class="u-isbl_item u-dfw">
+                                            <span class="first green">48032,12</span>
+                                            <div class="u-isbli_group u-dfw u-jc-sb">
+                                                <span>0.0506487</span>
+                                                <span>24,578.30987</span>
+                                            </div>
+                                        </li>
+                                        <li class="u-isbl_item u-dfw">
+                                            <span class="first green">45380,64</span>
+                                            <div class="u-isbli_group u-dfw u-jc-sb">
+                                                <span>0.356778</span>
+                                                <span>826.87895</span>
+                                            </div>
+                                        </li>
+                                        <li class="u-isbl_item u-dfw">
+                                            <span class="first green">49400,23</span>
+                                            <div class="u-isbli_group u-dfw u-jc-sb">
+                                                <span>0.019716</span>
+                                                <span>151.07751</span>
+                                            </div>
+                                        </li>
+                                        <li class="u-isbl_item u-dfw">
+                                            <span class="first green">49530,08</span>
+                                            <div class="u-isbli_group u-dfw u-jc-sb">
+                                                <span>0.007087</span>
+                                                <span>826.87895</span>
+                                            </div>
+                                        </li>
+                                        <li class="u-isbl_item u-dfw">
+                                            <span class="first green">48032,12</span>
+                                            <div class="u-isbli_group u-dfw u-jc-sb">
+                                                <span>0.0506487</span>
+                                                <span>24,578.30987</span>
+                                            </div>
+                                        </li>
+                                        <li class="u-isbl_item u-dfw">
+                                            <span class="first green">45380,64</span>
+                                            <div class="u-isbli_group u-dfw u-jc-sb">
+                                                <span>0.356778</span>
+                                                <span>826.87895</span>
+                                            </div>
+                                        </li>
+                                        <li class="u-isbl_item u-dfw">
+                                            <span class="first green">49400,23</span>
+                                            <div class="u-isbli_group u-dfw u-jc-sb">
+                                                <span>0.019716</span>
+                                                <span>151.07751</span>
+                                            </div>
+                                        </li>
+                                        <li class="u-isbl_item u-dfw">
+                                            <span class="first green">49530,08</span>
+                                            <div class="u-isbli_group u-dfw u-jc-sb">
+                                                <span>0.007087</span>
+                                                <span>826.87895</span>
+                                            </div>
+                                        </li>
+                                        <li class="u-isbl_item u-dfw">
+                                            <span class="first green">48032,12</span>
+                                            <div class="u-isbli_group u-dfw u-jc-sb">
+                                                <span>0.0506487</span>
+                                                <span>24,578.30987</span>
+                                            </div>
+                                        </li>
+                                        <li class="u-isbl_item u-dfw">
+                                            <span class="first green">45380,64</span>
+                                            <div class="u-isbli_group u-dfw u-jc-sb">
+                                                <span>0.356778</span>
+                                                <span>826.87895</span>
+                                            </div>
+                                        </li>
+                                        <li class="u-isbl_item u-dfw">
+                                            <span class="first green">49400,23</span>
+                                            <div class="u-isbli_group u-dfw u-jc-sb">
+                                                <span>0.019716</span>
+                                                <span>151.07751</span>
+                                            </div>
+                                        </li>
+                                        <li class="u-isbl_item u-dfw">
+                                            <span class="first green">49530,08</span>
+                                            <div class="u-isbli_group u-dfw u-jc-sb">
+                                                <span>0.007087</span>
+                                                <span>826.87895</span>
+                                            </div>
+                                        </li>
+                                        <li class="u-isbl_item u-dfw">
+                                            <span class="first green">48032,12</span>
+                                            <div class="u-isbli_group u-dfw u-jc-sb">
+                                                <span>0.0506487</span>
+                                                <span>24,578.30987</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="u-data_centerbar">
+                            <ul class="u-dcb_topbar u-dfw">
+                                <li class="u-dcbt_item u-dfw exchange-curancy">
+                                    <h4>BTC/USDT</h4>
+                                    <p>Bitcoin</p>
+                                </li>
+                                <li class="u-dcbt_item u-dfw rise">
+                                    <h4>0,00146975</h4>
+                                    <p>3 650 380,64 ₽</p>
+                                </li>
+                                <li class="u-dcbt_item u-dfw">
+                                    <h4>473.80 +0.97%</h4>
+                                    <p>Изменение за 24ч</p>
+                                </li>
+                                <li class="u-dcbt_item u-dfw">
+                                    <h4>49,757.04</h4>
+                                    <p>Макс 24ч</p>
+                                </li>
+                                <li class="u-dcbt_item u-dfw">
+                                    <h4>48,222.00</h4>
+                                    <p>Мин за 24ч</p>
+                                </li>
+                                <li class="u-dcbt_item u-dfw">
+                                    <h4>43,291.56</h4>
+                                    <p>Объем 24ч(BTC)</p>
+                                </li>
+                                <li class="u-dcbt_item u-dfw">
+                                    <h4>2,124,023,730.20</h4>
+                                    <p>Объем за 24ч(USDT)</p>
+                                </li>
+                            </ul>
+                            <div class="u-dcb_charts"></div>
+                            <div class="u-dcb_curancy-exchange u-tabination">
+                                <ul class="u-typeof_order u-tab_nav u-dfw">
+                                    <li class="active">Spot</li>
+                                    <li>Cross 3x</li>
+                                    <li>Isolated 10x</li>
+                                </ul>
+                                <div class="u-udcbc_type u-tab_item u-nd_tabination">
+                                    <ul class="u-deal_tab u-nd_tab_nav u-dfw">
+                                        <li class="active">Лимит</li>
+                                        <li>Маркет</li>
+                                        <li>Стоп-Лимит</li>
+                                    </ul>
+                                    <div class="u-act_forms u-nd_tab_item u-dfw">
+                                        <form class="u-d_col u-dfw buy">
+                                            <label class="u-d_meaning u-dfw u-jc-sb">
+                                                <span>Дост.</span>
+                                                <span>- USDT</span>
+                                            </label>
+                                            <label class="u-f_label u-dfw u-jc-sb u-alt-center">
+                                                <span class="price">Цена</span>
+                                                <input type="number">
+                                                <b class="currency">USDT</b>
+                                            </label>
+                                            <label class="u-f_label u-dfw u-jc-sb u-alt-center">
+                                                <span class="price">Цена</span>
+                                                <input type="number">
+                                                <b class="currency">BTC</b>
+                                            </label>
+                                            <div class="u-df_progress u-dfw u-alt-center">
+                                                <span class="active"></span>
+                                                <span class="active last"></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <button class="u-fd_btn">Купить BTC</button>
+                                        </form>
+                                        <form class="u-d_col u-dfw sell">
+                                            <label class="u-d_meaning u-dfw u-jc-sb">
+                                                <span>Дост.</span>
+                                                <span>- USDT</span>
+                                            </label>
+                                            <label class="u-f_label u-dfw u-jc-sb u-alt-center">
+                                                <span class="price">Цена</span>
+                                                <input type="number">
+                                                <b class="currency">USDT</b>
+                                            </label>
+                                            <label class="u-f_label u-dfw u-jc-sb u-alt-center">
+                                                <span class="price">Цена</span>
+                                                <input type="number">
+                                                <b class="currency">BTC</b>
+                                            </label>
+                                            <div class="u-df_progress u-dfw u-alt-center">
+                                                <span class="active"></span>
+                                                <span class="active last"></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <button class="u-fd_btn u-buy">Купить BTC</button>
+                                        </form>
+                                    </div>
+                                    <div class="u-act_forms u-nd_tab_item u-dfw">
+                                        <form class="u-d_col u-dfw buy">
+                                            <label class="u-d_meaning u-dfw u-jc-sb">
+                                                <span>Дост.</span>
+                                                <span>- USDT</span>
+                                            </label>
+                                            <label class="u-f_label u-dfw u-jc-sb u-alt-center">
+                                                <span class="price">Цена</span>
+                                                <input type="number">
+                                                <b class="currency">USDT</b>
+                                            </label>
+                                            <label class="u-f_label u-dfw u-jc-sb u-alt-center">
+                                                <span class="price">Цена</span>
+                                                <input type="number">
+                                                <b class="currency">BTC</b>
+                                            </label>
+                                            <div class="u-df_progress u-dfw u-alt-center">
+                                                <span class="active"></span>
+                                                <span class="active last"></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <button class="u-fd_btn">Купить BTC</button>
+                                        </form>
+                                        <form class="u-d_col u-dfw sell">
+                                            <label class="u-d_meaning u-dfw u-jc-sb">
+                                                <span>Дост.</span>
+                                                <span>- USDT</span>
+                                            </label>
+                                            <label class="u-f_label u-dfw u-jc-sb u-alt-center">
+                                                <span class="price">Цена</span>
+                                                <input type="number">
+                                                <b class="currency">USDT</b>
+                                            </label>
+                                            <label class="u-f_label u-dfw u-jc-sb u-alt-center">
+                                                <span class="price">Цена</span>
+                                                <input type="number">
+                                                <b class="currency">BTC</b>
+                                            </label>
+                                            <div class="u-df_progress u-dfw u-alt-center">
+                                                <span class="active"></span>
+                                                <span class="active last"></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <button class="u-fd_btn u-buy">Купить BTC</button>
+                                        </form>
+                                    </div>
+                                    <div class="u-act_forms u-nd_tab_item u-dfw">
+                                        <form class="u-d_col u-dfw buy">
+                                            <label class="u-d_meaning u-dfw u-jc-sb">
+                                                <span>Дост.</span>
+                                                <span>- USDT</span>
+                                            </label>
+                                            <label class="u-f_label u-dfw u-jc-sb u-alt-center">
+                                                <span class="price">Цена</span>
+                                                <input type="number">
+                                                <b class="currency">USDT</b>
+                                            </label>
+                                            <label class="u-f_label u-dfw u-jc-sb u-alt-center">
+                                                <span class="price">Цена</span>
+                                                <input type="number">
+                                                <b class="currency">BTC</b>
+                                            </label>
+                                            <div class="u-df_progress u-dfw u-alt-center">
+                                                <span class="active"></span>
+                                                <span class="active last"></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <button class="u-fd_btn">Купить BTC</button>
+                                        </form>
+                                        <form class="u-d_col u-dfw sell">
+                                            <label class="u-d_meaning u-dfw u-jc-sb">
+                                                <span>Дост.</span>
+                                                <span>- USDT</span>
+                                            </label>
+                                            <label class="u-f_label u-dfw u-jc-sb u-alt-center">
+                                                <span class="price">Цена</span>
+                                                <input type="number">
+                                                <b class="currency">USDT</b>
+                                            </label>
+                                            <label class="u-f_label u-dfw u-jc-sb u-alt-center">
+                                                <span class="price">Цена</span>
+                                                <input type="number">
+                                                <b class="currency">BTC</b>
+                                            </label>
+                                            <div class="u-df_progress u-dfw u-alt-center">
+                                                <span class="active"></span>
+                                                <span class="active last"></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <button class="u-fd_btn u-buy">Купить BTC</button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="u-udcbc_type u-tab_item u-nd_tabination">
+                                    <ul class="u-deal_tab u-nd_tab_nav u-dfw">
+                                        <li class="active">Лимит</li>
+                                        <li>Маркет</li>
+                                        <li>Стоп-Лимит</li>
+                                    </ul>
+                                    <div class="u-act_forms u-nd_tab_item u-dfw">
+                                        <form class="u-d_col u-dfw buy">
+                                            <label class="u-d_meaning u-dfw u-jc-sb">
+                                                <span>Дост.</span>
+                                                <span>- USDT</span>
+                                            </label>
+                                            <label class="u-f_label u-dfw u-jc-sb u-alt-center">
+                                                <span class="price">Цена</span>
+                                                <input type="number">
+                                                <b class="currency">USDT</b>
+                                            </label>
+                                            <label class="u-f_label u-dfw u-jc-sb u-alt-center">
+                                                <span class="price">Цена</span>
+                                                <input type="number">
+                                                <b class="currency">BTC</b>
+                                            </label>
+                                            <div class="u-df_progress u-dfw u-alt-center">
+                                                <span class="active"></span>
+                                                <span class="active last"></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <button class="u-fd_btn">Купить BTC</button>
+                                        </form>
+                                        <form class="u-d_col u-dfw sell">
+                                            <label class="u-d_meaning u-dfw u-jc-sb">
+                                                <span>Дост.</span>
+                                                <span>- USDT</span>
+                                            </label>
+                                            <label class="u-f_label u-dfw u-jc-sb u-alt-center">
+                                                <span class="price">Цена</span>
+                                                <input type="number">
+                                                <b class="currency">USDT</b>
+                                            </label>
+                                            <label class="u-f_label u-dfw u-jc-sb u-alt-center">
+                                                <span class="price">Цена</span>
+                                                <input type="number">
+                                                <b class="currency">BTC</b>
+                                            </label>
+                                            <div class="u-df_progress u-dfw u-alt-center">
+                                                <span class="active"></span>
+                                                <span class="active last"></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <button class="u-fd_btn u-buy">Купить BTC</button>
+                                        </form>
+                                    </div>
+                                    <div class="u-act_forms u-nd_tab_item u-dfw">
+                                        <form class="u-d_col u-dfw buy">
+                                            <label class="u-d_meaning u-dfw u-jc-sb">
+                                                <span>Дост.</span>
+                                                <span>- USDT</span>
+                                            </label>
+                                            <label class="u-f_label u-dfw u-jc-sb u-alt-center">
+                                                <span class="price">Цена</span>
+                                                <input type="number">
+                                                <b class="currency">USDT</b>
+                                            </label>
+                                            <label class="u-f_label u-dfw u-jc-sb u-alt-center">
+                                                <span class="price">Цена</span>
+                                                <input type="number">
+                                                <b class="currency">BTC</b>
+                                            </label>
+                                            <div class="u-df_progress u-dfw u-alt-center">
+                                                <span class="active"></span>
+                                                <span class="active last"></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <button class="u-fd_btn">Купить BTC</button>
+                                        </form>
+                                        <form class="u-d_col u-dfw sell">
+                                            <label class="u-d_meaning u-dfw u-jc-sb">
+                                                <span>Дост.</span>
+                                                <span>- USDT</span>
+                                            </label>
+                                            <label class="u-f_label u-dfw u-jc-sb u-alt-center">
+                                                <span class="price">Цена</span>
+                                                <input type="number">
+                                                <b class="currency">USDT</b>
+                                            </label>
+                                            <label class="u-f_label u-dfw u-jc-sb u-alt-center">
+                                                <span class="price">Цена</span>
+                                                <input type="number">
+                                                <b class="currency">BTC</b>
+                                            </label>
+                                            <div class="u-df_progress u-dfw u-alt-center">
+                                                <span class="active"></span>
+                                                <span class="active last"></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <button class="u-fd_btn u-buy">Купить BTC</button>
+                                        </form>
+                                    </div>
+                                    <div class="u-act_forms u-nd_tab_item u-dfw">
+                                        <form class="u-d_col u-dfw buy">
+                                            <label class="u-d_meaning u-dfw u-jc-sb">
+                                                <span>Дост.</span>
+                                                <span>- USDT</span>
+                                            </label>
+                                            <label class="u-f_label u-dfw u-jc-sb u-alt-center">
+                                                <span class="price">Цена</span>
+                                                <input type="number">
+                                                <b class="currency">USDT</b>
+                                            </label>
+                                            <label class="u-f_label u-dfw u-jc-sb u-alt-center">
+                                                <span class="price">Цена</span>
+                                                <input type="number">
+                                                <b class="currency">BTC</b>
+                                            </label>
+                                            <div class="u-df_progress u-dfw u-alt-center">
+                                                <span class="active"></span>
+                                                <span class="active last"></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <button class="u-fd_btn">Купить BTC</button>
+                                        </form>
+                                        <form class="u-d_col u-dfw sell">
+                                            <label class="u-d_meaning u-dfw u-jc-sb">
+                                                <span>Дост.</span>
+                                                <span>- USDT</span>
+                                            </label>
+                                            <label class="u-f_label u-dfw u-jc-sb u-alt-center">
+                                                <span class="price">Цена</span>
+                                                <input type="number">
+                                                <b class="currency">USDT</b>
+                                            </label>
+                                            <label class="u-f_label u-dfw u-jc-sb u-alt-center">
+                                                <span class="price">Цена</span>
+                                                <input type="number">
+                                                <b class="currency">BTC</b>
+                                            </label>
+                                            <div class="u-df_progress u-dfw u-alt-center">
+                                                <span class="active"></span>
+                                                <span class="active last"></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <button class="u-fd_btn u-buy">Купить BTC</button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="u-udcbc_type u-tab_item u-nd_tabination">
+                                    <ul class="u-deal_tab u-nd_tab_nav u-dfw">
+                                        <li class="active">Лимит</li>
+                                        <li>Маркет</li>
+                                        <li>Стоп-Лимит</li>
+                                    </ul>
+                                    <div class="u-act_forms u-nd_tab_item u-dfw">
+                                        <form class="u-d_col u-dfw buy">
+                                            <label class="u-d_meaning u-dfw u-jc-sb">
+                                                <span>Дост.</span>
+                                                <span>- USDT</span>
+                                            </label>
+                                            <label class="u-f_label u-dfw u-jc-sb u-alt-center">
+                                                <span class="price">Цена</span>
+                                                <input type="number">
+                                                <b class="currency">USDT</b>
+                                            </label>
+                                            <label class="u-f_label u-dfw u-jc-sb u-alt-center">
+                                                <span class="price">Цена</span>
+                                                <input type="number">
+                                                <b class="currency">BTC</b>
+                                            </label>
+                                            <div class="u-df_progress u-dfw u-alt-center">
+                                                <span class="active"></span>
+                                                <span class="active last"></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <button class="u-fd_btn">Купить BTC</button>
+                                        </form>
+                                        <form class="u-d_col u-dfw sell">
+                                            <label class="u-d_meaning u-dfw u-jc-sb">
+                                                <span>Дост.</span>
+                                                <span>- USDT</span>
+                                            </label>
+                                            <label class="u-f_label u-dfw u-jc-sb u-alt-center">
+                                                <span class="price">Цена</span>
+                                                <input type="number">
+                                                <b class="currency">USDT</b>
+                                            </label>
+                                            <label class="u-f_label u-dfw u-jc-sb u-alt-center">
+                                                <span class="price">Цена</span>
+                                                <input type="number">
+                                                <b class="currency">BTC</b>
+                                            </label>
+                                            <div class="u-df_progress u-dfw u-alt-center">
+                                                <span class="active"></span>
+                                                <span class="active last"></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <button class="u-fd_btn u-buy">Купить BTC</button>
+                                        </form>
+                                    </div>
+                                    <div class="u-act_forms u-nd_tab_item u-dfw">
+                                        <form class="u-d_col u-dfw buy">
+                                            <label class="u-d_meaning u-dfw u-jc-sb">
+                                                <span>Дост.</span>
+                                                <span>- USDT</span>
+                                            </label>
+                                            <label class="u-f_label u-dfw u-jc-sb u-alt-center">
+                                                <span class="price">Цена</span>
+                                                <input type="number">
+                                                <b class="currency">USDT</b>
+                                            </label>
+                                            <label class="u-f_label u-dfw u-jc-sb u-alt-center">
+                                                <span class="price">Цена</span>
+                                                <input type="number">
+                                                <b class="currency">BTC</b>
+                                            </label>
+                                            <div class="u-df_progress u-dfw u-alt-center">
+                                                <span class="active"></span>
+                                                <span class="active last"></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <button class="u-fd_btn">Купить BTC</button>
+                                        </form>
+                                        <form class="u-d_col u-dfw sell">
+                                            <label class="u-d_meaning u-dfw u-jc-sb">
+                                                <span>Дост.</span>
+                                                <span>- USDT</span>
+                                            </label>
+                                            <label class="u-f_label u-dfw u-jc-sb u-alt-center">
+                                                <span class="price">Цена</span>
+                                                <input type="number">
+                                                <b class="currency">USDT</b>
+                                            </label>
+                                            <label class="u-f_label u-dfw u-jc-sb u-alt-center">
+                                                <span class="price">Цена</span>
+                                                <input type="number">
+                                                <b class="currency">BTC</b>
+                                            </label>
+                                            <div class="u-df_progress u-dfw u-alt-center">
+                                                <span class="active"></span>
+                                                <span class="active last"></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <button class="u-fd_btn u-buy">Купить BTC</button>
+                                        </form>
+                                    </div>
+                                    <div class="u-act_forms u-nd_tab_item u-dfw">
+                                        <form class="u-d_col u-dfw buy">
+                                            <label class="u-d_meaning u-dfw u-jc-sb">
+                                                <span>Дост.</span>
+                                                <span>- USDT</span>
+                                            </label>
+                                            <label class="u-f_label u-dfw u-jc-sb u-alt-center">
+                                                <span class="price">Цена</span>
+                                                <input type="number">
+                                                <b class="currency">USDT</b>
+                                            </label>
+                                            <label class="u-f_label u-dfw u-jc-sb u-alt-center">
+                                                <span class="price">Цена</span>
+                                                <input type="number">
+                                                <b class="currency">BTC</b>
+                                            </label>
+                                            <div class="u-df_progress u-dfw u-alt-center">
+                                                <span class="active"></span>
+                                                <span class="active last"></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <button class="u-fd_btn">Купить BTC</button>
+                                        </form>
+                                        <form class="u-d_col u-dfw sell">
+                                            <label class="u-d_meaning u-dfw u-jc-sb">
+                                                <span>Дост.</span>
+                                                <span>- USDT</span>
+                                            </label>
+                                            <label class="u-f_label u-dfw u-jc-sb u-alt-center">
+                                                <span class="price">Цена</span>
+                                                <input type="number">
+                                                <b class="currency">USDT</b>
+                                            </label>
+                                            <label class="u-f_label u-dfw u-jc-sb u-alt-center">
+                                                <span class="price">Цена</span>
+                                                <input type="number">
+                                                <b class="currency">BTC</b>
+                                            </label>
+                                            <div class="u-df_progress u-dfw u-alt-center">
+                                                <span class="active"></span>
+                                                <span class="active last"></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            <button class="u-fd_btn u-buy">Купить BTC</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="u-info_sidebar right">
+                            <div class="u-is_inner u-tabination">
+                                <ul class="u-is_topbar-filter u-tab_nav u-dfw">
+                                    <label class="u-iftf_search-input u-dfw u-alt-center">
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.34369 10.9375C8.88075 10.9375 10.9374 8.88081 10.9374 6.34375C10.9374 3.80669 8.88075 1.75 6.34369 1.75C3.80663 1.75 1.74994 3.80669 1.74994 6.34375C1.74994 8.88081 3.80663 10.9375 6.34369 10.9375Z" stroke="#97A0B7" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M9.5918 9.59222L12.2496 12.2501" stroke="#97A0B7" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <input type="search" placeholder="Поиск" name="" id="">
+                                    </label>
+                                    <li class="u-iftf_item u-dfw u-jc-center u-alt-center">
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7.24123 10.4307L9.99942 12.1782C10.352 12.4015 10.7897 12.0693 10.6851 11.6578L9.8882 8.52295C9.86576 8.43564 9.86842 8.34377 9.89587 8.2579C9.92332 8.17203 9.97445 8.09565 10.0434 8.03755L12.5167 5.97892C12.8417 5.70843 12.674 5.16907 12.2565 5.14197L9.0264 4.93234C8.9394 4.92612 8.85595 4.89532 8.78578 4.84352C8.7156 4.79171 8.66159 4.72104 8.63003 4.63973L7.42535 1.60605C7.39261 1.51975 7.33438 1.44544 7.25841 1.39301C7.18244 1.34058 7.09231 1.3125 7 1.3125C6.90769 1.3125 6.81757 1.34058 6.7416 1.39301C6.66562 1.44544 6.6074 1.51975 6.57465 1.60605L5.36998 4.63973C5.33841 4.72104 5.2844 4.79171 5.21423 4.84352C5.14405 4.89532 5.06061 4.92612 4.97361 4.93234L1.74355 5.14197C1.32601 5.16907 1.15826 5.70843 1.48326 5.97892L3.95662 8.03755C4.02555 8.09565 4.07668 8.17203 4.10413 8.2579C4.13158 8.34377 4.13424 8.43564 4.1118 8.52295L3.37277 11.4301C3.24722 11.924 3.77251 12.3227 4.19558 12.0546L6.75877 10.4307C6.83086 10.3848 6.91455 10.3604 7 10.3604C7.08546 10.3604 7.16914 10.3848 7.24123 10.4307V10.4307Z" stroke="#97A0B7" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </li>
+                                    <li class="u-iftf_item u-dfw u-jc-center u-alt-center">
+                                        <span>BTC</span>
+                                    </li>
+                                    <li class="u-iftf_item u-dfw u-jc-center u-alt-center">
+                                        <span>BNB</span>
+                                    </li>
+                                    <li class="u-iftf_item u-dfw u-jc-center u-alt-center">
+                                        <span>ALTS</span>
+                                    </li>
+                                    <li class="u-iftf_item u-dfw u-jc-center u-alt-center">
+                                        <span>FIAT</span>
+                                    </li>
+                                    <li class="u-iftf_item u-dfw u-jc-center u-alt-center">
+                                        <span>ЗОНЫ</span>
+                                    </li>
+                                </ul>
+                                <div class="u-is_body u-tab_item">
+                                    <ul class="u-isb_list u-coins_list u-dfw">
+                                        <li class="u-isbl_item u-dfw u-jc-sb title u-alt-center">
+                                            <span class="first">Пара</span>
+                                            <div class="u-isbli_group u-dfw u-jc-sb u-alt-center">
+                                                <span>Цена</span>
+                                                <span>Измен..
+                                                    <u class="u-isbl_icon">
+                                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M9 6.75L10.5 8.25L9 9.75" stroke="#97A0B7" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M1.5 8.25H10.5" stroke="#97A0B7" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M3 5.25L1.5 3.75L3 2.25" stroke="#97A0B7" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M10.5 3.75H1.5" stroke="#97A0B7" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                    </u>
+                                                </span>
+                                            </div>
+                                        </li>
+                                        <li class="u-isbl_item u-dfw">
+                                            <u class="u-isbl_icon u-dfw u-jc-sb u-alt-center fill">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7.24123 10.4307L9.99942 12.1782C10.352 12.4015 10.7897 12.0693 10.6851 11.6578L9.8882 8.52295C9.86576 8.43564 9.86842 8.34377 9.89587 8.2579C9.92332 8.17203 9.97445 8.09565 10.0434 8.03755L12.5167 5.97892C12.8417 5.70843 12.674 5.16907 12.2565 5.14197L9.0264 4.93234C8.9394 4.92612 8.85595 4.89532 8.78578 4.84352C8.7156 4.79171 8.66159 4.72104 8.63003 4.63973L7.42535 1.60605C7.39261 1.51975 7.33438 1.44544 7.25841 1.39301C7.18244 1.34058 7.09231 1.3125 7 1.3125C6.90769 1.3125 6.81757 1.34058 6.7416 1.39301C6.66562 1.44544 6.6074 1.51975 6.57465 1.60605L5.36998 4.63973C5.33841 4.72104 5.2844 4.79171 5.21423 4.84352C5.14405 4.89532 5.06061 4.92612 4.97361 4.93234L1.74355 5.14197C1.32601 5.16907 1.15826 5.70843 1.48326 5.97892L3.95662 8.03755C4.02555 8.09565 4.07668 8.17203 4.10413 8.2579C4.13158 8.34377 4.13424 8.43564 4.1118 8.52295L3.37277 11.4301C3.24722 11.924 3.77251 12.3227 4.19558 12.0546L6.75877 10.4307C6.83086 10.3848 6.91455 10.3604 7 10.3604C7.08546 10.3604 7.16914 10.3848 7.24123 10.4307V10.4307Z" stroke="#C9CFDF" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </u>
+                                            <span class="first">
+                                                <l>LRS</l>/BTS
+                                            </span>
+                                            <div class="u-isbli_group u-dfw u-jc-sb">
+                                                <span class="green">0.356778</span>
+                                                <span class="u-up">+35.94%</span>
+                                            </div>
+                                        </li>
+                                        <li class="u-isbl_item u-dfw">
+                                            <u class="u-isbl_icon u-dfw u-jc-sb u-alt-center">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7.24123 10.4307L9.99942 12.1782C10.352 12.4015 10.7897 12.0693 10.6851 11.6578L9.8882 8.52295C9.86576 8.43564 9.86842 8.34377 9.89587 8.2579C9.92332 8.17203 9.97445 8.09565 10.0434 8.03755L12.5167 5.97892C12.8417 5.70843 12.674 5.16907 12.2565 5.14197L9.0264 4.93234C8.9394 4.92612 8.85595 4.89532 8.78578 4.84352C8.7156 4.79171 8.66159 4.72104 8.63003 4.63973L7.42535 1.60605C7.39261 1.51975 7.33438 1.44544 7.25841 1.39301C7.18244 1.34058 7.09231 1.3125 7 1.3125C6.90769 1.3125 6.81757 1.34058 6.7416 1.39301C6.66562 1.44544 6.6074 1.51975 6.57465 1.60605L5.36998 4.63973C5.33841 4.72104 5.2844 4.79171 5.21423 4.84352C5.14405 4.89532 5.06061 4.92612 4.97361 4.93234L1.74355 5.14197C1.32601 5.16907 1.15826 5.70843 1.48326 5.97892L3.95662 8.03755C4.02555 8.09565 4.07668 8.17203 4.10413 8.2579C4.13158 8.34377 4.13424 8.43564 4.1118 8.52295L3.37277 11.4301C3.24722 11.924 3.77251 12.3227 4.19558 12.0546L6.75877 10.4307C6.83086 10.3848 6.91455 10.3604 7 10.3604C7.08546 10.3604 7.16914 10.3848 7.24123 10.4307V10.4307Z" stroke="#C9CFDF" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </u>
+                                            <span class="first">
+                                                <l>LRS</l>/BTS
+                                            </span>
+                                            <div class="u-isbli_group u-dfw u-jc-sb">
+                                                <span class="green">0.356778</span>
+                                                <span class="u-up">+35.94%</span>
+                                            </div>
+                                        </li>
+                                        <li class="u-isbl_item u-dfw">
+                                            <u class="u-isbl_icon u-dfw u-jc-sb u-alt-center">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7.24123 10.4307L9.99942 12.1782C10.352 12.4015 10.7897 12.0693 10.6851 11.6578L9.8882 8.52295C9.86576 8.43564 9.86842 8.34377 9.89587 8.2579C9.92332 8.17203 9.97445 8.09565 10.0434 8.03755L12.5167 5.97892C12.8417 5.70843 12.674 5.16907 12.2565 5.14197L9.0264 4.93234C8.9394 4.92612 8.85595 4.89532 8.78578 4.84352C8.7156 4.79171 8.66159 4.72104 8.63003 4.63973L7.42535 1.60605C7.39261 1.51975 7.33438 1.44544 7.25841 1.39301C7.18244 1.34058 7.09231 1.3125 7 1.3125C6.90769 1.3125 6.81757 1.34058 6.7416 1.39301C6.66562 1.44544 6.6074 1.51975 6.57465 1.60605L5.36998 4.63973C5.33841 4.72104 5.2844 4.79171 5.21423 4.84352C5.14405 4.89532 5.06061 4.92612 4.97361 4.93234L1.74355 5.14197C1.32601 5.16907 1.15826 5.70843 1.48326 5.97892L3.95662 8.03755C4.02555 8.09565 4.07668 8.17203 4.10413 8.2579C4.13158 8.34377 4.13424 8.43564 4.1118 8.52295L3.37277 11.4301C3.24722 11.924 3.77251 12.3227 4.19558 12.0546L6.75877 10.4307C6.83086 10.3848 6.91455 10.3604 7 10.3604C7.08546 10.3604 7.16914 10.3848 7.24123 10.4307V10.4307Z" stroke="#C9CFDF" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </u>
+                                            <span class="first">
+                                                <l>LRS</l>/BTS
+                                            </span>
+                                            <div class="u-isbli_group u-dfw u-jc-sb">
+                                                <span class="green">0.356778</span>
+                                                <span class="u-up">+35.94%</span>
+                                            </div>
+                                        </li>
+                                        <li class="u-isbl_item u-dfw">
+                                            <u class="u-isbl_icon u-dfw u-jc-sb u-alt-center">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7.24123 10.4307L9.99942 12.1782C10.352 12.4015 10.7897 12.0693 10.6851 11.6578L9.8882 8.52295C9.86576 8.43564 9.86842 8.34377 9.89587 8.2579C9.92332 8.17203 9.97445 8.09565 10.0434 8.03755L12.5167 5.97892C12.8417 5.70843 12.674 5.16907 12.2565 5.14197L9.0264 4.93234C8.9394 4.92612 8.85595 4.89532 8.78578 4.84352C8.7156 4.79171 8.66159 4.72104 8.63003 4.63973L7.42535 1.60605C7.39261 1.51975 7.33438 1.44544 7.25841 1.39301C7.18244 1.34058 7.09231 1.3125 7 1.3125C6.90769 1.3125 6.81757 1.34058 6.7416 1.39301C6.66562 1.44544 6.6074 1.51975 6.57465 1.60605L5.36998 4.63973C5.33841 4.72104 5.2844 4.79171 5.21423 4.84352C5.14405 4.89532 5.06061 4.92612 4.97361 4.93234L1.74355 5.14197C1.32601 5.16907 1.15826 5.70843 1.48326 5.97892L3.95662 8.03755C4.02555 8.09565 4.07668 8.17203 4.10413 8.2579C4.13158 8.34377 4.13424 8.43564 4.1118 8.52295L3.37277 11.4301C3.24722 11.924 3.77251 12.3227 4.19558 12.0546L6.75877 10.4307C6.83086 10.3848 6.91455 10.3604 7 10.3604C7.08546 10.3604 7.16914 10.3848 7.24123 10.4307V10.4307Z" stroke="#C9CFDF" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </u>
+                                            <span class="first">
+                                                <l>LRS</l>/BTS
+                                            </span>
+                                            <div class="u-isbli_group u-dfw u-jc-sb">
+                                                <span class="green">0.356778</span>
+                                                <span class="u-up">+35.94%</span>
+                                            </div>
+                                        </li>
+                                        <li class="u-isbl_item u-dfw">
+                                            <u class="u-isbl_icon u-dfw u-jc-sb u-alt-center">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7.24123 10.4307L9.99942 12.1782C10.352 12.4015 10.7897 12.0693 10.6851 11.6578L9.8882 8.52295C9.86576 8.43564 9.86842 8.34377 9.89587 8.2579C9.92332 8.17203 9.97445 8.09565 10.0434 8.03755L12.5167 5.97892C12.8417 5.70843 12.674 5.16907 12.2565 5.14197L9.0264 4.93234C8.9394 4.92612 8.85595 4.89532 8.78578 4.84352C8.7156 4.79171 8.66159 4.72104 8.63003 4.63973L7.42535 1.60605C7.39261 1.51975 7.33438 1.44544 7.25841 1.39301C7.18244 1.34058 7.09231 1.3125 7 1.3125C6.90769 1.3125 6.81757 1.34058 6.7416 1.39301C6.66562 1.44544 6.6074 1.51975 6.57465 1.60605L5.36998 4.63973C5.33841 4.72104 5.2844 4.79171 5.21423 4.84352C5.14405 4.89532 5.06061 4.92612 4.97361 4.93234L1.74355 5.14197C1.32601 5.16907 1.15826 5.70843 1.48326 5.97892L3.95662 8.03755C4.02555 8.09565 4.07668 8.17203 4.10413 8.2579C4.13158 8.34377 4.13424 8.43564 4.1118 8.52295L3.37277 11.4301C3.24722 11.924 3.77251 12.3227 4.19558 12.0546L6.75877 10.4307C6.83086 10.3848 6.91455 10.3604 7 10.3604C7.08546 10.3604 7.16914 10.3848 7.24123 10.4307V10.4307Z" stroke="#C9CFDF" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </u>
+                                            <span class="first">
+                                                <l>LRS</l>/BTS
+                                            </span>
+                                            <div class="u-isbli_group u-dfw u-jc-sb">
+                                                <span class="green">0.356778</span>
+                                                <span class="u-up">+35.94%</span>
+                                            </div>
+                                        </li>
+                                        <li class="u-isbl_item u-dfw">
+                                            <u class="u-isbl_icon u-dfw u-jc-sb u-alt-center fill">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7.24123 10.4307L9.99942 12.1782C10.352 12.4015 10.7897 12.0693 10.6851 11.6578L9.8882 8.52295C9.86576 8.43564 9.86842 8.34377 9.89587 8.2579C9.92332 8.17203 9.97445 8.09565 10.0434 8.03755L12.5167 5.97892C12.8417 5.70843 12.674 5.16907 12.2565 5.14197L9.0264 4.93234C8.9394 4.92612 8.85595 4.89532 8.78578 4.84352C8.7156 4.79171 8.66159 4.72104 8.63003 4.63973L7.42535 1.60605C7.39261 1.51975 7.33438 1.44544 7.25841 1.39301C7.18244 1.34058 7.09231 1.3125 7 1.3125C6.90769 1.3125 6.81757 1.34058 6.7416 1.39301C6.66562 1.44544 6.6074 1.51975 6.57465 1.60605L5.36998 4.63973C5.33841 4.72104 5.2844 4.79171 5.21423 4.84352C5.14405 4.89532 5.06061 4.92612 4.97361 4.93234L1.74355 5.14197C1.32601 5.16907 1.15826 5.70843 1.48326 5.97892L3.95662 8.03755C4.02555 8.09565 4.07668 8.17203 4.10413 8.2579C4.13158 8.34377 4.13424 8.43564 4.1118 8.52295L3.37277 11.4301C3.24722 11.924 3.77251 12.3227 4.19558 12.0546L6.75877 10.4307C6.83086 10.3848 6.91455 10.3604 7 10.3604C7.08546 10.3604 7.16914 10.3848 7.24123 10.4307V10.4307Z" stroke="#C9CFDF" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </u>
+                                            <span class="first">
+                                                <l>LRS</l>/BTS
+                                            </span>
+                                            <div class="u-isbli_group u-dfw u-jc-sb">
+                                                <span class="green">0.356778</span>
+                                                <span class="u-up">+35.94%</span>
+                                            </div>
+                                        </li>
+                                        <li class="u-isbl_item u-dfw">
+                                            <u class="u-isbl_icon u-dfw u-jc-sb u-alt-center">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7.24123 10.4307L9.99942 12.1782C10.352 12.4015 10.7897 12.0693 10.6851 11.6578L9.8882 8.52295C9.86576 8.43564 9.86842 8.34377 9.89587 8.2579C9.92332 8.17203 9.97445 8.09565 10.0434 8.03755L12.5167 5.97892C12.8417 5.70843 12.674 5.16907 12.2565 5.14197L9.0264 4.93234C8.9394 4.92612 8.85595 4.89532 8.78578 4.84352C8.7156 4.79171 8.66159 4.72104 8.63003 4.63973L7.42535 1.60605C7.39261 1.51975 7.33438 1.44544 7.25841 1.39301C7.18244 1.34058 7.09231 1.3125 7 1.3125C6.90769 1.3125 6.81757 1.34058 6.7416 1.39301C6.66562 1.44544 6.6074 1.51975 6.57465 1.60605L5.36998 4.63973C5.33841 4.72104 5.2844 4.79171 5.21423 4.84352C5.14405 4.89532 5.06061 4.92612 4.97361 4.93234L1.74355 5.14197C1.32601 5.16907 1.15826 5.70843 1.48326 5.97892L3.95662 8.03755C4.02555 8.09565 4.07668 8.17203 4.10413 8.2579C4.13158 8.34377 4.13424 8.43564 4.1118 8.52295L3.37277 11.4301C3.24722 11.924 3.77251 12.3227 4.19558 12.0546L6.75877 10.4307C6.83086 10.3848 6.91455 10.3604 7 10.3604C7.08546 10.3604 7.16914 10.3848 7.24123 10.4307V10.4307Z" stroke="#C9CFDF" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </u>
+                                            <span class="first">
+                                                <l>LRS</l>/BTS
+                                            </span>
+                                            <div class="u-isbli_group u-dfw u-jc-sb">
+                                                <span class="green">0.356778</span>
+                                                <span class="u-up">+35.94%</span>
+                                            </div>
+                                        </li>
+                                        <li class="u-isbl_item u-dfw">
+                                            <u class="u-isbl_icon u-dfw u-jc-sb u-alt-center">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7.24123 10.4307L9.99942 12.1782C10.352 12.4015 10.7897 12.0693 10.6851 11.6578L9.8882 8.52295C9.86576 8.43564 9.86842 8.34377 9.89587 8.2579C9.92332 8.17203 9.97445 8.09565 10.0434 8.03755L12.5167 5.97892C12.8417 5.70843 12.674 5.16907 12.2565 5.14197L9.0264 4.93234C8.9394 4.92612 8.85595 4.89532 8.78578 4.84352C8.7156 4.79171 8.66159 4.72104 8.63003 4.63973L7.42535 1.60605C7.39261 1.51975 7.33438 1.44544 7.25841 1.39301C7.18244 1.34058 7.09231 1.3125 7 1.3125C6.90769 1.3125 6.81757 1.34058 6.7416 1.39301C6.66562 1.44544 6.6074 1.51975 6.57465 1.60605L5.36998 4.63973C5.33841 4.72104 5.2844 4.79171 5.21423 4.84352C5.14405 4.89532 5.06061 4.92612 4.97361 4.93234L1.74355 5.14197C1.32601 5.16907 1.15826 5.70843 1.48326 5.97892L3.95662 8.03755C4.02555 8.09565 4.07668 8.17203 4.10413 8.2579C4.13158 8.34377 4.13424 8.43564 4.1118 8.52295L3.37277 11.4301C3.24722 11.924 3.77251 12.3227 4.19558 12.0546L6.75877 10.4307C6.83086 10.3848 6.91455 10.3604 7 10.3604C7.08546 10.3604 7.16914 10.3848 7.24123 10.4307V10.4307Z" stroke="#C9CFDF" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </u>
+                                            <span class="first">
+                                                <l>LRS</l>/BTS
+                                            </span>
+                                            <div class="u-isbli_group u-dfw u-jc-sb">
+                                                <span class="green">0.356778</span>
+                                                <span class="u-up">+35.94%</span>
+                                            </div>
+                                        </li>
+                                        <li class="u-isbl_item u-dfw">
+                                            <u class="u-isbl_icon u-dfw u-jc-sb u-alt-center">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7.24123 10.4307L9.99942 12.1782C10.352 12.4015 10.7897 12.0693 10.6851 11.6578L9.8882 8.52295C9.86576 8.43564 9.86842 8.34377 9.89587 8.2579C9.92332 8.17203 9.97445 8.09565 10.0434 8.03755L12.5167 5.97892C12.8417 5.70843 12.674 5.16907 12.2565 5.14197L9.0264 4.93234C8.9394 4.92612 8.85595 4.89532 8.78578 4.84352C8.7156 4.79171 8.66159 4.72104 8.63003 4.63973L7.42535 1.60605C7.39261 1.51975 7.33438 1.44544 7.25841 1.39301C7.18244 1.34058 7.09231 1.3125 7 1.3125C6.90769 1.3125 6.81757 1.34058 6.7416 1.39301C6.66562 1.44544 6.6074 1.51975 6.57465 1.60605L5.36998 4.63973C5.33841 4.72104 5.2844 4.79171 5.21423 4.84352C5.14405 4.89532 5.06061 4.92612 4.97361 4.93234L1.74355 5.14197C1.32601 5.16907 1.15826 5.70843 1.48326 5.97892L3.95662 8.03755C4.02555 8.09565 4.07668 8.17203 4.10413 8.2579C4.13158 8.34377 4.13424 8.43564 4.1118 8.52295L3.37277 11.4301C3.24722 11.924 3.77251 12.3227 4.19558 12.0546L6.75877 10.4307C6.83086 10.3848 6.91455 10.3604 7 10.3604C7.08546 10.3604 7.16914 10.3848 7.24123 10.4307V10.4307Z" stroke="#C9CFDF" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </u>
+                                            <span class="first">
+                                                <l>LRS</l>/BTS
+                                            </span>
+                                            <div class="u-isbli_group u-dfw u-jc-sb">
+                                                <span class="green">0.356778</span>
+                                                <span class="u-up">+35.94%</span>
+                                            </div>
+                                        </li>
+                                        <li class="u-isbl_item u-dfw">
+                                            <u class="u-isbl_icon u-dfw u-jc-sb u-alt-center">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7.24123 10.4307L9.99942 12.1782C10.352 12.4015 10.7897 12.0693 10.6851 11.6578L9.8882 8.52295C9.86576 8.43564 9.86842 8.34377 9.89587 8.2579C9.92332 8.17203 9.97445 8.09565 10.0434 8.03755L12.5167 5.97892C12.8417 5.70843 12.674 5.16907 12.2565 5.14197L9.0264 4.93234C8.9394 4.92612 8.85595 4.89532 8.78578 4.84352C8.7156 4.79171 8.66159 4.72104 8.63003 4.63973L7.42535 1.60605C7.39261 1.51975 7.33438 1.44544 7.25841 1.39301C7.18244 1.34058 7.09231 1.3125 7 1.3125C6.90769 1.3125 6.81757 1.34058 6.7416 1.39301C6.66562 1.44544 6.6074 1.51975 6.57465 1.60605L5.36998 4.63973C5.33841 4.72104 5.2844 4.79171 5.21423 4.84352C5.14405 4.89532 5.06061 4.92612 4.97361 4.93234L1.74355 5.14197C1.32601 5.16907 1.15826 5.70843 1.48326 5.97892L3.95662 8.03755C4.02555 8.09565 4.07668 8.17203 4.10413 8.2579C4.13158 8.34377 4.13424 8.43564 4.1118 8.52295L3.37277 11.4301C3.24722 11.924 3.77251 12.3227 4.19558 12.0546L6.75877 10.4307C6.83086 10.3848 6.91455 10.3604 7 10.3604C7.08546 10.3604 7.16914 10.3848 7.24123 10.4307V10.4307Z" stroke="#C9CFDF" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </u>
+                                            <span class="first">
+                                                <l>LRS</l>/BTS
+                                            </span>
+                                            <div class="u-isbli_group u-dfw u-jc-sb">
+                                                <span class="green">0.356778</span>
+                                                <span class="u-up">+35.94%</span>
+                                            </div>
+                                        </li>
+                                        <li class="u-isbl_item u-dfw">
+                                            <u class="u-isbl_icon u-dfw u-jc-sb u-alt-center fill">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7.24123 10.4307L9.99942 12.1782C10.352 12.4015 10.7897 12.0693 10.6851 11.6578L9.8882 8.52295C9.86576 8.43564 9.86842 8.34377 9.89587 8.2579C9.92332 8.17203 9.97445 8.09565 10.0434 8.03755L12.5167 5.97892C12.8417 5.70843 12.674 5.16907 12.2565 5.14197L9.0264 4.93234C8.9394 4.92612 8.85595 4.89532 8.78578 4.84352C8.7156 4.79171 8.66159 4.72104 8.63003 4.63973L7.42535 1.60605C7.39261 1.51975 7.33438 1.44544 7.25841 1.39301C7.18244 1.34058 7.09231 1.3125 7 1.3125C6.90769 1.3125 6.81757 1.34058 6.7416 1.39301C6.66562 1.44544 6.6074 1.51975 6.57465 1.60605L5.36998 4.63973C5.33841 4.72104 5.2844 4.79171 5.21423 4.84352C5.14405 4.89532 5.06061 4.92612 4.97361 4.93234L1.74355 5.14197C1.32601 5.16907 1.15826 5.70843 1.48326 5.97892L3.95662 8.03755C4.02555 8.09565 4.07668 8.17203 4.10413 8.2579C4.13158 8.34377 4.13424 8.43564 4.1118 8.52295L3.37277 11.4301C3.24722 11.924 3.77251 12.3227 4.19558 12.0546L6.75877 10.4307C6.83086 10.3848 6.91455 10.3604 7 10.3604C7.08546 10.3604 7.16914 10.3848 7.24123 10.4307V10.4307Z" stroke="#C9CFDF" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </u>
+                                            <span class="first">
+                                                <l>LRS</l>/BTS
+                                            </span>
+                                            <div class="u-isbli_group u-dfw u-jc-sb">
+                                                <span class="green">0.356778</span>
+                                                <span class="u-up">+35.94%</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="u-is_inner u-tabination">
+                                <ul class="u-is_topbar-filter u-tab_nav u-dfw">
+                                    <li class="u-iftf_item u-dfw u-jc-center u-alt-center">
+                                        <span>Сделки на рынке</span>
+                                    </li>
+                                    <li class="u-iftf_item u-dfw u-jc-center u-alt-center">
+                                        <span>Мои сделки</span>
+                                    </li>
+                                </ul>
+                                <div class="u-is_body u-tab_item">
+                                    <ul class="u-isb_list u-dfw rise">
+                                        <li class="u-isbl_item u-dfw title">
+                                            <span class="first">Цена(USDT)</span>
+                                            <div class="u-isbli_group u-dfw u-jc-sb">
+                                                <span>Количество(BTC)</span>
+                                                <span>Всего</span>
+                                            </div>
+                                        </li>
+                                        <li class="u-isbl_item u-dfw">
+                                            <span class="first red">45380,64</span>
+                                            <div class="u-isbli_group u-dfw u-jc-sb">
+                                                <span>0.356778</span>
+                                                <span>11:48:15</span>
+                                            </div>
+                                        </li>
+                                        <li class="u-isbl_item u-dfw">
+                                            <span class="first green">45380,64</span>
+                                            <div class="u-isbli_group u-dfw u-jc-sb">
+                                                <span>0.356778</span>
+                                                <span>11:48:15</span>
+                                            </div>
+                                        </li>
+                                        <li class="u-isbl_item u-dfw">
+                                            <span class="first red">45380,64</span>
+                                            <div class="u-isbli_group u-dfw u-jc-sb">
+                                                <span>0.356778</span>
+                                                <span>11:48:15</span>
+                                            </div>
+                                        </li>
+                                        <li class="u-isbl_item u-dfw">
+                                            <span class="first green">45380,64</span>
+                                            <div class="u-isbli_group u-dfw u-jc-sb">
+                                                <span>0.356778</span>
+                                                <span>11:48:15</span>
+                                            </div>
+                                        </li>
+                                        <li class="u-isbl_item u-dfw">
+                                            <span class="first red">45380,64</span>
+                                            <div class="u-isbli_group u-dfw u-jc-sb">
+                                                <span>0.356778</span>
+                                                <span>11:48:15</span>
+                                            </div>
+                                        </li>
+                                        <li class="u-isbl_item u-dfw">
+                                            <span class="first green">45380,64</span>
+                                            <div class="u-isbli_group u-dfw u-jc-sb">
+                                                <span>0.356778</span>
+                                                <span>11:48:15</span>
+                                            </div>
+                                        </li>
+                                        <li class="u-isbl_item u-dfw">
+                                            <span class="first red">45380,64</span>
+                                            <div class="u-isbli_group u-dfw u-jc-sb">
+                                                <span>0.356778</span>
+                                                <span>11:48:15</span>
+                                            </div>
+                                        </li>
+                                        <li class="u-isbl_item u-dfw">
+                                            <span class="first green">45380,64</span>
+                                            <div class="u-isbli_group u-dfw u-jc-sb">
+                                                <span>0.356778</span>
+                                                <span>11:48:15</span>
+                                            </div>
+                                        </li>
+                                        <li class="u-isbl_item u-dfw">
+                                            <span class="first red">45380,64</span>
+                                            <div class="u-isbli_group u-dfw u-jc-sb">
+                                                <span>0.356778</span>
+                                                <span>11:48:15</span>
+                                            </div>
+                                        </li>
+                                        <li class="u-isbl_item u-dfw">
+                                            <span class="first green">45380,64</span>
+                                            <div class="u-isbli_group u-dfw u-jc-sb">
+                                                <span>0.356778</span>
+                                                <span>11:48:15</span>
+                                            </div>
+                                        </li>
+                                        <li class="u-isbl_item u-dfw">
+                                            <span class="first red">45380,64</span>
+                                            <div class="u-isbli_group u-dfw u-jc-sb">
+                                                <span>0.356778</span>
+                                                <span>11:48:15</span>
+                                            </div>
+                                        </li>
+                                        <li class="u-isbl_item u-dfw">
+                                            <span class="first green">45380,64</span>
+                                            <div class="u-isbli_group u-dfw u-jc-sb">
+                                                <span>0.356778</span>
+                                                <span>11:48:15</span>
+                                            </div>
+                                        </li>
+                                        <li class="u-isbl_item u-dfw">
+                                            <span class="first red">45380,64</span>
+                                            <div class="u-isbli_group u-dfw u-jc-sb">
+                                                <span>0.356778</span>
+                                                <span>11:48:15</span>
+                                            </div>
+                                        </li>
+                                        <li class="u-isbl_item u-dfw">
+                                            <span class="first green">45380,64</span>
+                                            <div class="u-isbli_group u-dfw u-jc-sb">
+                                                <span>0.356778</span>
+                                                <span>11:48:15</span>
+                                            </div>
+                                        </li>
+                                        <li class="u-isbl_item u-dfw">
+                                            <span class="first red">45380,64</span>
+                                            <div class="u-isbli_group u-dfw u-jc-sb">
+                                                <span>0.356778</span>
+                                                <span>11:48:15</span>
+                                            </div>
+                                        </li>
+                                        <li class="u-isbl_item u-dfw">
+                                            <span class="first green">45380,64</span>
+                                            <div class="u-isbli_group u-dfw u-jc-sb">
+                                                <span>0.356778</span>
+                                                <span>11:48:15</span>
+                                            </div>
+                                        </li>
+                                        <li class="u-isbl_item u-dfw">
+                                            <span class="first red">45380,64</span>
+                                            <div class="u-isbli_group u-dfw u-jc-sb">
+                                                <span>0.356778</span>
+                                                <span>11:48:15</span>
+                                            </div>
+                                        </li>
+                                        <li class="u-isbl_item u-dfw">
+                                            <span class="first green">45380,64</span>
+                                            <div class="u-isbli_group u-dfw u-jc-sb">
+                                                <span>0.356778</span>
+                                                <span>11:48:15</span>
+                                            </div>
+                                        </li>
+                                        <li class="u-isbl_item u-dfw">
+                                            <span class="first red">45380,64</span>
+                                            <div class="u-isbli_group u-dfw u-jc-sb">
+                                                <span>0.356778</span>
+                                                <span>11:48:15</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--- History Details Section --->
+
+            <section class="u-deals-section">
+                <div class="u-container">
+                    <div class="u-row">
+                        <div class="u-tabination u-orders_list">
+                            <ul class="u-typeof_order u-orders u-tab_nav u-dfw">
+                                <li class="active">Открытые ордера</li>
+                                <li>История ордеров</li>
+                                <li>История сделок</li>
+                                <li>Средства</li>
+                            </ul>
+                            <div class="u-tab_item">
+                                <ul data-show="8" class="u-data_table u-show_more">
+                                    <li class="u-dt_item u-dfw u-jc-sb title">
+                                        <span class="u-dti_date">Дата</span>
+                                        <span class="u-dti_couple">Пара</span>
+                                        <span class="u-dti_type">Тип</span>
+                                        <span class="u-dti_side">Сторона</span>
+                                        <span class="u-dti_price">Цена</span>
+                                        <span class="u-dti_count">Количество</span>
+                                        <span class="u-dti_fill">Заполнено</span>
+                                        <span class="u-dti_total">Всего</span>
+                                        <span class="u-dti_cancel">Отмнить все</span>
+                                    </li>
+                                    <li class="u-dt_item u-dfw u-jc-sb">
+                                        <span class="u-dti_date">02-24 11:09:36</span>
+                                        <span class="u-dti_couple">BTC/USDT</span>
+                                        <span class="u-dti_type">Лимит</span>
+                                        <span class="u-dti_side">Продать</span>
+                                        <span class="u-dti_price">0.057380</span>
+                                        <span class="u-dti_count">52,726</span>
+                                        <span class="u-dti_fill">0.00%</span>
+                                        <span class="u-dti_total">3,025.417880 BUSD</span>
+                                        <span class="u-dti_cancel">Отменить</span>
+                                    </li>
+                                    <li class="u-dt_item u-dfw u-jc-sb">
+                                        <span class="u-dti_date">02-24 11:09:36</span>
+                                        <span class="u-dti_couple">BTC/USDT</span>
+                                        <span class="u-dti_type">Лимит</span>
+                                        <span class="u-dti_side">Продать</span>
+                                        <span class="u-dti_price">0.057380</span>
+                                        <span class="u-dti_count">52,726</span>
+                                        <span class="u-dti_fill">0.00%</span>
+                                        <span class="u-dti_total">3,025.417880 BUSD</span>
+                                        <span class="u-dti_cancel">Отменить</span>
+                                    </li>
+                                    <li class="u-dt_item u-dfw u-jc-sb">
+                                        <span class="u-dti_date">02-24 11:09:36</span>
+                                        <span class="u-dti_couple">BTC/USDT</span>
+                                        <span class="u-dti_type">Лимит</span>
+                                        <span class="u-dti_side">Продать</span>
+                                        <span class="u-dti_price">0.057380</span>
+                                        <span class="u-dti_count">52,726</span>
+                                        <span class="u-dti_fill">0.00%</span>
+                                        <span class="u-dti_total">3,025.417880 BUSD</span>
+                                        <span class="u-dti_cancel">Отменить</span>
+                                    </li>
+                                    <li class="u-dt_item u-dfw u-jc-sb">
+                                        <span class="u-dti_date">02-24 11:09:36</span>
+                                        <span class="u-dti_couple">BTC/USDT</span>
+                                        <span class="u-dti_type">Лимит</span>
+                                        <span class="u-dti_side">Продать</span>
+                                        <span class="u-dti_price">0.057380</span>
+                                        <span class="u-dti_count">52,726</span>
+                                        <span class="u-dti_fill">0.00%</span>
+                                        <span class="u-dti_total">3,025.417880 BUSD</span>
+                                        <span class="u-dti_cancel">Отменить</span>
+                                    </li>
+                                    <li class="u-dt_item u-dfw u-jc-sb">
+                                        <span class="u-dti_date">02-24 11:09:36</span>
+                                        <span class="u-dti_couple">BTC/USDT</span>
+                                        <span class="u-dti_type">Лимит</span>
+                                        <span class="u-dti_side">Продать</span>
+                                        <span class="u-dti_price">0.057380</span>
+                                        <span class="u-dti_count">52,726</span>
+                                        <span class="u-dti_fill">0.00%</span>
+                                        <span class="u-dti_total">3,025.417880 BUSD</span>
+                                        <span class="u-dti_cancel">Отменить</span>
+                                    </li>
+                                    <li class="u-dt_item u-dfw u-jc-sb">
+                                        <span class="u-dti_date">02-24 11:09:36</span>
+                                        <span class="u-dti_couple">BTC/USDT</span>
+                                        <span class="u-dti_type">Лимит</span>
+                                        <span class="u-dti_side">Продать</span>
+                                        <span class="u-dti_price">0.057380</span>
+                                        <span class="u-dti_count">52,726</span>
+                                        <span class="u-dti_fill">0.00%</span>
+                                        <span class="u-dti_total">3,025.417880 BUSD</span>
+                                        <span class="u-dti_cancel">Отменить</span>
+                                    </li>
+                                    <li class="u-dt_item u-dfw u-jc-sb">
+                                        <span class="u-dti_date">02-24 11:09:36</span>
+                                        <span class="u-dti_couple">BTC/USDT</span>
+                                        <span class="u-dti_type">Лимит</span>
+                                        <span class="u-dti_side">Продать</span>
+                                        <span class="u-dti_price">0.057380</span>
+                                        <span class="u-dti_count">52,726</span>
+                                        <span class="u-dti_fill">0.00%</span>
+                                        <span class="u-dti_total">3,025.417880 BUSD</span>
+                                        <span class="u-dti_cancel">Отменить</span>
+                                    </li>
+                                </ul>
+                                <button class="u-show_more-btn not_opened u-dfw u-alt-center">
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M17.875 8.25L11 15.125L4.125 8.25" stroke="#97A0B7" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <span>Загрузить больше</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Main Section End -->
+        <script type="text/javascript" src="../../index.js"></script>
+        <script type="text/javascript">
+            const boxTr = document.querySelector('.u-data_centerbar').parentNode,
+            trElem = document.querySelector('.u-orders_list');
+            console.dir(window.outerWidth)
+            if (window.outerWidth <= 992 && window.outerWidth >= 576 ) {
+                boxTr.appendChild(trElem);
+            }
+        </script>
+    </body>
+</html>
